@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>关键词管理</title>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div>
+<!--点击头像出现菜单开始-->
+<div class="topnav_slide" style="display:none;">
+  <p><a href="account.html">账户管理<i class="fa fa-cog" aria-hidden="true"></i></a></p>
+  <p><a href="#">退出登录<i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+</div>
+<!--点击头像出现菜单结束--> 
+<!--顶部开始-->
+<div class="top clearfix">
+  <h2><img src="images/logo.png" /></h2>
+  <span>当前位置：<a href="index2.html"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;&gt;&nbsp;关键词管理</span>
+  <div class="clearfix">
+    <p> 
+      <!--经济版开始--> <em class="v1"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>经济版</em> 
+      <!--标准版开始--> <em class="v2" style="display: none;"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>标准版</em> 
+      <!--高级版开始--> <em class="v3" style="display: none;"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>高级版</em> 徐水县星涛机械厂 </p>
+    <img src="images/tx.jpg" class="i_tx" /> </div>
+</div>
+<!--顶部结束-->
+<div id="main">
+<!--左侧导航开始-->
+<div class="nav layui-collapse" lay-accordion="">
+  <div class="gwtg layui-colla-item">
+    <div class="tgtitle layui-colla-title">官网SEO</div>
+    <ul class="layui-colla-content layui-show">
+      <li><a href="index2.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>推广效果</span><strong>推广效果</strong></a></li>
+      <li class="active"><a href="keyword.html"><i class="fa fa-crosshairs" aria-hidden="true"></i><span>关键词管理</span><strong>关键词管理</strong></a></li>
+      <li><a href="charging.html"><i class="fa fa-list-ul"></i><span>扣费明细</span><strong>扣费明细</strong></a></li>
+      <li><a href="recharge.html"><i class="fa fa-money"></i><span>充值记录</span><strong>充值记录</strong></a></li>
+    </ul>
+  </div>
+  <div class="qwtg layui-colla-item">
+    <div class="tgtitle layui-colla-title"><a href="index.html">汇&nbsp;&nbsp;推</a></div>
+    <ul class="layui-colla-content">
+      <li><a href="index.html"><i class="fa fa-tachometer" aria-hidden="true"></i><span>中控台</span><strong>中控台</strong></a></li>
+      <li><a href="content.html"><i class="fa fa-cubes" aria-hidden="true"></i><span>内容中心</span></a><strong>内容中心</strong></li>
+      <li><a href="#"><i class="fa fa-paper-plane-o"></i><span>渠道中心</span></a><strong>渠道中心</strong></li>
+      <li class="navsm"><a href="website.html"><i class="fa fa-globe"></i><span>企业官网</span></a><strong>企业官网</strong></li>
+      <li class="navsm"><a href="substation.html"><i class="fa fa-sitemap"></i><span>企业分站</span></a><strong>企业分站</strong></li>
+      <li class="navsm"><a href="copycloud.html"><i class="fa fa-cloud"></i><span>企业云站</span></a><strong>企业云站</strong></li>
+      <li class="navsm"><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span>商贸联盟</span></a><strong>商贸联盟</strong></li>
+      <li class="navsm"><a href="wechat.html"><i class="fa fa-weixin" aria-hidden="true"></i><span>微信工具</span></a><strong>微信工具</strong></li>
+      <li class="navsm"><a href="news.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>新闻推广</span></a><strong>新闻推广</strong></li>
+      <li class="navsm"><a href="society.html"><i class="fa fa-weibo" aria-hidden="true"></i><span>社会化媒体</span></a><strong>社会化媒体</strong></li>
+      <li class="navsm"><a href="baike.html"><i class="fa fa-list" aria-hidden="true"></i><span>企业百科</span></a><strong>企业百科</strong></li>
+      <li class="navsm"><a href="answer.html"><i class="fa fa-comments-o" aria-hidden="true"></i><span>企业问答</span></a><strong>企业问答</strong></li>
+      <li class="navsm"><a href="starmedia.html"><i class="fa fa-star" aria-hidden="true"></i><span>星媒体</span></a><strong>星媒体</strong></li>
+      <li class="navsm"><a href="dsp.html"><i class="fa fa-bullseye" aria-hidden="true"></i><span>云广告</span></a><strong>云广告</strong></li>
+      <li><a href="data.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>数据中心</span></a><strong>数据中心</strong></li>
+      <li><a href="service.html"><i class="fa fa-heart" aria-hidden="true"></i><span>服务中心</span></a><strong>服务中心</strong></li>
+    </ul>
+  </div>
+  <div class="leftkf"> 专属服务顾问电话 <span>4006605555-6118</span> <br />
+    服务顾问企业QQ <span>3002745607</span> </div>
+  <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+  <h2>专属服务顾问电话：1501000000</h2>
+</div>
+<!--左侧导航结束--> 
+<!--主体内容开始-->
+<div class="content">
+<div class="cntnt">
+  <div class="box">
+    <div class="snav">
+      <ul class=" clearfix">
+        <li class="sactive"><a href="keyword.html">关键词管理</a></li>
+        <li><a href="keyword-local.html">本地关键词查询</a></li>
+        <li class="snavli"><a href="keyword-add.html"><i class="fa fa-plus" aria-hidden="true"></i>添加关键词</a> <i class="fa fa-question-circle white" title="操作说明" onclick="keyfaq()"></i></li>
+        <li class="snavli"><a href="keyword-select.html"><i class="fa fa-check-square-o" aria-hidden="true"></i> 选择关键词</a></li>
+      </ul>
+    </div>
+    <div class="container keyword pad20">
+      <div class="kywdselect clearfix"> 
+        <!--提交关键词少于25个时提示开始-->
+        <div class="newtip">
+          <p class="red"><i class="fa fa-exclamation-circle"></i> 您的关键词少于15个，请继续选择！</p>
+        </div>
+        <!--提交关键词少于25个时提示结束-->
+        <div class="layui-tab">
+          <ul class="layui-tab-title">
+            <li class="layui-this">全部</li>
+            <li>百度</li>
+            <li>搜狗</li>
+            <li>360</li>
+            <li>百度移动</li>
+            <li>搜狗移动</li>
+            <li>360移动</li>
+          </ul>
+          <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+              <table class="layui-table">
+                <colgroup>
+                <col width="80">
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col width="150">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>序号</th>
+                    <th>关键词</th>
+                    <th>搜索引擎</th>
+                    <th>累计达标时间</th>
+                    <th>选择时间</th>
+                    <th>最后更新</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>搪瓷反应釜</td>
+                    <td><img src="images/icon/baidu-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>搪玻璃反应釜</td>
+                    <td><img src="images/icon/360-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>已停止</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_green" onClick="tipstar()">恢复 </a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>钛反应釜</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>水热反应釜</td>
+                    <td><img src="images/icon/360-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>双层玻璃反应釜</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>实验用反应釜</td>
+                    <td><img src="images/icon/baidu-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>实验室高压反应釜</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>实验室反应釜</td>
+                    <td><img src="images/icon/360-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>实验室不锈钢反应釜</td>
+                    <td><img src="images/icon/baidu-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>实验反应釜</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="layui-tab-item">
+              <table class="layui-table">
+                <colgroup>
+                <col width="80">
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col width="150">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>序号</th>
+                    <th>关键词</th>
+                    <th>搜索引擎</th>
+                    <th>累计达标时间</th>
+                    <th>选择时间</th>
+                    <th>最后更新</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>搅拌反应釜</td>
+                    <td><img src="images/icon/baidu-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>加热反应釜</td>
+                    <td><img src="images/icon/baidu-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>加氢反应釜</td>
+                    <td><img src="images/icon/baidu-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>已停止</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_green" onClick="tipstop()">恢复 </a></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>高压釜反应釜</td>
+                    <td><img src="images/icon/baidu-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>高压反应釜</td>
+                    <td><img src="images/icon/baidu-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>反应釜图片</td>
+                    <td><img src="images/icon/baidu-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>反应釜图</td>
+                    <td><img src="images/icon/baidu-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>反应釜冷水机</td>
+                    <td><img src="images/icon/baidu-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>反应釜搅拌器</td>
+                    <td><img src="images/icon/baidu-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>反应釜搅拌</td>
+                    <td><img src="images/icon/baidu-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="layui-tab-item">
+              <table class="layui-table">
+                <colgroup>
+                <col width="80">
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col width="150">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>序号</th>
+                    <th>关键词</th>
+                    <th>搜索引擎</th>
+                    <th>累计达标时间</th>
+                    <th>选择时间</th>
+                    <th>最后更新</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>反应釜价格</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>反应釜加热器</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>反应釜高压</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>反应釜反应釜</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>反应釜电加热器</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>反应釜的</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>反应釜厂家</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>反应釜不锈钢</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>反应釜厂家</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>电加热反应釜</td>
+                    <td><img src="images/icon/sogou-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="layui-tab-item">
+              <table class="layui-table">
+                <colgroup>
+                <col width="80">
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col width="150">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>序号</th>
+                    <th>关键词</th>
+                    <th>搜索引擎</th>
+                    <th>累计达标时间</th>
+                    <th>选择时间</th>
+                    <th>最后更新</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>导热油反应釜</td>
+                    <td><img src="images/icon/360-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>磁力反应釜</td>
+                    <td><img src="images/icon/360-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>不锈钢反应釜</td>
+                    <td><img src="images/icon/360-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>玻璃反应釜</td>
+                    <td><img src="images/icon/360-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>玻璃反应釜</td>
+                    <td><img src="images/icon/360-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>实验用反应釜</td>
+                    <td><img src="images/icon/360-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>实验室高压反应釜</td>
+                    <td><img src="images/icon/360-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>实验室反应釜</td>
+                    <td><img src="images/icon/360-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>实验室不锈钢反应釜</td>
+                    <td><img src="images/icon/360-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>双层玻璃反应釜</td>
+                    <td><img src="images/icon/360-2.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="layui-tab-item">
+              <table class="layui-table">
+                <colgroup>
+                <col width="80">
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col width="150">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>序号</th>
+                    <th>关键词</th>
+                    <th>搜索引擎</th>
+                    <th>累计达标时间</th>
+                    <th>选择时间</th>
+                    <th>最后更新</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>搅拌反应釜</td>
+                    <td><img src="images/icon/baidu_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>加热反应釜</td>
+                    <td><img src="images/icon/baidu_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>加氢反应釜</td>
+                    <td><img src="images/icon/baidu_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>已停止</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_green" onClick="tipstop()">恢复 </a></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>高压釜反应釜</td>
+                    <td><img src="images/icon/baidu_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>高压反应釜</td>
+                    <td><img src="images/icon/baidu_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>反应釜图片</td>
+                    <td><img src="images/icon/baidu_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>反应釜图</td>
+                    <td><img src="images/icon/baidu_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>反应釜冷水机</td>
+                    <td><img src="images/icon/baidu_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>反应釜搅拌器</td>
+                    <td><img src="images/icon/baidu_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>反应釜搅拌</td>
+                    <td><img src="images/icon/baidu_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="layui-tab-item">
+              <table class="layui-table">
+                <colgroup>
+                <col width="80">
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col width="150">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>序号</th>
+                    <th>关键词</th>
+                    <th>搜索引擎</th>
+                    <th>累计达标时间</th>
+                    <th>选择时间</th>
+                    <th>最后更新</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>反应釜价格</td>
+                    <td><img src="images/icon/sogou_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>反应釜加热器</td>
+                    <td><img src="images/icon/sogou_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>反应釜高压</td>
+                    <td><img src="images/icon/sogou_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>反应釜反应釜</td>
+                    <td><img src="images/icon/sogou_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>反应釜电加热器</td>
+                    <td><img src="images/icon/sogou_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>反应釜的</td>
+                    <td><img src="images/icon/sogou_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>反应釜厂家</td>
+                    <td><img src="images/icon/sogou_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>反应釜不锈钢</td>
+                    <td><img src="images/icon/sogou_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>反应釜厂家</td>
+                    <td><img src="images/icon/sogou_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>电加热反应釜</td>
+                    <td><img src="images/icon/sogou_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="layui-tab-item">
+              <table class="layui-table">
+                <colgroup>
+                <col width="80">
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col width="150">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>序号</th>
+                    <th>关键词</th>
+                    <th>搜索引擎</th>
+                    <th>累计达标时间</th>
+                    <th>选择时间</th>
+                    <th>最后更新</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>导热油反应釜</td>
+                    <td><img src="images/icon/360_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>磁力反应釜</td>
+                    <td><img src="images/icon/360_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>不锈钢反应釜</td>
+                    <td><img src="images/icon/360_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>玻璃反应釜</td>
+                    <td><img src="images/icon/360_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>玻璃反应釜</td>
+                    <td><img src="images/icon/360_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>实验用反应釜</td>
+                    <td><img src="images/icon/360_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>实验室高压反应釜</td>
+                    <td><img src="images/icon/360_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>实验室反应釜</td>
+                    <td><img src="images/icon/360_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>实验室不锈钢反应釜</td>
+                    <td><img src="images/icon/360_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>双层玻璃反应釜</td>
+                    <td><img src="images/icon/360_m.png"></td>
+                    <td>8天</td>
+                    <td>2019-08-08</td>
+                    <td>2019-08-08</td>
+                    <td>推广中</td>
+                    <td><a href="keyword-detail.html" class="btn btn_white">查看 </a><a href="javascript:;" class="btn btn_white btn_red" onClick="tipstop()">停止 </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div> </div>
+    </div>
+    <!--主体内容结束--> 
+    <!--添加一条新纪录开始-->
+    <div id="addnr" class="addnr" style="display:none;">
+      <form class="layui-form" action="">
+        <div class="layui-form-item">
+          <label class="layui-form-label">关键词名称：</label>
+          <div class="layui-input-block">
+            <textarea class="layui-textarea" style="min-height:300px"></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--添加一条新纪录结束--> 
+    <!--操作说明开始-->
+    <div id="keyfaq" class="keyword-faq" style="display:none;">
+      <div class="keypad scoll">
+        <div class="kfaq-item">
+          <h3>一、提交关键词</h3>
+          <p>1、填写需要推广的关键词，每行一个，每次最多填写10个关键词。</p>
+          <p>2、填写完成后按“提交”按钮。关键词提交后，将在2-3个工作日内进行关键词评估，评估完成后会发送邮件/短信通知。</p>
+          <p><img src="images/faq/faq1.png"></p>
+        </div>
+        <div class="kfaq-item">
+          <h3>二、选择关键词</h3>
+          <p>1、收到评估完成的通知后，可在关键词管理页，点击“选择关键词”按钮，选择需要推广的关键词。</p>
+          <p><img src="images/faq/faq2.png"></p>
+          <p>2、在需要推广的关键词后面勾选需要覆盖的搜索引擎，确认无误并点击“保存”按钮。</p>
+          <p>3、关键词选择完成后优化师将开始对勾选的关键词进行优化工作，待关键词出排名后，系统将发送邮件/短信通知，收到通知后即可查看关键词排名效果。</p>
+          <p><img src="images/faq/faq3.png"></p>
+        </div>
+      </div>
+    </div>
+    <!--操作说明结束--> 
+    <!--停止 系统提示开始-->
+    <div id="tipstop" class="tipstop" style="display:none;">
+      <p>1、”停止“后该关键词将停止一切推广操作，在搜索引擎中的排名会快速掉落。</p>
+      <p>2、由于推广效果的滞后性，停止后的关键词在未来90天内进入搜索引擎前三页，依然会被扣费；</p>
+      <p>3、停止后的关键词可以”恢复“推广，但是无法延用之前的推广成果，等同于开始新的推广。</p>
+    </div>
+    <!--停止 系统提示结束--> 
+  </div>
+</div>
+<script type="text/javascript">
+  //选则关键词选中
+  function mclick(obj,obj2){
+    var obj=document.getElementById(obj);  //获得id为b的容器
+    if($("#"+obj2).hasClass('on')) {
+      $("#"+obj2).removeClass("on");
+      $(obj).attr("class","fa fa-square-o fa-2x");
+    }
+    else {
+      $("#"+obj2).addClass('on');
+      $(obj).attr("class","fa fa-check-square-o fa-2x");
+    }
+    }
+
+
+layui.use(['form', 'layedit', 'laydate','element'], function(){
+  var form = layui.form
+  ,layer = layui.layer
+  ,layedit = layui.layedit
+  ,laydate = layui.laydate
+  ,element = layui.element;
+	}) 
+
+//添加一条新纪录
+function addnr(){
+  layer.open({
+    type: 1,
+  title: '发布结果回录',
+  shadeClose: true,
+  shade: 0.8,
+  btn: ['提交', '取消'],
+  area: ['600px', 'auto'],
+  content: $('#addnr')
+});
+}
+//选择关键词
+function kywdslct(){
+  layer.open({
+    type: 1,
+  title: '选择关键词',
+  shadeClose: true,
+  shade: 0.8,
+  btn: ['提交', '取消'],
+  area: ['800px', 'auto'],
+  content: $('#kywdslct')
+});
+}  
+
+//操作说明
+function keyfaq(){
+  layer.open({
+  type: 1,
+  title: '操作说明',
+  shadeClose: true,
+  shade: 0.8,
+  area: ['80%', '650px'],
+  content: $('#keyfaq')
+});
+}
+
+//停止系统提示
+function tipstop(){
+    layer.confirm( '<div class="tipstop"><p>1、”停止“后该关键词将停止一切推广操作，在搜索引擎中的排名会快速掉落。</p><p>2、由于推广效果的滞后性，停止后的关键词在未来90天内进入搜索引擎前三页，依然会被扣费；</p><p>3、停止后的关键词可以”恢复“推广，但是无法延用之前的推广成果，等同于开始新的推广。</p></div>', {
+            btn: ['确定', '取消'],
+            area:["700px","auto"],
+        }, function (index, layero) {
+            //移除元素
+            $("#tr" + id).remove();
+            //无法关闭这个消息框
+            layer.closeAll('dialog');  //加入这个信息点击确定 会关闭这个消息框
+            layer.msg("删除成功!",{ icon: 1, time: 1000 });
+        }
+    );
+}
+  
+function tipstar(){
+    layer.msg('关键词已经重新开始推广');
+}    
+
+</script>
+</body>
+</html>

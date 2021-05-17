@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>内容中心</title>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div> 
+  <!--顶部开始-->
+  <div class="top clearfix">
+    <h2><img src="images/logo.png"></h2>
+    <span><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;>&nbsp;内容中心</span>
+    <div class="clearfix">
+      <p>徐水县星涛机械厂</p>
+      <img src="images/tx.jpg"></div>
+  </div>
+  <!--顶部结束-->
+  
+  <div id="main"> 
+    <!--左侧导航开始-->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html" ><i class="fa fa-tachometer" aria-hidden="true"></i><span>首页</span><strong>首页</strong></a></li>
+        <li class="active"><a href="content.html"><i class="fa fa-cubes" aria-hidden="true"></i><span>内容中心</span></span></a><strong>内容中心</strong></li>
+        <li><a href="substation.html"><i class="fa fa-sitemap"></i><span>企业分站</span></a><strong>企业分站</strong></li>
+        <li><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span>商贸联盟</span></a><strong>商贸联盟</strong></li>
+        <li><a href="wechat.html"><i class="fa fa-weixin" aria-hidden="true"></i><span>微信秀场</span></a><strong>微信秀场</strong></li>
+        <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>新闻联盟</span></a><strong>新闻联盟</strong></li>
+        <li><a href="video.html"><i class="fa fa-video-camera" aria-hidden="true"></i><span>视频联盟</span></a><strong>视频联盟</strong></li>
+        <li><a href="classification.html"><i class="fa fa-list" aria-hidden="true"></i><span>分类站联盟</span></a><strong>分类站联盟</strong></li>
+        <li><a href="data.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>数据分析</span></a><strong>数据分析</strong></li>
+        <li><a href="xunpan.html"><i class="fa fa-commenting" aria-hidden="true"></i><span>询盘管理</span></a><strong>询盘管理</strong></li>
+        <!--<li><a href="service.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>服务市场</span></a><strong>服务市场</strong></li>-->
+      </ul>
+      <div> 专属服务顾问电话 <span>1501000000</span> </div>
+      <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+      <h2>专属服务顾问电话：1501000000</h2>
+    </div>
+    <!--左侧导航结束--> 
+    <!--主体内容开始-->
+    <div class="content">
+      <div class="cntnt">
+        <div class="body">
+          <div class="snav">
+            <ul class=" clearfix layui-nav">
+              <li><a href="content.html">全部内容</a></li>
+              <li><a href="#">商品信息</a></li>
+              <li><a href="#">资讯信息</a></li>
+              <li><a href="#">视频信息</a></li>
+              <li class="layui-nav-item sactive sactive1"> <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>创建新内容</a>
+                <dl class="layui-nav-child">
+                  <dd><a href="content-add.html">商品信息</a></dd>
+                  <dd><a href="content-add-news.html">资讯信息</a></dd>
+                  <dd><a href="content-add-video.html">视频信息</a></dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="container ct_form">
+            <form class="layui-form" action="">
+              <!--编辑视频时出现-->
+              <div class="editvimg" style="display:none;"><img src="images/video.png"></div>
+              <!--编辑视频时出现-->
+              <!--编辑视频时隐藏-->
+              <div>
+              <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block layui-input-block1">
+                  <div class="layui-upload-drag" id="test10"> <i class="layui-icon"></i>
+                    <p>点击上传，或将文件拖拽到此处</p>
+                  </div>
+                  <div class="layui-progress layui-progress-big">
+                    <div class="layui-progress-bar" lay-percent="20%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block layui-input-block1">
+                  <div class="video_tip">提示：为了获得更高的推荐量和点击量，建议上传720p(1280*720)或更高分辨率的视频；<br/>
+                    视频格式支持MPEG/AVI/MP4/RM/MOV/WMV/FLV/ASF等;<br/>
+                    大小不超过150M,时长90秒 </div>
+                </div>
+              </div>
+              </div>
+               <!--编辑视频时隐藏-->
+              <div class="layui-form-item">
+                <label class="layui-form-label">视频名称：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name="title" placeholder="最多添加8个字" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">视频简介：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <textarea placeholder="请输入内容" class="layui-textarea" placeholder="最多添加400个字">
+                  </textarea>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">关键词：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name="title" placeholder="用空格隔开，最多添加10个关键词！" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item submin-cancle">
+                <label class="layui-form-label">&nbsp;</label>
+                <div class="layui-input-block">
+                  <button class="layui-btn btn_blue" lay-submit="" lay-filter="demo1">保存</button>
+                  <button type="reset" class="layui-btn layui-btn-primary">取消</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--主体内容结束--> 
+  </div>
+  <!--确定删除弹窗开始-->
+  <div class="delate" style="display:none;" id="delate">
+    <div class="pop-main">
+      <p>确定要删除吗？</p>
+    </div>
+  </div>
+  <!--确定删除弹窗结束--> 
+</div>
+<script type="text/javascript">
+
+	
+	
+$(function(){
+     //左侧导航js
+     var _width = $(window).width(); 
+     if(_width < 1000){
+     
+	$(".nav p").mouseover(function(){
+		$(".nav h2").show();
+		})
+	$(".nav p").mouseleave(function(){
+		$(".nav h2").hide();
+		})
+		
+	$(".nav ul li").mouseover(function(){
+		$(this).find("strong").show();
+		})
+	$(".nav ul li").mouseleave(function(){
+		$(this).find("strong").hide();
+		})
+   
+     }
+});
+	
+layui.use(['form','upload', 'laydate','laypage', 'layer','element'], function(){
+	
+	var form = layui.form
+	,layer = layui.layer
+	,laydate = layui.laydate
+	,upload = layui.upload
+	,element = layui.element;
+	//监听导航点击
+  element.on('nav(demo)', function(elem){
+    //console.log(elem)
+    layer.msg(elem.text());
+  });
+	  //日期
+	    laydate.render({
+	      elem: '#date'
+	    });
+  
+	  //监听提交
+	  form.on('submit(formDemo)', function(data){
+	    layer.msg(JSON.stringify(data.field));
+	    return false;
+	  });
+	  
+ //拖拽上传
+  upload.render({
+    elem: '#test10'
+    ,url: '/upload/'
+    ,done: function(res){
+      console.log(res)
+    }
+  });
+
+	});
+	
+//确定删除弹窗
+function delate(){
+	layer.open({
+   type: 1,
+  title: false,
+  closeBtn: 0,
+  shadeClose: true,
+  area: ['300px', 'auto'],
+  btn: ['确定', '取消'],
+  skin: 'yourclass',
+  content: $('#delate'),	
+
+ 
+});
+}	
+
+
+</script>
+</body>
+</html>

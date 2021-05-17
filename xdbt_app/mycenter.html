@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- Your app title -->
+<title>个人中心</title>
+<link rel="stylesheet" href="css/framework7.ios.min.css">
+<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+<link rel="stylesheet" href="css/my-app.css">
+<style>
+.pull-to-refresh-layer .pull-to-refresh-arrow {
+	margin-top: 14px;
+	background-image: none;
+}
+.pull-to-refresh-layer {
+	top: -15px;
+}
+.dbt-center-reload p {
+	color: #999
+}
+</style>
+</head>
+<body class="dbt">
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<div class="views" id="dbt">
+<div class="view view-main"> 
+  <!-- 主体开始-->
+  <div class="pages navbar-through toolbar-through dbt-center">
+    <div data-page="mycenter" class="page">
+      <div class="page-content" >
+        <div class="dbt-center-top row no-gutter content-block" >
+          <div class="col-20 tx"> <a href="#"> <img src="images/tx-no.png"> </a> </div>
+          <div class="col-80 cm-name">
+            <p>北京xxxxxxxx有限公司</p>
+            <div><a href="#" onclick="window.location.href='index.html'" ><i class="f7-icons">logout</i></a><a href="#" onclick="window.location.href='company-preview.html'"><i class="f7-icons">gear</i></a></div>
+          </div>
+        </div>
+        <div class="dbt-center-top-nav">
+          <div class="row no-gutter">
+            <div class="col-33"><a href="#" onclick="window.location.href='mynr-list.html'"><i class="f7-icons">sort</i>
+              <p>我的内容</p>
+              </a></div>
+            <div class="col-33"><a href="#" onclick="window.location.href='mytg-ygmtg.html'"><i class="f7-icons">data</i>
+              <p>我的推广</p>
+              </a></div>
+            <div class="col-33"><a href="#" onclick="window.location.href='mydate.html'"><i class="f7-icons">pie</i>
+              <p>我的数据</p>
+              </a></div>
+          </div>
+        </div>
+        <div class="dbt-center-mid pull-to-refresh-content">
+          <div class="dbt-center-reload">
+            <div>
+              <p>下拉刷新</p>
+            </div>
+            <div class="pull-to-refresh-layer">
+              <div class="preloader"></div>
+            </div>
+          </div>
+          <div class="dbt-center-news list-block ">
+            <div class="list-block accordion-list accordion-tip">
+              <ul>
+                <li class="accordion-item accordion-item-expanded">
+                <a href="#" class="item-content item-link">
+                  <div class="item-inner">
+                    <div class="item-title">
+                      <h2>工作提示<span class="badge bg-red">5</span></h2>
+                    </div>
+                  </div>
+                  </a>
+                  <div class="accordion-item-content">
+                    <div class="content-block">
+                      <div class="swipeout">
+                        <div class="swipeout-content">
+                          <div class="item-subtitle"><a href="#"  onclick="window.location.href='company-info.html'"><i class="f7-icons">list</i><span>您的企业资料未完善，请点击去完善</span></a> <a href="#" class="swipeout-delete"><i class="f7-icons">close</i></a></div>
+                        </div>
+                      </div>
+                      <div class="swipeout">
+                        <div class="swipeout-content">
+                          <div class="item-subtitle"><a href="#"  onclick="window.location.href='add.html'"><i class="f7-icons">list</i><span>您还未创建任何内容，请点击去创建</span></a> <a href="#" class="swipeout-delete"><i class="f7-icons">close</i></a></div>
+                        </div>
+                      </div>
+                      <div class="swipeout">
+                        <div class="swipeout-content">
+                          <div class="item-subtitle"><a href="#"  onclick="window.location.href='add.html'"><i class="f7-icons">list</i><span>您已经有很长时间未曾创建新内容了，创建更多内容有利于企业推广</span></a> <a href="#" class="swipeout-delete"><i class="f7-icons">close</i></a></div>
+                        </div>
+                      </div>
+                      <div class="swipeout">
+                        <div class="swipeout-content">
+                          <div class="item-subtitle"><a href="#"  onclick="window.location.href='mytg-qysp-xx.html'"><i class="f7-icons">list</i><span>您的“视频营销”产品未激活，点击激活</span></a> <a href="#" class="swipeout-delete"><i class="f7-icons">close</i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dbt-center-work">
+            <h2>大把推辅助您完成了以下工作：</h2>
+            <div class="timeline">
+              <div class="timeline-item"> <a href="#" onclick="window.location.href='mytg-qysp.html'">
+                <div class="timeline-item-divider aa"><span><i class="f7-icons">videocam</i></span></div>
+                <div class="timeline-item-content">您的视频营销服务已经开通
+                  <p>2017年12月3日</p>
+                </div>
+                <div class="timeline-item-right"><i class="f7-icons">right</i></div>
+                </a> </div>
+              <div class="timeline-item"> <a href="#" onclick="window.location.href='mytg-smlm.html'">
+                <div class="timeline-item-divider ac"><span><i class="f7-icons">briefcase</i></span></div>
+                <div class="timeline-item-content">您的商贸联盟服务已经开通
+                  <p>2017年12月3日</p>
+                </div>
+                <div class="timeline-item-right"><i class="f7-icons">right</i></div>
+                </a> </div>
+              <div class="timeline-item"> <a href="#" onclick="window.location.href='#'">
+                <div class="timeline-item-divider ag"><span><i class="f7-icons">keyboard</i></span></div>
+                <div class="timeline-item-content">您的企业秀场服务已经开通
+                  <p>2017年12月3日</p>
+                </div>
+                <div class="timeline-item-right"><i class="f7-icons">right</i></div>
+                </a> </div>
+              <div class="timeline-item"> <a href="#" onclick="window.location.href='mytg-news.html'">
+                <div class="timeline-item-divider ah"><span><i class="f7-icons">menu</i></span></div>
+                <div class="timeline-item-content">您的企业新闻服务已经开通
+                  <p>2017年12月3日</p>
+                </div>
+                <div class="timeline-item-right"><i class="f7-icons">right</i></div>
+                </a> </div>
+              <div class="timeline-item"> <a href="#" onclick="window.location.href='mytg-wmtg.html'">
+                <div class="timeline-item-divider af"><span><i class="f7-icons">world</i></span></div>
+                <div class="timeline-item-content">您的外贸推广服务已经开通
+                  <p>2017年12月3日</p>
+                </div>
+                <div class="timeline-item-right"><i class="f7-icons">right</i></div>
+                </a> </div>
+              <div class="timeline-item "> <a href="#">
+                <div class="timeline-item-divider ab"><span><i class="f7-icons">sort</i></span></div>
+                <div class="timeline-item-content">您的3条咨询/投诉已受理，我们将在24小时内处理及反馈
+                  <p>2017年12月3日</p>
+                </div>
+                </a> </div>
+              <div class="timeline-item"> <a href="#"  onclick="window.location.href='mydate.html'">
+                <div class="timeline-item-divider ad"><span><i class="f7-icons">graph_round</i></span></div>
+                <div class="timeline-item-content">您的推广数据已更新
+                  <p>2017年12月3日</p>
+                </div>
+                <div class="timeline-item-right"><i class="f7-icons">right</i></div>
+                </a> </div>
+              <div class="timeline-item"> <a href="#" onclick="window.location.href='mydate.html'">
+                <div class="timeline-item-divider ae"><span><i class="f7-icons">document_text_fill</i></span></div>
+                <div class="timeline-item-content">您的2条内容已经推送至3个推广资源中
+                  <p>2017年12月3日</p>
+                </div>
+                <div class="timeline-item-right"><i class="f7-icons">right</i></div>
+                </a> </div>
+              <div class="timeline-item"> <a href="#" onclick="window.location.href='mytg-qysp-xx.html'">
+                <div class="timeline-item-divider aa"><span><i class="f7-icons">videocam</i></span></div>
+                <div class="timeline-item-content">您的“营销视频”当前为“已激活”状态
+                  <p>2017年12月3日</p>
+                </div>
+                <div class="timeline-item-right"><i class="f7-icons">right</i></div>
+                </a> </div>
+              <div class="timeline-item"> <a href="#" onclick="window.location.href='#'">
+                <div class="timeline-item-divider af"><span><i class="f7-icons">world</i></span></div>
+                <div class="timeline-item-content">外贸推广运营动态：您的一条内容在“XXX”发布
+                  <p>2017年12月3日</p>
+                </div>
+                </a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 主体结束--> 
+    <!-- 底部导航开始-->
+    <div class="toolbar tabbar tabbar-labels">
+      <div class="toolbar-inner"> <a href="#"    data-popup=".popup-about" class="tab-link1 open-popup"> <i class="f7-icons">reload_round</i><span class="tabbar-label">协同</span> </a> <a href="#" class="tab-link1" onclick="window.location.href='service.html'"> <i class="f7-icons f7-icons-q"> data <span class="badge bg-red">5</span> </i> <span class="tabbar-label">推广</span></a> <a href="#" class="tab-link1 tab-link3 "  onclick="window.location.href='add.html'"> <i class="f7-icons">add_round_fill</i> <span class="tabbar-label">创建内容</span></a> <a href="#tab4" class="tab-link1"  onclick="window.location.href='contact.html'"> <i class="f7-icons">phone</i> <span class="tabbar-label">联系</span></a> <a href="mycenter.html" class="tab-link1 active" onclick="window.location.href='mycenter.html'"> <i class="f7-icons">person</i><span class="tabbar-label">我的</span> </a> </div>
+    </div>
+    <!-- 底部导航结束--> 
+    <!--协同弹窗开始-->
+    <div class="popup popup-about popup-xt">
+      <div class="content-block">
+        <h1>多维度内容才能更好获客<br/>让你的工作亮点成就营销内容</h1>
+        <div class="xt-content"> <img src="images/ewm_03.jpg">
+          <h4>扫码在其他终端使用<br/>
+            在线：1/3</h4>
+        </div>
+        <p><a href="#" class="close-popup"><i class="f7-icons">close_round</i></a></p>
+      </div>
+    </div>
+    <!--协同弹窗结束--> 
+  </div>
+</div>
+<!-- Path to Framework7 Library JS--> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<!-- Path to your app js--> 
+<script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

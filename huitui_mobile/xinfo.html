@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>提示信息</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div class="mobile"> 
+  <!--头部导航开始-->
+  <div class="navbar cloginbar">
+    <div class="navbar-inner">
+      <h1>提示信息</h1>
+    </div>
+  </div>
+  <!--头部导航结束--> 
+  <!--绑定信息开始-->
+  <div class="errorpage binding">
+    <i class="fa fa-link"></i>
+    <p>微信已绑定成功，<span id="sp">3</span>秒将返回首页</p>
+  </div>
+  <!--绑定信息结束--> 
+  <!--解绑信息开始-->
+  <div class="errorpage binding">
+    <i class="fa fa-unlink"></i>
+    <p>微信已解绑成功，<span id="sp">3</span>秒将返回首页</p>
+  </div>
+  <!--解绑信息结束--> 
+</div>
+<script type="text/javascript"> 
+  onload=function(){ 
+    setInterval(go, 1000); 
+  }; 
+  var x=3; //利用了全局变量来执行 
+  function go(){ 
+    x--; 
+    if(x>0){ 
+      document.getElementById("sp").innerHTML=x; //每次设置的x的值都不一样了。 
+    }else{ 
+    location.href='index.html'; 
+  } 
+} 
+</script>  
+</body>
+</html>

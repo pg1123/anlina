@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- Your app title -->
+<title>我的内容</title>
+<link rel="stylesheet" href="css/framework7.ios.min.css">
+<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+<link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="dbt">
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<div class="views" id="dbt">
+  <div class="view view-main"> 
+    <!-- 头部开始-->
+    <div class="navbar">
+      <div class="navbar-inner"> 
+        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+        <div class="left"><a class="back" href="#"><i class="f7-icons">left</i></a></div>
+        <div class="center sliding">我的内容</div>
+      </div>
+    </div>
+    <!-- 头部结束--> 
+    <!-- 主体开始-->
+    <div class="pages navbar-through toolbar-through ">
+      <div data-page="list-article" class="page">
+        <div class="page-content ">
+          <div class="mytg-news-xx dbt-list-article">
+            <h2>真以为在乌镇很爽？那一定是你想多了！</h2>
+            <span>2017年10月1日</span>
+            <video src="movie.ogg" controls></video>
+            <div class="picbox clearfix">
+              <ul class="grid-list">
+                <li class="image-item">
+                  <div class="item-media"><a href="#" class="pb-popup"><img src="images/demo/p1.jpg"></a></div>
+                </li>
+                <li class="image-item">
+                  <div class="item-media"><a href="#" class="pb-popup"><img src="images/demo/p2.jpg"></a></div>
+                </li>
+                <li class="image-item">
+                  <div class="item-media"><a href="#" class="pb-popup"><img src="images/demo/p3.jpg"></a></div>
+                </li>
+                <li class="image-item">
+                  <div class="item-media"><a href="#" class="pb-popup"><img src="images/demo/p4.jpg"></a></div>
+                </li>
+                <li class="image-item">
+                  <div class="item-media"><a href="#" class="pb-popup"><img src="images/demo/p5.jpg"></a></div>
+                </li>
+              </ul>
+            </div>
+            <p>嘿嘿嘿，动力奶爸回总部了，今天叔为所欲为了！这几天都被世界互联网大会的新闻炸飞了，世界上头部互联网公司们赚足了眼球，可谓政策一片利好，前途大放光明。 </p>
+            <p>刘强东对贫困发起了新一轮冲锋，马化腾认为中国互联网公司是时候该走在世界前端去引导一些什么……太多的振奋人心。</p>
+            <p>给你算一笔，专业定点观众3.5万人，411个展位，平均一个展位人流量85.1人。残忍不？然而，这些我们早就做好了准备，中企动力的展位就在7号馆2层门口，进门就能看到，充满IT科技风格的视觉也是一大亮点，不少人在“成长树”前合影。</p>
+            <p>嘿嘿嘿，动力奶爸回总部了，今天叔为所欲为了！这几天都被世界互联网大会的新闻炸飞了，世界上头部互联网公司们赚足了眼球，可谓政策一片利好，前途大放光明。 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 主体结束--> 
+    
+  </div>
+</div>
+<!-- Path to Framework7 Library JS--> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<!-- Path to your app js--> 
+<script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

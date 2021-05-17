@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>账户管理</title>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div> 
+  <!--顶部开始-->
+  <div class="top clearfix">
+    <h2><img src="images/logo.png"></h2>
+    <span><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;>&nbsp;账户管理</span>
+    <div class="clearfix">
+      <p>徐水县星涛机械厂</p>
+      <img src="images/tx.jpg"></div>
+  </div>
+  <!--顶部结束-->
+  
+  <div id="main"> 
+    <!--左侧导航开始-->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html" ><i class="fa fa-tachometer" aria-hidden="true"></i><span>首页</span><strong>首页</strong></a></li>
+        <li><a href="content.html"><i class="fa fa-cubes" aria-hidden="true"></i><span>内容中心</span></span></a><strong>内容中心</strong></li>
+        <li><a href="substation.html"><i class="fa fa-sitemap"></i><span>企业分站</span></a><strong>商贸企业分站</strong></li>
+        <li><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span>商贸联盟</span></a><strong>商贸联盟</strong></li>
+        <li><a href="wechat.html"><i class="fa fa-weixin" aria-hidden="true"></i><span>微信秀场</span></a><strong>微信秀场</strong></li>
+        <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>新闻联盟</span></a><strong>新闻联盟</strong></li>
+        <li><a href="video.html"><i class="fa fa-video-camera" aria-hidden="true"></i><span>视频联盟</span></a><strong>视频联盟</strong></li>
+        <li><a href="classification.html"><i class="fa fa-list" aria-hidden="true"></i><span>分类站联盟</span></a><strong>分类站联盟</strong></li>
+        <li><a href="data.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>数据分析</span></a><strong>数据分析</strong></li>
+        <li><a href="xunpan.html"><i class="fa fa-commenting" aria-hidden="true"></i><span>询盘管理</span></a><strong>询盘管理</strong></li>
+        <!--<li><a href="service.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>服务市场</span></a><strong>服务市场</strong></li>-->
+      </ul>
+      <div> 专属服务顾问电话 <span>1501000000</span> </div>
+      <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+      <h2>专属服务顾问电话：1501000000</h2>
+    </div>
+    <!--左侧导航结束--> 
+    <!--主体内容开始-->
+    <div class="content">
+      <div class="cntnt">
+        <div class="body">
+          <div class="snav">
+            <ul class=" clearfix">
+              <li><a href="account.html">基础信息</a></li>
+              <li><a href="account-info.html">企业资料</a></li>
+              <li><a href="account-info1.html">企业经营信息</a></li>
+              <li class="sactive"><a href="account-contact.html">联系方式</a></li>
+              <li><a href="account-online.html">在线客服</a></li>
+            </ul>
+          </div>
+          <div class="container account-contact">
+            <form class="layui-form">
+              <div class="layui-form-item">
+                <label class="layui-form-label">所在地区：</label>
+                <div class="layui-input-inline">
+                  <select name="city" lay-verify="required">
+                    <option value="">请选择</option>
+                    <option value="0">北京</option>
+                    <option value="1">上海</option>
+                  </select>
+                </div>
+                <div class="layui-input-inline">
+                  <select name="city1" lay-verify="required">
+                    <option value="">请选择</option>
+                    <option value="0">北京</option>
+                    <option value="1">上海</option>
+                  </select>
+                </div>
+                <div class="layui-input-inline">
+                  <select name="city2" lay-verify="required">
+                    <option value="">请选择</option>
+                    <option value="0">朝阳区</option>
+                    <option value="1">静安区</option>
+                  </select>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">公司地址全称：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name=""  lay-verify=""  class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">固定电话：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name=""  lay-verify=""  class="layui-input" placeholder="非必填，如需填写需按此格式：86-010-12345678">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">联系人：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name=""  lay-verify=""  class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">联系人职务：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name=""  lay-verify=""  class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">性别：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="radio" name="sex" value="先生" title="先生" checked="">
+                  <input type="radio" name="sex" value="女士" title="女士">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">联系人电话：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name=""  lay-verify=""  class="layui-input" placeholder="非必填，如需填写需按此格式：86-010-12345678">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">联系人手机：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name=""  lay-verify=""  class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">电子邮箱：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name=""  lay-verify=""  class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">官网地址：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name=""  lay-verify=""  class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">联系人QQ：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name=""  lay-verify=""  class="layui-input">
+                </div>
+              </div>
+            </form>
+            <div class="ct-table">
+              <h2>企业分支机构联系方式：</h2>
+              <table class="layui-table">
+                <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col width="80">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>分支结构名称</th>
+                    <th>联系电话</th>
+                    <th>联系人姓名</th>
+                    <th>联系人手机</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>华北业务部</td>
+                    <td>010-55555555</td>
+                    <td>张三</td>
+                    <td>13125556666</td>
+                    <td><button class="btn btn_white" onclick="delate()">删除</button></td>
+                  </tr>
+                  <tr>
+                    <td>华北业务部</td>
+                    <td>010-55555555</td>
+                    <td>张三</td>
+                    <td>13125556666</td>
+                    <td><button class="btn btn_white" onclick="delate()">删除</button></td>
+                  </tr>
+                  <tr>
+                    <td>华北业务部</td>
+                    <td>010-55555555</td>
+                    <td>张三</td>
+                    <td>13125556666</td>
+                    <td><button class="btn btn_white" onclick="delate()">删除</button></td>
+                  </tr>
+                  <tr>
+                    <td>华北业务部</td>
+                    <td>010-55555555</td>
+                    <td>张三</td>
+                    <td>13125556666</td>
+                    <td><button class="btn btn_white" onclick="delate()">删除</button></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="javascript:;" onClick="ctadd()" class="bluea"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;添加联系方式</a>
+            </div>
+            <div class="layui-form-item submin-cancle">
+              <label class="layui-form-label">&nbsp;</label>
+              <div class="layui-input-block">
+                <button class="layui-btn btn_blue" lay-submit="" lay-filter="demo1">保存</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--主体内容结束--> 
+  </div>
+  <!--确定删除弹窗开始-->
+  <div class="delate" style="display:none;" id="delate">
+    <div class="pop-main">
+      <p>确定要删除吗？</p>
+    </div>
+  </div>
+  <!--确定删除弹窗结束--> 
+  <!--添加联系方式弹窗开始-->
+  <div class="ctadd" style="display:none;" id="ctadd">
+    <form class="layui-form">
+      <div class="layui-form-item">
+        <label class="layui-form-label">分支结构名称：</label>
+        <div class="layui-input-block">
+          <input type="text" name="title" placeholder="" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">联系电话：</label>
+        <div class="layui-input-block">
+          <input type="text" name="title" placeholder="" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">联系人姓名：</label>
+        <div class="layui-input-block">
+          <input type="text" name="title" placeholder="" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">联系人手机：</label>
+        <div class="layui-input-block">
+          <input type="text" name="title" placeholder="" class="layui-input">
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--添加联系方式弹窗结束--> 
+</div>
+<script type="text/javascript">
+
+	
+	
+$(function(){
+     //左侧导航js
+     var _width = $(window).width(); 
+     if(_width < 1000){
+     
+	$(".nav p").mouseover(function(){
+		$(".nav h2").show();
+		})
+	$(".nav p").mouseleave(function(){
+		$(".nav h2").hide();
+		})
+		
+	$(".nav ul li").mouseover(function(){
+		$(this).find("strong").show();
+		})
+	$(".nav ul li").mouseleave(function(){
+		$(this).find("strong").hide();
+		})
+   
+     }
+
+});
+
+layui.use(['form','upload', 'laydate'], function(){
+	
+	var form = layui.form
+	,layer = layui.layer
+	,laydate = layui.laydate;
+	
+
+  
+	});
+//确定删除弹窗
+function delate(){
+	layer.open({
+   type: 1,
+  title: false,
+  closeBtn: 0,
+  shadeClose: true,
+  area: ['300px', 'auto'],
+  btn: ['确定', '取消'],
+  skin: 'yourclass',
+  content: $('#delate'),	
+
+ 
+});
+}
+
+//添加弹窗
+function ctadd(){
+	layer.open({
+		type: 1,
+  title: '添加联系方式',
+  shadeClose: true,
+  shade: 0.8,
+  area: ['500px', 'auto'],
+  btn: ['确定', '取消'],
+  content: $('#ctadd') //iframe的url
+		
+ 
+});
+}
+
+</script>
+</body>
+</html>

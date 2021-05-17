@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- Your app title -->
+<title>投诉</title>
+<link rel="stylesheet" href="css/framework7.ios.min.css">
+<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+<link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="dbt">
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<div class="views" id="dbt">
+<div class="view view-main">
+
+<!-- 主体开始-->
+<div class="pages navbar-through toolbar-through  ">
+  <div data-page="ts" class="page"> 
+  
+    <!-- 头部开始-->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left"><a href="#" class="back"><i class="f7-icons">left</i></a></div>
+        <div class="center sliding">投诉建议</div>
+      </div>
+    </div>
+    <!-- 头部结束-->
+    <div class="page-content" >
+      <form id="my-form" class="list-block dbt-add dbt-add-ts">
+        <div class="dbt-add-content dbt-contact-ts">
+          <h2>请描述您的问题</h2>
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-media"><i class="icon icon-form-email"></i></div>
+                <div class="item-inner item-inner1">
+                  <div class="item-input item-textarea">
+                    <textarea placeholder="问题详情"></textarea>
+                    <i class="f7-icons notification-default">mic</i> </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="dbt-add-tage dbt-add-pic">
+          <h3><i class="f7-icons">add</i>请提供相关截图<span class="xt">（选填）</span></h3>
+          <div class="list-block">
+            <ul class="clearfix">
+              <li class="swipeout">
+                <div class="swipeout-content item-content">
+                  <div class="item-media"><img src="images/product_06.jpg"></div>
+                  <a href="#" class="swipeout-delete"><i class="f7-icons">close</i></a> </div>
+              <li class="swipeout">
+                <div class="swipeout-content item-content">
+                  <div class="item-media"><img src="images/product_03.jpg"></div>
+                  <a href="#" class="swipeout-delete"><i class="f7-icons">close</i></a> </div>
+              </li>
+              <li class="swipeout">
+                <div class="swipeout-content item-content">
+                  <div class="item-media"><img src="images/product_06.jpg"></div>
+                  <a href="#" class="swipeout-delete"><i class="f7-icons">close</i></a> </div>
+              </li>
+              <span>
+              <div class="a-upload"><i class="f7-icons">add</i>
+                <input type="file" accept="video/*;capture=camcorder">
+              </div>
+              </span>
+            </ul>
+          </div>
+        </div>
+        <div class="tj"><a href="#" class="button button-big button-fill">提交</a></div>
+      </form>
+    </div>
+  </div>
+  <!-- 主体结束--> 
+
+  
+</div>
+<!-- Path to Framework7 Library JS--> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<!-- Path to your app js--> 
+<script type="text/javascript" src="js/my-app.js"></script>
+<script>
+var myApp = new Framework7(); 
+var mainView = myApp.addView('.view-main');
+ 
+var $$ = Dom7;
+ 
+$$('.notification-default').on('click', function () {
+    myApp.addNotification({
+        title: '友情提醒',
+        message: '请打开手机输入法语音输入'
+    });
+});
+</script>
+</body>
+</html>

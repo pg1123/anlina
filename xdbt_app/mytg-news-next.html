@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- Your app title -->
+<title>我的推广</title>
+<link rel="stylesheet" href="css/framework7.ios.min.css">
+<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+<link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="dbt">
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<div class="views" id="dbt">
+<div class="view view-main"> 
+  <!-- 头部开始-->
+  <div class="navbar">
+    <div class="navbar-inner"> 
+      <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+      <div class="left"><a href="#" class="back"><i class="f7-icons">left</i></a></div>
+      <div class="center sliding">软文推广</div>
+    </div>
+  </div>
+  <!-- 头部结束--> 
+  <!-- 主体开始-->
+  <div class="pages navbar-through toolbar-through ">
+    <div data-page="" class="page">
+      <div class="page-content">
+        <div class="news-next">
+           <!--状态1，无内容提示开始-->
+           <div class="news-next-none" style="display:none;">
+            <p>您已创建的内容中没有标签为“新闻”的内容</p>
+            <div class="tj"><a href="#" class="button button-big button-fill" onclick="window.location.href='add.html'">撰写新文章</a></div>
+           </div>
+           <!--状态1，无内容提示结束-->
+           <!--状态2，主要内容区域开始-->
+            <div class="news-next-have">
+               <div class="news-xq-t"><h2>最多发布30篇文章</h2><a href="#" onclick="window.location.href='add.html'" >撰写新文章</a></div>
+               <div class="next-have">
+               <div class="list-block">
+              <ul>
+                <li>
+                  <label class="label-radio item-content">
+                  <!-- Checked by default -->
+                  <input type="radio" name="my-radio" value="Books" checked="checked">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">文章标题文章标题文章标题文章标题</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-radio item-content">
+                  <input type="radio" name="my-radio" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">文章标题文章标题文章标题文章标题</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-radio item-content">
+                  <input type="radio" name="my-radio" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">文章标题文章标题文章标题文章标题</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-radio item-content">
+                  <input type="radio" name="my-radio" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">文章标题文章标题文章标题文章标题</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-radio item-content">
+                  <input type="radio" name="my-radio" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">文章标题文章标题文章标题文章标题</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-radio item-content">
+                  <input type="radio" name="my-radio" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">文章标题文章标题文章标题文章标题</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-radio item-content">
+                  <input type="radio" name="my-radio" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">文章标题文章标题文章标题文章标题</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-radio item-content">
+                  <input type="radio" name="my-radio" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">文章标题文章标题文章标题文章标题</div>
+                  </div>
+                  </label>
+                </li>
+              </ul>
+              
+            </div>
+               
+               </div>
+               <div class="tj"><a href="mytg-news-next1.html" class="button button-big button-fill">下一步</a></div>
+            </div>
+            <!--状态2，主要内容区域结束-->
+      </div>
+    </div>
+  </div>
+  <!-- 主体结束--> 
+  
+</div>
+<!-- Path to Framework7 Library JS--> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<!-- Path to your app js--> 
+<script type="text/javascript" src="js/my-app.js"></script>
+
+</body>
+</html>

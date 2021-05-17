@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>账户管理</title>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div> 
+  <!--顶部开始-->
+  <div class="top clearfix">
+    <h2><img src="images/logo.png"></h2>
+    <span><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;>&nbsp;账户管理</span>
+    <div class="clearfix">
+      <p>徐水县星涛机械厂</p>
+      <img src="images/tx.jpg"></div>
+  </div>
+  <!--顶部结束-->
+  
+  <div id="main"> 
+    <!--左侧导航开始-->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html" ><i class="fa fa-tachometer" aria-hidden="true"></i><span>首页</span><strong>首页</strong></a></li>
+        <li><a href="content.html"><i class="fa fa-cubes" aria-hidden="true"></i><span>内容中心</span></span></a><strong>内容中心</strong></li>
+        <li><a href="substation.html"><i class="fa fa-sitemap"></i><span>企业分站</span></a><strong>商贸企业分站</strong></li>
+        <li><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span>商贸联盟</span></a><strong>商贸联盟</strong></li>
+        <li><a href="wechat.html"><i class="fa fa-weixin" aria-hidden="true"></i><span>微信秀场</span></a><strong>微信秀场</strong></li>
+        <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>新闻联盟</span></a><strong>新闻联盟</strong></li>
+        <li><a href="video.html"><i class="fa fa-video-camera" aria-hidden="true"></i><span>视频联盟</span></a><strong>视频联盟</strong></li>
+        <li><a href="classification.html"><i class="fa fa-list" aria-hidden="true"></i><span>分类站联盟</span></a><strong>分类站联盟</strong></li>
+        <li><a href="data.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>数据分析</span></a><strong>数据分析</strong></li>
+        <li><a href="xunpan.html"><i class="fa fa-commenting" aria-hidden="true"></i><span>询盘管理</span></a><strong>询盘管理</strong></li>
+        <!--<li><a href="service.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>服务市场</span></a><strong>服务市场</strong></li>-->
+      </ul>
+      <div> 专属服务顾问电话 <span>1501000000</span> </div>
+      <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+      <h2>专属服务顾问电话：1501000000</h2>
+    </div>
+    <!--左侧导航结束--> 
+    <!--主体内容开始-->
+    <div class="content">
+      <div class="cntnt">
+        <div class="body">
+          <div class="snav">
+            <ul class=" clearfix">
+              <li><a href="account.html">基础信息</a></li>
+              <li class="sactive"><a href="account-info.html">企业资料</a></li>
+              <li><a href="account-info1.html">企业经营信息</a></li>
+              <li><a href="account-contact.html">联系方式</a></li>
+              <li><a href="account-online.html">在线客服</a></li>
+            </ul>
+          </div>
+          <div class="container account-info">
+            <div class="smlmtip1 "> <span></span>资料已审核通过，若修改资料需要重新审核！ </div>
+            <form class="layui-form">
+              <div class="layui-form-item">
+                <label class="layui-form-label">企业名称：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name="title"  lay-verify="title" placeholder="请填写公司名称" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">所属行业：</label>
+                <div class="layui-input-inline">
+                  <select name="city" lay-verify="required">
+                    <option value="">请选择</option>
+                    <option value="0">一级分类1</option>
+                    <option value="1">一级分类2</option>
+                    <option value="2">一级分类3</option>
+                    <option value="3">一级分类4</option>
+                    <option value="4">一级分类5</option>
+                  </select>
+                </div>
+                <div class="layui-input-inline">
+                  <select name="city1" lay-verify="required">
+                    <option value="">请选择</option>
+                    <option value="0">二级分类1</option>
+                    <option value="1">二级分类2</option>
+                    <option value="2">二级分类3</option>
+                    <option value="3">二级分类4</option>
+                    <option value="4">二级分类5</option>
+                  </select>
+                </div>
+                <div class="layui-input-inline">
+                  <select name="city2" lay-verify="required">
+                    <option value="">请选择</option>
+                    <option value="0">三级分类1</option>
+                    <option value="1">三级分类2</option>
+                    <option value="2">三级分类3</option>
+                    <option value="3">三级分类4</option>
+                    <option value="4">三级分类5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">业务覆盖地域：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name="title" required  lay-verify="required" placeholder="建议填写目标销售区的二三级城市及县、乡名称，多个产品用逗号(,)分隔，限定5个" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">企业logo：</label>
+                <div class="layui-upload qylogo">
+                  <button type="button" class="layui-btn layui-btn-primary" id="qylogo"><i class="layui-icon"></i>上传企业logo</button>
+                  <span class="splogo1 ">建议图片尺寸为：400px*400px，上传格式png</span> 
+                  <div class="upldimg">
+                    <img src="images/pic_05.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">业务类型：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="checkbox" name="like1[]" lay-skin="primary" title="厂家" checked="">
+                  <input type="checkbox" name="like1[]" lay-skin="primary" title="销售">
+                  <input type="checkbox" name="like1[]" lay-skin="primary" title="供应">
+                  <input type="checkbox" name="like1[]" lay-skin="primary" title="代理">
+                  <input type="checkbox" name="like1[]" lay-skin="primary" title="代工">
+                </div>
+              </div>
+              <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">企业简介：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <textarea name="desc" placeholder="请输入内容" class="layui-textarea layui-textarea-jj"></textarea>
+                </div>
+              </div>
+              <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">企业形象图片：</label>
+                <div class="layui-upload qypic">
+                  <button type="button" class="layui-btn layui-btn-primary" id="qypic"><i class="layui-icon"></i>上传企业形象图</button>
+                  <span class="splogo1 ">建议图片尺寸为：600px*400px</span> 
+                  <div class="upldimg">
+                    <img src="images/pic_05.jpg">
+                  </div>
+                  </div>
+              </div>
+              <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">图片描述：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name=""  class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item submin-cancle">
+                <label class="layui-form-label">&nbsp;</label>
+                <div class="layui-input-block layui-input-block1">
+                  <button class="layui-btn btn_blue" lay-submit="" lay-filter="demo1">保存</button>
+                  <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--主体内容结束--> 
+  </div>
+</div>
+<script type="text/javascript">
+
+	
+	
+$(function(){
+     //左侧导航js
+     var _width = $(window).width(); 
+     if(_width < 1000){
+     
+	$(".nav p").mouseover(function(){
+		$(".nav h2").show();
+		})
+	$(".nav p").mouseleave(function(){
+		$(".nav h2").hide();
+		})
+		
+	$(".nav ul li").mouseover(function(){
+		$(this).find("strong").show();
+		})
+	$(".nav ul li").mouseleave(function(){
+		$(this).find("strong").hide();
+		})
+   
+     }
+
+});
+
+
+layui.use(['form','upload', 'laydate'], function(){
+	
+	var form = layui.form
+	,layer = layui.layer
+	,laydate = layui.laydate;
+	
+	
+	  //日期
+	    laydate.render({
+	      elem: '#date'
+	    });
+  
+	  //监听提交
+	  form.on('submit(formDemo)', function(data){
+	    layer.msg(JSON.stringify(data.field));
+	    return false;
+	  });
+	  
+    //自定义验证规则
+    form.verify({
+      title: function(value){
+      if(value.length<=0){
+        return '标题不能为空';
+      }
+        if(value.length > 50){
+        return '标题不超过50个汉字';
+        }
+    },
+    b_product : function(value,item){
+        if(value.length<=0){
+        return '主营产品不能为空';
+        }
+        var keyword=value;
+        var k_len_error=0;
+        keyword = keyword.replace("、",",");
+        keyword = keyword.replace("，",",");
+        keyword = keyword.replace("　",",");
+        keyword = keyword.replace(/\s+/g,",");
+        //alert(b_product);
+        var keyword_arr = $.unique(keyword.split(','));
+        var keyword_arr_length = keyword_arr.length;
+
+        $.each(keyword_arr,function(index,kvalue){
+            if(kvalue.length>20) 
+            {
+              k_len_error = 1;
+          }
+        });
+        console.log(keyword_arr_length);
+        if(keyword_arr_length>5 || k_len_error)
+        {
+          console.log(123123);
+          return '多个产品用逗号(,)分隔，限定5个';
+        }
+      },
+
+    });
+	  
+	  
+	 var $ = layui.jquery,
+     upload = layui.upload;
+	   //上传企业logo
+  var uploadInst = upload.render({
+    elem: '#qylogo'
+    ,url: '/upload/'
+    ,before: function(obj){
+      //预读本地文件示例，不支持ie8
+      obj.preview(function(index, file, result){
+        $('#qylogoimg').attr('src', result); //图片链接（base64）
+      });
+    }
+    ,done: function(res){
+      //如果上传失败
+      if(res.code > 0){
+        return layer.msg('上传失败');
+      }
+      //上传成功
+    }
+    ,error: function(){
+      //演示失败状态，并实现重传
+      var demoText = $('#qylogotext');
+      demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+      demoText.find('.demo-reload').on('click', function(){
+        uploadInst.upload();
+      });
+    }
+  }); 
+   
+   //上传企业形象图
+     var uploadInst = upload.render({
+    elem: '#qypic'
+    ,url: '/upload/'
+    ,before: function(obj){
+      //预读本地文件示例，不支持ie8
+      obj.preview(function(index, file, result){
+        $('#qypicimg1').attr('src', result); //图片链接（base64）
+      });
+    }
+    ,done: function(res){
+      //如果上传失败
+      if(res.code > 0){
+        return layer.msg('上传失败');
+      }
+      //上传成功
+    }
+    ,error: function(){
+      //演示失败状态，并实现重传
+      var demoText = $('#qypictext');
+      demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+      demoText.find('.demo-reload').on('click', function(){
+        uploadInst.upload();
+      });
+    }
+  }); 
+  
+  
+  
+	});
+	
+
+
+
+
+
+
+</script>
+</body>
+</html>

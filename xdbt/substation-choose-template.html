@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>企业分站</title>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div> 
+  <!--顶部开始-->
+  <div class="top clearfix">
+    <h2><img src="images/logo.png"></h2>
+    <span><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;>&nbsp;<a href="index.html">企业分站</a>&nbsp;>&nbsp;创建分站</span>
+    <div class="clearfix">
+      <p>徐水县星涛机械厂</p>
+      <img src="images/tx.jpg"></div>
+  </div>
+  <!--顶部结束-->
+  
+  <div id="main"> 
+    <!--左侧导航开始-->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html" ><i class="fa fa-tachometer" aria-hidden="true"></i><span>首页</span><strong>首页</strong></a></li>
+        <li><a href="content.html"><i class="fa fa-cubes" aria-hidden="true"></i><span>内容中心</span></span></a><strong>内容中心</strong></li>
+        <li class="active"><a href="substation.html"><i class="fa fa-sitemap"></i><span>企业分站</span></a><strong>企业分站</strong></li>
+        <li><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span>商贸联盟</span></a><strong>商贸联盟</strong></li>
+        <li><a href="wechat.html"><i class="fa fa-weixin" aria-hidden="true"></i><span>微信秀场</span></a><strong>微信秀场</strong></li>
+        <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>新闻联盟</span></a><strong>新闻联盟</strong></li>
+        <li><a href="video.html"><i class="fa fa-video-camera" aria-hidden="true"></i><span>视频联盟</span></a><strong>视频联盟</strong></li>
+        <li><a href="classification.html"><i class="fa fa-list" aria-hidden="true"></i><span>分类站联盟</span></a><strong>分类站联盟</strong></li>
+        <li><a href="data.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>数据分析</span></a><strong>数据分析</strong></li>
+        <li><a href="xunpan.html"><i class="fa fa-commenting" aria-hidden="true"></i><span>询盘管理</span></a><strong>询盘管理</strong></li>
+        <!--<li><a href="service.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>服务市场</span></a><strong>服务市场</strong></li>-->
+      </ul>
+      <div> 专属服务顾问电话 <span>1501000000</span> </div>
+      <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+      <h2>专属服务顾问电话：1501000000</h2>
+    </div>
+    <!--左侧导航结束--> 
+    <!--主体内容开始-->
+    <div class="content">
+      <div class="cntnt">
+        <div class="body">
+          <div class="container substation-add">
+            <div class="sbul">
+              <ul class="clearfix">
+                <li class="lineli this"><span></span>
+                  <p>设定分站功能</p>
+                </li>
+                <li class="this"><span></span>
+                  <p>选择模板</p>
+                </li>
+                <li><span></span>
+                  <p>添加内容</p>
+                </li>
+                <li class="last"><span></span>
+                  <p>完成</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub_template">
+            <h2>请选择企业分站模板<span>（当前分站：<strong>分站名称</strong>）</span></h2>
+            <ul class="clearfix">
+              <li>
+                <div class="temli moren">
+                  <div class="temimg">
+                    <div class="temimgp" style="display:none"><p><span>模版特色</span>标准企业展示网站</p>
+                      <p><span>适用企业</span>企业分支机构较多，产品丰富</p></div>
+                    <img src="images/shop/GW001A_S.jpg"></div>
+                  <div class="temaction clearfix"><h4>GW001A</h4><span>默认模板</span><a href="images/shop/B2B001A.jpg" target="_blank">预览</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="temli">
+                  <div class="temimg">
+                     <div class="temimgp" style="display:none"><p><span>模版特色</span>标准企业展示网站</p>
+                      <p><span>适用企业</span>生产制造企业，企业商品线丰富，商品数量众多</p></div>
+                    <img src="images/shop/GW001B_S.jpg"></div>
+                  
+                  <div class="temaction clearfix"><h4>GW001B</h4><span class="temchoose" onClick="choose()">选择此模板</span><a href="images/shop/GW001B.jpg" target="_blank">预览</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="temli">
+                  <div class="temimg">
+                    <div class="temimgp" style="display:none"><p><span>模版特色</span>标准企业展示网站</p>
+                      <p><span>适用企业</span>渠道分销商，代理经销的品牌数量较多，商品丰富</p></div>
+                    <img src="images/shop/GW001C_S.jpg"></div>
+                  
+                  <div class="temaction clearfix"><h4>GW001C</h4><span class="temchoose" onClick="choose()">选择此模板</span><a href="images/shop/GW001C.jpg" target="_blank">预览</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="temli">
+                  <div class="temimg">
+                     <div class="temimgp" style="display:none"><p><span>模版特色</span>标准商品展示网站</p>
+                      <p><span>适用企业</span>企业商品种类众多，型号丰富</p></div>
+                    <img src="images/shop/B2B001A_S.jpg"></div>
+                  
+                  <div class="temaction clearfix"><h4>B2B001A</h4><span class="temchoose" onClick="choose()">选择此模板</span><a href="images/shop/B2B001A.jpg" target="_blank">预览</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="temli">
+                  <div class="temimg">
+                     <div class="temimgp" style="display:none"><p><span>模版特色</span>标准商品展示网站</p>
+                      <p><span>适用企业</span>生产制造企业，企业商品线丰富，商品数量众多</p></div>
+                    <img src="images/shop/B2B001B_S.jpg"></div>
+                  
+                  <div class="temaction clearfix"><h4>B2B001B</h4><span class="temchoose" onClick="choose()">选择此模板</span><a href="images/shop/B2B001B.jpg" target="_blank">预览</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="temli">
+                  <div class="temimg">
+                    <div class="temimgp" style="display:none"><p><span>模版特色</span>标准商品展示网站</p>
+                      <p><span>适用企业</span>渠道分销商，代理经销的品牌数量较多，商品丰富</p></div>
+                    <img src="images/shop/B2B001C_S.jpg"></div>
+                  
+                  <div class="temaction clearfix"><h4>B2B001C</h4><span class="temchoose" onClick="choose()">选择此模板</span><a href="images/shop/B2B001C.jpg" target="_blank">预览</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="temli">
+                  <div class="temimg">
+                     <div class="temimgp" style="display:none"><p><span>模版特色</span>1、营销型页面，针对增加页面收录及提升企业曝光量；<br/>
+                    	2、分站以商品排行榜形式呈现（非传统网站形式），客户相关信息以广告图片的形式展现在每个页面中；<br/>
+                    	3、分站中会包含非客户发布的内容，目的是使页面内容丰富；最大限度增加搜索引擎收录，提升推广覆盖面<br/>
+                    	4、客户能够根据行业热门关键词自由创建企业广告页面</p>
+                        <p><span>适用企业</span>具备网络营销认知，处于热门行业，商品数量较少，无法满足传统网站推广的内容数量需求</p></div>
+                    <img src="images/shop/PHB001A_S.jpg"></div>
+                  
+                  <div class="temaction clearfix"><h4>PHB001A</h4><span class="temchoose" onClick="choose()">选择此模板</span><a href="images/shop/PHB001A.jpg" target="_blank">预览</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="temli">
+                  <div class="temimg">
+                     <div class="temimgp" style="display:none"><p><span>模版特色</span>1、营销型页面，针对增加页面收录及提升企业曝光量；<br/>
+                    	2、分站以商品排行榜形式呈现（非传统网站形式），客户相关信息以广告图片的形式展现在每个页面中；<br/>
+                    	3、分站中会包含非客户发布的内容，目的是使页面内容丰富；最大限度增加搜索引擎收录，提升推广覆盖面<br/>
+                    	4、客户能够根据行业热门关键词自由创建企业广告页面</p>
+                        <p><span>适用企业</span>具备网络营销认知，处于热门行业，商品数量较少，无法满足传统网站推广的内容数量需求</p></div>
+                    <img src="images/shop/PHB001B_S.jpg"></div>
+                  
+                  <div class="temaction clearfix"><h4>PHB001B</h4><span class="temchoose" onClick="choose()">选择此模板</span><a href="images/shop/PHB001B.jpg" target="_blank">预览</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="temli">
+                  <div class="temimg">
+                     <div class="temimgp" style="display:none"><p><span>模版特色</span>1、营销型页面，针对增加页面收录及提升企业曝光量；<br/>
+                    	2、分站以商品排行榜形式呈现（非传统网站形式），客户相关信息以广告图片的形式展现在每个页面中；<br/>
+                    	3、分站中会包含非客户发布的内容，目的是使页面内容丰富；最大限度增加搜索引擎收录，提升推广覆盖面<br/>
+                    	4、客户能够根据行业热门关键词自由创建企业广告页面</p>
+                        <p><span>适用企业</span>具备网络营销认知，处于热门行业，商品数量较少，无法满足传统网站推广的内容数量需求</p></div>
+                    <img src="images/shop/PHB001C_S.jpg"></div>
+                  
+                  <div class="temaction clearfix"><h4>PHB001C</h4><span class="temchoose" onClick="choose()">选择此模板</span><a href="images/shop/PHB001C.jpg" target="_blank">预览</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="temli">
+                  <div class="temimg">
+                     <div class="temimg">
+                     <div class="temimgp" style="display:none"><p><span>模版特色</span>1、营销型页面，针对增加页面收录及提升企业曝光量；<br/>
+                    	2、分站以资讯专题的形式呈（非传统网站形式），客户相关信息以广告图片的形式展现在每个页面中；<br/>
+                    	3、分站中会包含非客户发布的内容，目的是使页面内容丰富；最大限度增加搜索引擎收录，提升推广覆盖面<br/>
+                    	4、客户能够根据行业热门关键词自由创建企业广告页面</p>
+                        <p><span>适用企业</span>具备网络营销认知，处于热门行业，商品数量较少，无法满足传统网站推广的内容数量需求</p></div>
+                    <img src="images/shop/ZXZT001A_S.jpg"></div>
+                  
+                  <div class="temaction clearfix"><h4>ZXZT001A</h4><span class="temchoose" onClick="choose()">选择此模板</span><a href="images/shop/ZXZT001A.jpg" target="_blank">预览</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="temli">
+                  <div class="temimg">
+                     <div class="temimg">
+                     <div class="temimgp" style="display:none"><p><span>模版特色</span>1、营销型页面，针对增加页面收录及提升企业曝光量；<br/>
+                    	2、分站以资讯专题的形式呈（非传统网站形式），客户相关信息以广告图片的形式展现在每个页面中；<br/>
+                    	3、分站中会包含非客户发布的内容，目的是使页面内容丰富；最大限度增加搜索引擎收录，提升推广覆盖面<br/>
+                    	4、客户能够根据行业热门关键词自由创建企业广告页面</p>
+                        <p><span>适用企业</span>具备网络营销认知，处于热门行业，商品数量较少，无法满足传统网站推广的内容数量需求</p></div>
+                    <img src="images/shop/ZXZT001B_S.jpg"></div>
+                  
+                  <div class="temaction clearfix"><h4>ZXZT001B</h4><span class="temchoose" onClick="choose()">选择此模板</span><a href="images/shop/ZXZT001B.jpg" target="_blank">预览</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="temli">
+                  <div class="temimg">
+                     <div class="temimg">
+                     <div class="temimgp" style="display:none"><p><span>模版特色</span>1、营销型页面，针对增加页面收录及提升企业曝光量；<br/>
+                    	2、分站以资讯专题的形式呈现（非传统网站形式），客户相关信息以广告图片的形式展现在每个页面中；<br/>
+                    	3、分站中会包含非客户发布的内容，目的是使页面内容丰富；最大限度增加搜索引擎收录，提升推广覆盖面<br/>
+                    	4、客户能够根据行业热门关键词自由创建企业广告页面</p>
+                        <p><span>适用企业</span>具备网络营销认知，处于热门行业，商品数量较少，无法满足传统网站推广的内容数量需求</p></div>
+  
+                    <img src="images/shop/ZXZT001C_S.jpg"></div>
+                  
+                  <div class="temaction clearfix"><h4>ZXZT001C</h4><span class="temchoose" onClick="choose()">选择此模板</span><a href="images/shop/ZXZT001C.jpg" target="_blank">预览</a></div>
+                </div>
+              </li>
+            </ul>
+            <div id="demo2" class="page">
+              <div class="layui-box layui-laypage layui-laypage-molv" id="layui-laypage-1"><a href="javascript:;" class="layui-laypage-prev layui-disabled" data-page="0">上一页</a><span class="layui-laypage-curr"><em class="layui-laypage-em" style="background-color:#3596dd;"></em><em>1</em></span><a href="javascript:;" data-page="2">2</a><a href="javascript:;" data-page="3">3</a><a href="javascript:;" data-page="4">4</a><a href="javascript:;" data-page="5">5</a><span class="layui-laypage-spr">…</span><a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="10">10</a><a href="javascript:;" class="layui-laypage-next" data-page="2">下一页</a></div>
+            </div>
+            <div class="tembtn">
+              <button class="layui-btn layui-btn-primary" value="click" onclick="window.location='substation-add.html'">返回上一步</button>
+              <button class="layui-btn btn_blue"  value="click" onclick="window.location='substation-addcontent.html'">下一步</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--主体内容结束--> 
+  </div>
+  <!--选择模板弹窗开始-->
+  <div class="choose" style="display:none;" id="choose">
+    <div class="pop-main">
+      <p>确定选择为默认模板？</p>
+    </div>
+  </div>
+  <!--选择模板弹窗结束--> 
+</div>
+<script type="text/javascript">
+
+	
+	
+$(function(){
+     //左侧导航js
+     var _width = $(window).width(); 
+     if(_width < 1000){
+     
+	$(".nav p").mouseover(function(){
+		$(".nav h2").show();
+		})
+	$(".nav p").mouseleave(function(){
+		$(".nav h2").hide();
+		})
+		
+	$(".nav ul li").mouseover(function(){
+		$(this).find("strong").show();
+		})
+	$(".nav ul li").mouseleave(function(){
+		$(this).find("strong").hide();
+		})
+   
+     }
+	 
+	 //鼠标经过出现介绍文字
+	$(".temimg").mouseover(function(){
+		$(this).find(".temimgp").show();
+		})
+    $(".temimg").mouseleave(function(){
+		$(this).find(".temimgp").hide();
+		})
+	
+
+});
+
+
+  
+  
+
+
+
+layui.use(['form','upload', 'laydate','laypage', 'layer', 'element',], function(){
+	
+	var form = layui.form
+	,layer = layui.layer
+	,laydate = layui.laydate
+	,element = layui.element
+	,upload = layui.upload;
+
+ <!--分页-->
+  var laypage = layui.laypage
+  ,layer = layui.layer;
+laypage.render({
+    elem: 'demo2'
+    ,count: 100
+    ,theme: '#3596dd'
+  });
+
+
+
+
+});  
+
+//选择模板弹窗
+function choose(){
+	layer.open({
+   type: 1,
+  title: false,
+  closeBtn: 0,
+  shadeClose: true,
+  area: ['400px', 'auto'],
+  btn: ['确定', '取消'],
+  skin: 'yourclass',
+  content: $('#choose'),	
+
+ 
+});
+}
+
+
+</script>
+</body>
+</html>

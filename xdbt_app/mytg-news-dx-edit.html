@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- Your app title -->
+<title>我的推广</title>
+<link rel="stylesheet" href="css/framework7.ios.min.css">
+<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+<link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="dbt">
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<div class="views" id="dbt">
+<div class="view view-main"> 
+  <!-- 头部开始-->
+  <div class="navbar">
+    <div class="navbar-inner"> 
+      <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+      <div class="left"><a href="#" class="back"><i class="f7-icons">left</i></a></div>
+      <div class="center sliding">软文推广</div>
+    </div>
+  </div>
+  <!-- 头部结束--> 
+  <!-- 主体开始-->
+  <div class="pages navbar-through toolbar-through ">
+    <div data-page="" class="page">
+      <div class="page-content">
+        <div class="dx-edit">
+           <ul >
+                <li class="select">
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-input">
+                        <input type="text" placeholder="请选择文章类型" readonly id="picker-describe-rw" onClick="rws()">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="select">
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-input">
+                        <input type="text" placeholder="请选择文章风格" readonly id="picker-describe-rw1"  onClick="rws1()">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-input">
+                        <input type="text" placeholder="最多5个关键词，每个关键词最多10个汉字">
+                    </div>
+                  </div>
+                </div></li>
+                <li class="align-top">
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                    <div class="item-inner">
+                      <div class="item-input item-textarea">
+                        <textarea placeholder="详细代写需求说明，请描述需要代写文章内容相关的时间、地点、人物等重点元素"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                
+              </ul>
+              <div class="tj"><a href="#" class="button button-big button-fill" onClick="rwxq()">提交</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 主体结束--> 
+  
+</div>
+<!-- Path to Framework7 Library JS--> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<!-- Path to your app js--> 
+<script type="text/javascript" src="js/my-app.js"></script>
+
+</body>
+</html>

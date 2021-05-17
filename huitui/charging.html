@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>扣费明细</title>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div>
+<!--点击头像出现菜单开始-->
+<div class="topnav_slide" style="display:none;">
+  <p><a href="account.html">账户管理<i class="fa fa-cog" aria-hidden="true"></i></a></p>
+  <p><a href="#">退出登录<i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+</div>
+<!--点击头像出现菜单结束--> 
+<!--顶部开始-->
+<div class="top clearfix">
+  <h2><img src="images/logo.png" /></h2>
+  <span>当前位置：<a href="index2.html"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;&gt;&nbsp;扣费明细</span>
+  <div class="clearfix">
+    <p> 
+      <!--经济版开始--> <em class="v1"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>经济版</em> 
+      <!--标准版开始--> <em class="v2" style="display: none;"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>标准版</em> 
+      <!--高级版开始--> <em class="v3" style="display: none;"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>高级版</em> 徐水县星涛机械厂 </p>
+    <img src="images/tx.jpg" class="i_tx" /> </div>
+</div>
+<!--顶部结束-->
+<div id="main">
+<!--左侧导航开始-->
+<div class="nav layui-collapse" lay-accordion="">
+  <div class="gwtg layui-colla-item">
+    <div class="tgtitle layui-colla-title">官网SEO</div>
+    <ul class="layui-colla-content layui-show">
+      <li><a href="index2.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>推广效果</span><strong>推广效果</strong></a></li>
+      <li><a href="keyword.html"><i class="fa fa-crosshairs" aria-hidden="true"></i><span>关键词管理</span><strong>关键词管理</strong></a></li>
+      <li class="active"><a href="charging.html"><i class="fa fa-list-ul"></i><span>扣费明细</span><strong>扣费明细</strong></a></li>
+      <li><a href="recharge.html"><i class="fa fa-money"></i><span>充值记录</span><strong>充值记录</strong></a></li>
+    </ul>
+  </div>
+  <div class="qwtg layui-colla-item">
+    <div class="tgtitle layui-colla-title"><a href="index.html">汇&nbsp;&nbsp;推</a></div>
+    <ul class="layui-colla-content">
+      <li><a href="index.html"><i class="fa fa-tachometer" aria-hidden="true"></i><span>中控台</span><strong>中控台</strong></a></li>
+      <li><a href="content.html"><i class="fa fa-cubes" aria-hidden="true"></i><span>内容中心</span></a><strong>内容中心</strong></li>
+      <li><a href="#"><i class="fa fa-paper-plane-o"></i><span>渠道中心</span></a><strong>渠道中心</strong></li>
+      <li class="navsm"><a href="website.html"><i class="fa fa-globe"></i><span>企业官网</span></a><strong>企业官网</strong></li>
+      <li class="navsm"><a href="substation.html"><i class="fa fa-sitemap"></i><span>企业分站</span></a><strong>企业分站</strong></li>
+      <li class="navsm"><a href="copycloud.html"><i class="fa fa-cloud"></i><span>企业云站</span></a><strong>企业云站</strong></li>
+      <li class="navsm"><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span>商贸联盟</span></a><strong>商贸联盟</strong></li>
+      <li class="navsm"><a href="wechat.html"><i class="fa fa-weixin" aria-hidden="true"></i><span>微信工具</span></a><strong>微信工具</strong></li>
+      <li class="navsm"><a href="news.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>新闻推广</span></a><strong>新闻推广</strong></li>
+      <li class="navsm"><a href="society.html"><i class="fa fa-weibo" aria-hidden="true"></i><span>社会化媒体</span></a><strong>社会化媒体</strong></li>
+      <li class="navsm"><a href="baike.html"><i class="fa fa-list" aria-hidden="true"></i><span>企业百科</span></a><strong>企业百科</strong></li>
+      <li class="navsm"><a href="answer.html"><i class="fa fa-comments-o" aria-hidden="true"></i><span>企业问答</span></a><strong>企业问答</strong></li>
+      <li class="navsm"><a href="starmedia.html"><i class="fa fa-star" aria-hidden="true"></i><span>星媒体</span></a><strong>星媒体</strong></li>
+      <li class="navsm"><a href="dsp.html"><i class="fa fa-bullseye" aria-hidden="true"></i><span>云广告</span></a><strong>云广告</strong></li>
+      <li><a href="data.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>数据中心</span></a><strong>数据中心</strong></li>
+      <li><a href="service.html"><i class="fa fa-heart" aria-hidden="true"></i><span>服务中心</span></a><strong>服务中心</strong></li>
+    </ul>
+  </div>
+  <div class="leftkf"> 专属服务顾问电话 <span>4006605555-6118</span> <br />
+    服务顾问企业QQ <span>3002745607</span> </div>
+  <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+  <h2>专属服务顾问电话：1501000000</h2>
+</div>
+<!--左侧导航结束--> 
+<!--主体内容开始-->
+<div class="content">
+  <div class="cntnt">
+    <div class="box">
+      <div class="snav">
+        <ul class=" clearfix">
+          <li class="sactive"><a href="charging.html">扣费明细</a></li>
+          <li><a href="charging-set.html">扣费设置</a></li>
+        </ul>
+      </div>
+      <div class="pad20 charging">
+        <div class="charge_t clearfix">
+          <p >累计扣费：<span class="red">9000元</span>预期扣费：<span class="red">2000元</span>账户余额：<span class="red">7200元</span></p>
+        </div>
+        <div class="charga clearfix">
+          <div class="left keyprice">
+            <table class="layui-table normaltab">
+              <colgroup>
+              <col />
+              <col />
+              <col />
+              <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>百度</th>
+                  <th>搜狗</th>
+                  <th>360</th>
+                  <th>百度移动</th>
+                  <th>搜狗移动</th>
+                  <th>360移动</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>第一页</td>
+                  <td><span>8.00元</span>/个/天</td>
+                  <td><span>4.00元</span>/个/天</td>
+                  <td><span>2.00元</span>/个/天</td>
+                  <td><span>8.00元</span>/个/天</td>
+                  <td><span>4.00元</span>/个/天</td>
+                  <td><span>2.00元</span>/个/天</td>
+                </tr>
+                <tr>
+                  <td>第二页</td>
+                  <td><span>4.00元</span>/个/天</td>
+                  <td><span>2.00元</span>/个/天</td>
+                  <td><span>1.00元</span>/个/天</td>
+                  <td><span>8.00元</span>/个/天</td>
+                  <td><span>4.00元</span>/个/天</td>
+                  <td><span>2.00元</span>/个/天</td>
+                </tr>
+                <tr>
+                  <td>第三页</td>
+                  <td><span>5.00元</span>/个/天</td>
+                  <td><span>2.50元</span>/个/天</td>
+                  <td><span>1.00元</span>/个/天</td>
+                  <td><span>8.00元</span>/个/天</td>
+                  <td><span>4.00元</span>/个/天</td>
+                  <td><span>2.00元</span>/个/天</td>
+                </tr>               
+              </tbody>
+            </table>
+          </div>
+          <div class="right chargeword">
+            <p> <span>关键词扣费说明：</span> 1、关键词仅在效果达到推广标准（排名进入前三页）后才会扣费，不达标不扣费。<br/>
+              2、预期扣费：已达标关键词在未来90天预计扣费金额。 </p>
+          </div>
+        </div>
+        <div class="charge_data">
+          <form class="layui-form" action="">
+            <div class="layui-input-inline">
+              <select name="quiz1">
+                <option value="">请选择时间</option>
+                <option value="2019-01" selected="">2019-01</option>
+                <option value="2019-02">2019-02</option>
+                <option value="2019-03">2019-03</option>
+                <option value="2019-04">2019-04</option>
+                <option value="2019-05">2019-05</option>
+                <option value="2019-06">2019-06</option>
+                <option value="2019-07">2019-07</option>
+                <option value="2019-08">2019-08</option>
+                <option value="2019-09">2019-09</option>
+                <option value="2019-10">2019-10</option>
+                <option value="2019-11">2019-11</option>
+                <option value="2019-12">2019-12</option>
+              </select>
+            </div>
+            <button class="layui-btn btn_blue">查询</button>
+          </form>
+        </div>
+        <div class="chargingtab">
+          <table class="layui-table normaltab">
+            <colgroup>
+            <col />
+            <col />
+            <col/>
+            <col/>
+            <col/>
+            <col/>
+            <col/>
+            <col/>
+            <col/>
+            <col/>
+            <col/ width="80">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>时间</th>
+                <th>扣费</th>
+                <th>达标关键词数量</th>
+                <th>百度（1/2/3页）</th>
+                <th>搜狗（1/2/3页）</th>
+                <th>360（1/2/3页）</th>
+                <th>百度移动（1/2/3页）</th>
+                <th>搜狗移动（1/2/3页）</th>
+                <th>360移动（1/2/3页）</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="localkey">2019.07.01<img src="images/local.png" title="本地跑词"></td>
+                <td class="red">210元</td>
+                <td>40个</td>
+                <td>6个/10个/18个</td>
+                <td>5个/8个/10个</td>
+                <td>0个/0个/1个</td>
+                <td>6个/10个/18个</td>
+                <td>5个/8个/10个</td>
+                <td>0个/0个/1个</td>
+                <td><span id="s1" onclick="javascript:viewRankUrl(1,this);" class="fa fa-chevron-down"></span></td>
+              </tr>
+              <tr id="t1" style="display:none;">
+                <td class="news-field-box" colspan="11"><table class="layui-table">
+                    <colgroup>
+                    <col width="80" />
+                    <col  width="200"/>
+                    <col  width="200"/>
+                    <col  width="200"/>
+                    <col  width="200"/>
+                    <col  width="200"/>
+                    <col  width="200"/>
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>&nbsp;</th>
+                        <th>百度</th>
+                        <th>搜狗</th>
+                        <th>360</th>
+                        <th>百度移动</th>
+                        <th>搜狗移动</th>
+                        <th>360移动</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>第一页</td>
+                        <td><a href="keyword-detail.html">反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">厨具涂料</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">反应釜</a><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">厨具涂料</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">反应釜</a><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                      </tr>
+                      <tr>
+                        <td>第二页</td>
+                        <td><a href="keyword-detail.html">反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">厨具涂料</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">厨具涂料</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">反应釜</a><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">反应釜</a><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                      </tr>
+                      <tr>
+                        <td>第三页</td>
+                        <td><a href="keyword-detail.html">反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">厨具涂料</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">反应釜</a><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">厨具涂料</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">反应釜</a><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜反应釜</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                        <td><a href="keyword-detail.html">散热器粉末</a><a href="keyword-detail.html">氧化反应釜</a><a href="keyword-detail.html">搪瓷反应釜厂家</a><a href="keyword-detail.html">玻璃反应釜</a><a href="keyword-detail.html">高压反应釜</a></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>2019.07.01</td>
+                <td class="red">210元</td>
+                <td>40个</td>
+                <td>6个/10个/18个</td>
+                <td>5个/8个/10个</td>
+                <td>0个/0个/1个</td>
+                <td>6个/10个/18个</td>
+                <td>5个/8个/10个</td>
+                <td>0个/0个/1个</td>
+                <td><span id="s2" honclick="javascript:viewRankUrl(2,this);" class="fa fa-chevron-down"></span></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td class="localkey">2019.07.01<img src="images/local.png" title="本地跑词"></td>
+                <td class="red">210元</td>
+                <td>40个</td>
+                <td>6个/10个/18个</td>
+                <td>5个/8个/10个</td>
+                <td>0个/0个/1个</td>
+                <td>6个/10个/18个</td>
+                <td>5个/8个/10个</td>
+                <td>0个/0个/1个</td>
+                <td><span onclick="javascript:viewRankUrl(3,this);" class="fa fa-chevron-down"></span></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>2019.07.01</td>
+                <td class="red">210元</td>
+                <td>40个</td>
+                <td>6个/10个/18个</td>
+                <td>5个/8个/10个</td>
+                <td>0个/0个/1个</td>
+                <td>6个/10个/18个</td>
+                <td>5个/8个/10个</td>
+                <td>0个/0个/1个</td>
+                <td><span class="fa fa-chevron-down"></span></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>2019.07.01</td>
+                <td class="red">210元</td>
+                <td>40个</td>
+                <td>6个/10个/18个</td>
+                <td>5个/8个/10个</td>
+                <td>0个/0个/1个</td>
+                <td>6个/10个/18个</td>
+                <td>5个/8个/10个</td>
+                <td>0个/0个/1个</td>
+                <td><span class="fa fa-chevron-down"></span></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>2019.07.01</td>
+                <td class="red">210元</td>
+                <td>40个</td>
+                <td>6个/10个/18个</td>
+                <td>5个/8个/10个</td>
+                <td>0个/0个/1个</td>
+                <td>6个/10个/18个</td>
+                <td>5个/8个/10个</td>
+                <td>0个/0个/1个</td>
+                <td><span class="fa fa-chevron-down"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div> </div>
+    </div>
+    <!--主体内容结束--> 
+  </div>
+</div>
+<script type="text/javascript">
+
+			function viewRankUrl(i,tthis) {
+				var obj = '#t'+i;
+				if($(obj).is(':hidden')) {
+					$(tthis).removeClass("fa-chevron-down");
+					$(tthis).addClass("fa-chevron-up");
+					$(obj).show();
+				}else{
+					$(tthis).removeClass("fa-chevron-up");
+					$(tthis).addClass("fa-chevron-down");
+					$(obj).hide();
+				}
+			}
+
+
+layui.use(['layer', 'form', 'element'], function(){
+  var layer = layui.layer
+  ,form = layui.form
+  ,element = layui.element;
+});
+      
+
+</script>
+</body>
+</html>

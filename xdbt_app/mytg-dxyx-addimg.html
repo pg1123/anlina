@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- Your app title -->
+<title>我的推广</title>
+<link rel="stylesheet" href="css/framework7.ios.min.css">
+<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+<link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="dbt">
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<div class="views" id="dbt">
+  <div class="view view-main"> 
+    <!-- 头部开始-->
+    <div class="navbar">
+      <div class="navbar-inner"> 
+        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+        <div class="left"><a href="mytg-dxyx-mould.html" class="back"><i class="f7-icons">left</i></a></div>
+        <div class="center sliding">广告图片设置</div>
+      </div>
+    </div>
+    <!-- 头部结束--> 
+    <!-- 主体开始-->
+    <div class="pages navbar-through toolbar-through ">
+      <div data-page="qysp" class="page">
+        <div class="page-content">
+          <div class="addimg">
+            <ul>
+              <li class="clearfix">
+                <h2>广告位名称：</h2>
+                <input type="text" placeholder="不多于10个字符">
+              </li>
+              <li class="clearfix">
+                <h2>广告图片规格：<span>图片宽度：650px，图片高度300px</span></h2>
+              </li>
+            </ul>
+            <div class="img-table">
+              <table id="tab11" style="display: none">
+                <tbody>
+                  <tr>
+                    <td height="30" align="center"><input type="text"    class="addimg-input" placeholder="排序"/></td>
+                    <td align="center" class="addimg-img"><img src="images/ggt.jpg">
+                      <div class="imageFileInput">
+                        <input class="fileInput" type="file" id="" name="">
+                      </div></td>
+                    <td><input type="button" id="Button1" onClick="deltr(this)" value="删除"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <input type="button" id="btn_addtr" value="增加广告图片">
+              <table id="dynamicTable" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td height="30" align="center"><input type="text"  class="addimg-input" placeholder="排序"/></td>
+                    <td align="center " class="addimg-img"><img src="images/ggt.jpg">
+                      <div class="imageFileInput">
+                        <input class="fileInput" type="file" id="" name="">
+                      </div></td>
+                    <td><input type="button" id="Button2" onClick="deltr(this)" value="删除"></td>
+                  </tr>
+                  <tr>
+                    <td height="30" align="center"><input type="text"  class="addimg-input" placeholder="排序"/></td>
+                    <td align="center " class="addimg-img"><img src="images/ggt.jpg">
+                      <div class="imageFileInput">
+                        <input class="fileInput" type="file" id="" name="">
+                      </div></td>
+                    <td><input type="button" id="Button2" onClick="deltr(this)" value="删除"></td>
+                  </tr>
+                  <tr>
+                    <td height="30" align="center"><input type="text"  class="addimg-input" placeholder="排序"/></td>
+                    <td align="center " class="addimg-img"><img src="images/ggt.jpg">
+                      <div class="imageFileInput">
+                        <input class="fileInput" type="file" id="" name="">
+                      </div></td>
+                    <td><input type="button" id="Button2" onClick="deltr(this)" value="删除"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tj"><a href="#" class="button button-big button-fill">提交</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 主体结束--> 
+</div>
+<!-- Path to Framework7 Library JS--> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<!-- Path to your app js--> 
+<script type="text/javascript" src="js/my-app.js"></script> 
+<script type="text/javascript" src="js/jquery1.7.js"></script> 
+<script type="text/javascript">
+$(function () {
+	var show_count = 10;   //要显示的条数
+	var count = 1;    //递增的开始值，这里是你的ID
+	$("#btn_addtr").click(function () {
+
+		var length = $("#dynamicTable tbody tr").length;
+		//alert(length);
+		if (length < show_count)    //点击时候，如果当前的数字小于递增结束的条件
+		{
+			$("#tab11 tbody tr").clone().appendTo("#dynamicTable tbody");   //在表格后面添加一行
+			changeIndex();//更新行号
+		}
+	});
+
+
+});
+
+
+function deltr(opp) {
+	var length = $("#dynamicTable tbody tr").length;
+	//alert(length);
+	if (length <= 0) {
+
+	} else {
+		$(opp).parent().parent().remove();//移除当前行
+		changeIndex();
+	}
+	
+}
+</script>
+</body>
+</html>

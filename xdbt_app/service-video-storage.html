@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- Your app title -->
+  <title>我的推广</title>
+  <link rel="stylesheet" href="css/framework7.ios.min.css">
+  <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="dbt">
+  <!-- Status bar overlay for full screen mode (PhoneGap) -->
+  <div class="statusbar-overlay"></div>
+  <!-- Panels overlay-->
+  <div class="panel-overlay"></div>
+
+  <div class="views" id="dbt"> 
+    <div class="view view-main"> 
+      <!-- 头部开始-->
+      <div class="navbar">
+        <div class="navbar-inner"> 
+          <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+          <div class="left"><a href="#" class="back"><i class="f7-icons">left</i></a></div>
+          <div class="center sliding">视频云服务</div>
+        </div>
+      </div>
+      <!-- 头部结束-->
+      <!-- 主体开始-->
+      <div class="pages navbar-through toolbar-through"> 
+        <div data-page="" class="page">
+         <div class="page-content tgdetail">
+          <!-- service cover -->
+          <div class="scover-img"><img src="images/video-storage-cover.png"></div>
+          <h2 class="h2title">服务介绍</h2>
+          <div class="dbt-common-content">              
+            <div class="dbt-content-item">
+              <p>相比同类产品价格更低，按需采购，播放稳定，无贴片广告和水印干扰，保证企业形象</p>
+            </div>
+            <div class="dbt-content-item">
+              <p><img class="lct" src="images/liucheng3.png" alt=""></p>
+            </div>
+          </div>
+          <h2 class="h2title">服务采购</h2>
+          <div class="dbt-common-content list-block"> 
+            <div class="content-block cg-list">
+              <div class="row">             
+                <div class="col-70">
+                  <h3>视频云服务</h3>
+                  <p class="x-desc">创建各类视频云存储</p>
+                </div>
+                <div class="col-30">
+                  <a href="#"  class="button">暂存</a>
+                  <a href="#" class="button notification-yescart" onClick="yescart()">购买</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 主体结束-->
+
+  </div>
+  <!-- Path to Framework7 Library JS--> 
+  <script type="text/javascript" src="js/framework7.min.js"></script> 
+  <!-- Path to your app js--> 
+  <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

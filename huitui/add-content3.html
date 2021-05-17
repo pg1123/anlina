@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+  <title>内容中心</title> 
+  <script type="text/javascript" src="layui/layui.js"></script> 
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script> 
+  <link rel="stylesheet" href="css/style2.css" /> 
+</head> 
+<body> 
+  <!--发布产品模块开始-->
+  <!--发布进度3开始-->
+  <div class="sbul ht_progress col3"> 
+    <ul class="clearfix"> 
+      <li class="lineli this"> <span></span> <p>选择行业</p> </li> 
+      <li class="lineli this"> <span></span> <p>产品信息</p> </li> 
+      <li class="this"> <span></span> <p>推广信息</p> </li> 
+    </ul> 
+  </div> 
+  <!--发布进度3结束-->
+  <!--发布内容开始-->
+  <form class="layui-form" action="">
+    <div class="xcontent"> 
+        <div class="texteditbox">
+          <div class="layui-form-item"> 
+            <label class="layui-form-label">产品标题：</label> 
+            <div class="layui-input-block layui-input-block1"> 
+              <input type="text" name="title" placeholder="产品标题产品标题产品标题产品标题产品标题产品标题产品标题" disabled="disabled" class="layui-input" /> 
+            </div> 
+          </div> 
+          <div class="layui-form-item tgkeyw"> 
+            <label class="layui-form-label">推广关键词：</label> 
+            <div class="layui-input-block layui-input-block1"> 
+              <textarea placeholder="每行代表一个关键词，最多填写15个，每个最多10个汉字" class="layui-textarea"></textarea> 
+            </div> 
+          </div> 
+          <!--商品推广标题开始-->
+          <div class="layui-form-item layui-form-text tgbti"> 
+            <label class="layui-form-label">推广标题：</label> 
+            <div class="layui-input-block"> 
+              <div class="layui-input-block layui-input-block1 bustages"> 
+                <input type="checkbox" name="like1[addfront]" lay-skin="primary" title="加前缀" /> 
+                <div class="xlist smlm-addctnt-area clearfix"> 
+                  <span>所在地区：</span> 
+                  <ul class="area-list"> 
+                    <li>北京 <i class="fa fa-times" onclick="deleteyes()"></i></li> 
+                    <li>上海 <i class="fa fa-times" onclick="deleteyes()"></i></li> 
+                    <li>深圳 <i class="fa fa-times" onclick="deleteyes()"></i></li> 
+                    <a class="layui-btn layui-btn-mini layui-btn-danger" onclick="selectionarea()"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;选取</a>
+                  </ul> 
+                </div> 
+                <input type="checkbox" name="like1[addafter]" lay-skin="primary" title="加后缀" /> 
+                <div class="xlist smlm-addctnt-industry clearfix"> 
+                  <span>业务形式：</span> 
+                  <ul class="yw-list"> 
+                    <li><p>批发 <i class="fa fa-times" onclick="deleteyes()"></i></p></li> 
+                    <li><p>销售 <i class="fa fa-times" onclick="deleteyes()"></i></p></li> 
+                    <li><p>批发 <i class="fa fa-times" onclick="deleteyes()"></i></p></li> 
+                    <li><p>销售 <i class="fa fa-times" onclick="deleteyes()"></i></p></li> 
+                    <li><p>批发 <i class="fa fa-times" onclick="deleteyes()"></i></p></li> 
+                    <li><p>销售 <i class="fa fa-times" onclick="deleteyes()"></i></p></li> 
+                    <a class="layui-btn layui-btn-mini layui-btn-danger" onclick="selection()"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;选取</a>
+                  </ul> 
+                </div> 
+              </div> 
+              <button class="layui-btn layui-btn-danger totitle" onclick="toxtitle()"><i class="fa fa-magic"></i> 点击生成推广标题</button> 
+              <ol class="xtitlelist" contenteditable="true" style="display:;"> 
+                <li>北京反应釜标题标题标题标题销售</li> 
+                <li>标题标题标题标题标题标题标题标题标题2</li> 
+                <li>标题标题标题标题标题标题标题标题标题3</li> 
+                <li>标题标题标题标题标题标题标题标题标题4</li> 
+                <li>标题标题标题标题标题标题标题标题标题5</li> 
+              </ol> 
+            </div> 
+          </div> 
+          <!--商品推广标题结束-->
+          <div class="layui-form-item xtips"> 
+            <label class="layui-form-label"></label> 
+            <div class="layui-input-block layui-input-block1"> 
+              <div class="tips ntips"><p>提示：填写完整的产品描述有助于增加产品对买家的吸引力及搜索曝光率。 </p></div> 
+            </div> 
+          </div> 
+          <div class="layui-form-item textareabody"> 
+            <label class="layui-form-label">产品描述：</label> 
+            <div class="layui-input-block layui-input-block1"> 
+              <div class="textareabox"> 
+                <p><b>基本信息</b> <span>(除基本功能外的其它特质，例如工作时长、操作简便性等，<small>字数不低于200字</small>)</span></p> 
+                <div name="p_intro_div" id="p_intro_div" class="layui-textarea" lay-verify="p_intro_div|required|blacks" contenteditable="true">
+                  <p>环保装饰材料是指天然的，本身没有或极少有毒有害的物质、未经污染只进行了简单加工的装饰材料。如火山泥、石膏、滑石粉、砂石、木材、某些天然石材等。</p>
+                  <p>是指经过加工、合成等技术手段来控制有毒、有害物质的积聚和缓慢释放、因其毒性轻微、对人类健康不构成危险的装饰材料。如甲醛释放量较低、达到国家标准的大芯板、胶合板、纤维板等，如氧森源火山泥，自身无毒无害，还可以解决其他装修产生的室内空气污染，环保性能优于其他环保壁材。</p>
+                  <p>草墙纸、麻墙纸、纱绸墙布等产品，具有保湿、驱虫、保健等多种功能。防霉墙纸经过化学处理，排除了墙纸在空气潮湿或室内外温差大时出现的发霉、发泡、滋生霉菌等现象，而且表面柔和，透气性好。</p>
+                  <p>生物乳胶漆，除施工简便外还有多种颜色，能给家居带来缤纷色彩。涂刷后会散发阵阵清香，还可以重刷或用清洁剂进行处理，能抑制墙体内的霉菌。这是一种以节约电能、保护环境为目的的照明系统。通过科学的照明设计，利用高效、安全、优质的照明电器产品，创造出一个舒适、经济、有益的照明环境。</p>
+                  <p>环保装饰材料是指天然的，本身没有或极少有毒有害的物质、未经污染只进行了简单加工的装饰材料。如火山泥、石膏、滑石粉、砂石、木材、某些天然石材等。</p>
+                  <p>是指经过加工、合成等技术手段来控制有毒、有害物质的积聚和缓慢释放、因其毒性轻微、对人类健康不构成危险的装饰材料。如甲醛释放量较低、达到国家标准的大芯板、胶合板、纤维板等，如氧森源火山泥，自身无毒无害，还可以解决其他装修产生的室内空气污染，环保性能优于其他环保壁材。</p>
+                </div>
+              </div> 
+              <div class="textareabox"> 
+                <p><b>技术参数</b> <span>(选填，例如材质、工艺、尺寸的技术标准等)</span></p> 
+                <div name="p_intro_div" id="p_intro_div" class="layui-textarea" lay-verify="p_intro_div|required|blacks" contenteditable="true">
+                  <p>草墙纸、麻墙纸、纱绸墙布等产品，具有保湿、驱虫、保健等多种功能。防霉墙纸经过化学处理，排除了墙纸在空气潮湿或室内外温差大时出现的发霉、发泡、滋生霉菌等现象，而且表面柔和，透气性好。</p>
+                  <p>生物乳胶漆，除施工简便外还有多种颜色，能给家居带来缤纷色彩。涂刷后会散发阵阵清香，还可以重刷或用清洁剂进行处理，能抑制墙体内的霉菌。这是一种以节约电能、保护环境为目的的照明系统。通过科学的照明设计，利用高效、安全、优质的照明电器产品，创造出一个舒适、经济、有益的照明环境。</p>
+                  <p>环保装饰材料是指天然的，本身没有或极少有毒有害的物质、未经污染只进行了简单加工的装饰材料。如火山泥、石膏、滑石粉、砂石、木材、某些天然石材等。</p>
+                  <p>是指经过加工、合成等技术手段来控制有毒、有害物质的积聚和缓慢释放、因其毒性轻微、对人类健康不构成危险的装饰材料。如甲醛释放量较低、达到国家标准的大芯板、胶合板、纤维板等，如氧森源火山泥，自身无毒无害，还可以解决其他装修产生的室内空气污染，环保性能优于其他环保壁材。</p>
+                  <p>草墙纸、麻墙纸、纱绸墙布等产品，具有保湿、驱虫、保健等多种功能。防霉墙纸经过化学处理，排除了墙纸在空气潮湿或室内外温差大时出现的发霉、发泡、滋生霉菌等现象，而且表面柔和，透气性好。</p>
+                  <p>生物乳胶漆，除施工简便外还有多种颜色，能给家居带来缤纷色彩。涂刷后会散发阵阵清香，还可以重刷或用清洁剂进行处理，能抑制墙体内的霉菌。这是一种以节约电能、保护环境为目的的照明系统。通过科学的照明设计，利用高效、安全、优质的照明电器产品，创造出一个舒适、经济、有益的照明环境。</p>
+                </div> 
+              </div> 
+              <div class="textareabox"> 
+                <p><b>使用说明</b> <span>(选填，例如使用场所、工作原理、产品结构、安全操作说明等)</span></p> 
+                <div name="p_intro_div" id="p_intro_div" class="layui-textarea" lay-verify="p_intro_div|required|blacks" contenteditable="true">
+                  <p>草墙纸、麻墙纸、纱绸墙布等产品，具有保湿、驱虫、保健等多种功能。防霉墙纸经过化学处理，排除了墙纸在空气潮湿或室内外温差大时出现的发霉、发泡、滋生霉菌等现象，而且表面柔和，透气性好。</p>
+                  <p>生物乳胶漆，除施工简便外还有多种颜色，能给家居带来缤纷色彩。涂刷后会散发阵阵清香，还可以重刷或用清洁剂进行处理，能抑制墙体内的霉菌。这是一种以节约电能、保护环境为目的的照明系统。通过科学的照明设计，利用高效、安全、优质的照明电器产品，创造出一个舒适、经济、有益的照明环境。</p>
+                  <p>环保装饰材料是指天然的，本身没有或极少有毒有害的物质、未经污染只进行了简单加工的装饰材料。如火山泥、石膏、滑石粉、砂石、木材、某些天然石材等。</p>
+                  <p>是指经过加工、合成等技术手段来控制有毒、有害物质的积聚和缓慢释放、因其毒性轻微、对人类健康不构成危险的装饰材料。如甲醛释放量较低、达到国家标准的大芯板、胶合板、纤维板等，如氧森源火山泥，自身无毒无害，还可以解决其他装修产生的室内空气污染，环保性能优于其他环保壁材。</p>
+                  <p>草墙纸、麻墙纸、纱绸墙布等产品，具有保湿、驱虫、保健等多种功能。防霉墙纸经过化学处理，排除了墙纸在空气潮湿或室内外温差大时出现的发霉、发泡、滋生霉菌等现象，而且表面柔和，透气性好。</p>
+                  <p>生物乳胶漆，除施工简便外还有多种颜色，能给家居带来缤纷色彩。涂刷后会散发阵阵清香，还可以重刷或用清洁剂进行处理，能抑制墙体内的霉菌。这是一种以节约电能、保护环境为目的的照明系统。通过科学的照明设计，利用高效、安全、优质的照明电器产品，创造出一个舒适、经济、有益的照明环境。</p>
+                </div> 
+              </div> 
+              <div class="textareabox"> 
+                <p><b>采购须知</b> <span>(选填，例如发货时间、运输方式、售后服务事项等)</span></p> 
+                <div name="p_intro_div" id="p_intro_div" class="layui-textarea" lay-verify="p_intro_div|required|blacks" contenteditable="true">
+                  <p>草墙纸、麻墙纸、纱绸墙布等产品，具有保湿、驱虫、保健等多种功能。防霉墙纸经过化学处理，排除了墙纸在空气潮湿或室内外温差大时出现的发霉、发泡、滋生霉菌等现象，而且表面柔和，透气性好。</p>
+                  <p>生物乳胶漆，除施工简便外还有多种颜色，能给家居带来缤纷色彩。涂刷后会散发阵阵清香，还可以重刷或用清洁剂进行处理，能抑制墙体内的霉菌。这是一种以节约电能、保护环境为目的的照明系统。通过科学的照明设计，利用高效、安全、优质的照明电器产品，创造出一个舒适、经济、有益的照明环境。</p>
+                  <p>环保装饰材料是指天然的，本身没有或极少有毒有害的物质、未经污染只进行了简单加工的装饰材料。如火山泥、石膏、滑石粉、砂石、木材、某些天然石材等。</p>
+                  <p>是指经过加工、合成等技术手段来控制有毒、有害物质的积聚和缓慢释放、因其毒性轻微、对人类健康不构成危险的装饰材料。如甲醛释放量较低、达到国家标准的大芯板、胶合板、纤维板等，如氧森源火山泥，自身无毒无害，还可以解决其他装修产生的室内空气污染，环保性能优于其他环保壁材。</p>
+                  <p>草墙纸、麻墙纸、纱绸墙布等产品，具有保湿、驱虫、保健等多种功能。防霉墙纸经过化学处理，排除了墙纸在空气潮湿或室内外温差大时出现的发霉、发泡、滋生霉菌等现象，而且表面柔和，透气性好。</p>
+                  <p>生物乳胶漆，除施工简便外还有多种颜色，能给家居带来缤纷色彩。涂刷后会散发阵阵清香，还可以重刷或用清洁剂进行处理，能抑制墙体内的霉菌。这是一种以节约电能、保护环境为目的的照明系统。通过科学的照明设计，利用高效、安全、优质的照明电器产品，创造出一个舒适、经济、有益的照明环境。</p>
+                </div> 
+              </div> 
+              <div class="numbox text-align-right pad10">
+                字数：
+                <span>168</span>/5000
+              </div> 
+            </div> 
+          </div> 
+        </div>
+        <div class="texteditbox comtext" style="display:none;">
+          <fieldset class="layui-elem-field layui-field-title">
+            <legend>相似产品</legend>
+            <div class="layui-field-box textareabody">
+              <h4>北京环保装饰材料批发</h4>
+              <div class="textbody">
+                <p>环保装饰材料是指天然的，本身没有或极少有毒有害的物质、未经污染只进行了简单加工的装饰材料。如火山泥、石膏、滑石粉、砂石、木材、某些天然石材等。</p>
+                <p>是指经过加工、合成等技术手段来控制有毒、有害物质的积聚和缓慢释放、因其毒性轻微、对人类健康不构成危险的装饰材料。如甲醛释放量较低、达到国家标准的大芯板、胶合板、纤维板等，如氧森源火山泥，自身无毒无害，还可以解决其他装修产生的室内空气污染，环保性能优于其他环保壁材。</p>
+                <p>草墙纸、麻墙纸、纱绸墙布等产品，具有保湿、驱虫、保健等多种功能。防霉墙纸经过化学处理，排除了墙纸在空气潮湿或室内外温差大时出现的发霉、发泡、滋生霉菌等现象，而且表面柔和，透气性好。</p>
+                <p>生物乳胶漆，除施工简便外还有多种颜色，能给家居带来缤纷色彩。涂刷后会散发阵阵清香，还可以重刷或用清洁剂进行处理，能抑制墙体内的霉菌。这是一种以节约电能、保护环境为目的的照明系统。通过科学的照明设计，利用高效、安全、优质的照明电器产品，创造出一个舒适、经济、有益的照明环境。</p>
+                <p>环保装饰材料是指天然的，本身没有或极少有毒有害的物质、未经污染只进行了简单加工的装饰材料。如火山泥、石膏、滑石粉、砂石、木材、某些天然石材等。</p>
+                <p>是指经过加工、合成等技术手段来控制有毒、有害物质的积聚和缓慢释放、因其毒性轻微、对人类健康不构成危险的装饰材料。如甲醛释放量较低、达到国家标准的大芯板、胶合板、纤维板等，如氧森源火山泥，自身无毒无害，还可以解决其他装修产生的室内空气污染，环保性能优于其他环保壁材。</p>
+                <p>草墙纸、麻墙纸、纱绸墙布等产品，具有保湿、驱虫、保健等多种功能。防霉墙纸经过化学处理，排除了墙纸在空气潮湿或室内外温差大时出现的发霉、发泡、滋生霉菌等现象，而且表面柔和，透气性好。</p>
+                <p>生物乳胶漆，除施工简便外还有多种颜色，能给家居带来缤纷色彩。涂刷后会散发阵阵清香，还可以重刷或用清洁剂进行处理，能抑制墙体内的霉菌。这是一种以节约电能、保护环境为目的的照明系统。通过科学的照明设计，利用高效、安全、优质的照明电器产品，创造出一个舒适、经济、有益的照明环境。</p>
+                <p>环保装饰材料是指天然的，本身没有或极少有毒有害的物质、未经污染只进行了简单加工的装饰材料。如火山泥、石膏、滑石粉、砂石、木材、某些天然石材等。</p>
+                <p>是指经过加工、合成等技术手段来控制有毒、有害物质的积聚和缓慢释放、因其毒性轻微、对人类健康不构成危险的装饰材料。如甲醛释放量较低、达到国家标准的大芯板、胶合板、纤维板等，如氧森源火山泥，自身无毒无害，还可以解决其他装修产生的室内空气污染，环保性能优于其他环保壁材。</p>
+                <p>草墙纸、麻墙纸、纱绸墙布等产品，具有保湿、驱虫、保健等多种功能。防霉墙纸经过化学处理，排除了墙纸在空气潮湿或室内外温差大时出现的发霉、发泡、滋生霉菌等现象，而且表面柔和，透气性好。</p>
+                <p>生物乳胶漆，除施工简便外还有多种颜色，能给家居带来缤纷色彩。涂刷后会散发阵阵清香，还可以重刷或用清洁剂进行处理，能抑制墙体内的霉菌。这是一种以节约电能、保护环境为目的的照明系统。通过科学的照明设计，利用高效、安全、优质的照明电器产品，创造出一个舒适、经济、有益的照明环境。</p>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+    </div> 
+     <div class="xsubmit clearfix"> 
+      <button class="layui-btn layui-btn-primary" type="button" onclick="window.location='add-content2.html'">上一步</button> 
+      <a class="layui-btn layui-btn-normal comparebtn" href="#" onclick="comparebtn()">提交</a>
+      <button class="layui-btn layui-btn-normal submitbtn" type="button" style="display:none;" onclick="errordiv()">继续提交</button> 
+    </div> 
+ </form>
+  <!--发布内容结束-->
+  <!--发布产品模块结束-->
+  <div class="selection xpop" id="delate" style="display:none;"> 
+    <div class="popbox">
+      <p>确认删除？</p>
+    </div>
+  </div>
+  <!--选择业务弹窗开始--> 
+  <div class="selection xpop" id="selection" style="display:none;"> 
+    <form class="layui-form" action=""> 
+      <div class="layui-form-item selection-se" pane=""> 
+        <div class="xlist layui-input-block clearfix"> 
+          <ul class="yw-list">
+            <li> 
+              <input type="checkbox" name="like1[1]" lay-skin="primary" title="批发" /> 
+              <i class="fa fa-times" onclick="deleteyes()"></i> 
+            </li> 
+            <li> 
+              <input type="checkbox" name="like1[1]" lay-skin="primary" title="零售" /> 
+              <i class="fa fa-times" onclick="deleteyes()"></i> 
+            </li> 
+            <li> 
+              <input type="checkbox" name="like1[1]" lay-skin="primary" title="批发" /> 
+              <i class="fa fa-times" onclick="deleteyes()"></i> 
+            </li> 
+            <li> 
+              <input type="checkbox" name="like1[1]" lay-skin="primary" title="零售" /> 
+              <i class="fa fa-times" onclick="deleteyes()"></i> 
+            </li> 
+            <li> 
+              <input type="checkbox" name="like1[1]" lay-skin="primary" title="批发" /> 
+              <i class="fa fa-times" onclick="deleteyes()"></i> 
+            </li> 
+            <li> 
+              <input type="checkbox" name="like1[1]" lay-skin="primary" title="零售" /> 
+              <i class="fa fa-times" onclick="deleteyes()"></i> 
+            </li> 
+            <li> 
+              <input type="checkbox" name="like1[1]" lay-skin="primary" title="批发" /> 
+              <i class="fa fa-times" onclick="deleteyes()"></i> 
+            </li> 
+            <li> 
+              <input type="checkbox" name="like1[1]" lay-skin="primary" title="零售" /> 
+              <i class="fa fa-times" onclick="deleteyes()"></i> 
+            </li> 
+          </ul>
+        </div> 
+      </div> 
+      <div class="selection-input clearfix"> 
+        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入业务形式" class="layui-input" id="input1" /> 
+        <button class="layui-btn">添加</button> 
+      </div> 
+    </form> 
+  </div> 
+  <!--选择业务弹窗结束--> 
+  <!--选择地区弹窗开始--> 
+    <div class="selection xpop" id="selectionarea" style="display:none;"> 
+      <form class="layui-form" action=""> 
+        <div class="layui-form-item selection-se" pane=""> 
+          <div class="xlist layui-input-block clearfix">
+            <ul class="area-list"> 
+              <li> 
+                <input type="checkbox" name="like1[1]" lay-skin="primary" title="北京" /> 
+                <i class="fa fa-times" onclick="deleteyes()"></i> 
+              </li> 
+              <li> 
+                <input type="checkbox" name="like1[1]" lay-skin="primary" title="上海" /> 
+                <i class="fa fa-times" onclick="deleteyes()"></i> 
+              </li> 
+              <li> 
+                <input type="checkbox" name="like1[1]" lay-skin="primary" title="天津" /> 
+                <i class="fa fa-times" onclick="deleteyes()"></i> 
+              </li> 
+              <li> 
+                <input type="checkbox" name="like1[1]" lay-skin="primary" title="重庆" /> 
+                <i class="fa fa-times" onclick="deleteyes()"></i> 
+              </li> 
+              <li> 
+                <input type="checkbox" name="like1[1]" lay-skin="primary" title="武汉" /> 
+                <i class="fa fa-times" onclick="deleteyes()"></i> 
+              </li> 
+              <li> 
+                <input type="checkbox" name="like1[1]" lay-skin="primary" title="南昌" /> 
+                <i class="fa fa-times" onclick="deleteyes()"></i> 
+              </li> 
+              <li> 
+                <input type="checkbox" name="like1[1]" lay-skin="primary" title="青岛" /> 
+                <i class="fa fa-times" onclick="deleteyes()"></i> 
+              </li> 
+              <li> 
+                <input type="checkbox" name="like1[1]" lay-skin="primary" title="济南" /> 
+                <i class="fa fa-times" onclick="deleteyes()"></i> 
+              </li> 
+            </ul>
+          </div> 
+        </div> 
+        <div class="selection-input clearfix"> 
+          <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入地区" class="layui-input" id="input1" /> 
+          <button class="layui-btn">添加</button> 
+        </div> 
+      </form> 
+    </div> 
+    <!--选择地区弹窗结束-->
+    <script type="text/javascript">
+    layui.use(['form'], function(){
+      var form = layui.form; 
+      var index = layer.load(0, {shade: false});     
+    });
+
+    //删除所在地区、业务形式
+    $(".xlist ul li i").click(function(){
+      $(this).parent(".xlist ul li").hide();
+    });
+
+    //选取弹窗
+    function selectionarea(){
+      layer.open({
+        type: 1,
+        title: '请选择地区',
+        shadeClose: true,
+        shade: 0.8,
+        btn: ['确定', '取消'],
+        area: ['460px', 'auto'],
+        content: $('#selectionarea')
+      });
+    }
+    function selection(){
+      layer.open({
+        type: 1,
+        title: '请选择业务形式',
+        shadeClose: true,
+        shade: 0.8,
+        btn: ['确定', '取消'],
+        area: ['460px', 'auto'],
+        content: $('#selection')
+      });
+    }
+    function errordiv(){
+      layer.open({
+        type: 1,
+        title: '提示信息',
+        shadeClose: true,
+        shade: 0.8,
+        btn: ['确定'],
+        area: ['460px', 'auto'],
+        content: '<div class="popbox red"><p>产品描述与xxxxxxxxx描述的相似度超过60%，请修改描述内容。</p></div>'
+      });
+    }
+    function toxtitle(){
+      $(".xtitlelist").show();
+    }
+    function comparebtn(){
+        $('.xcontent').addClass('wid50'); 
+        $('.comtext,.submitbtn').show();
+        $('.comparebtn,.xtips,.tgkeyw,.sbul,.tgbti').hide();
+    }
+    //确定删除弹窗
+    function deleteyes(){
+      layer.confirm('确定删除？', {
+        btn: ['确定','取消'] //按钮
+      });
+    }
+  </script> 
+</body>
+</html>

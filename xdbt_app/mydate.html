@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- Your app title -->
+<title>我的数据</title>
+<link rel="stylesheet" href="css/framework7.ios.min.css">
+<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+<link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="dbt">
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<div class="views" id="dbt">
+  <div class="view view-main"> 
+    <!-- 头部开始-->
+    <div class="navbar">
+      <div class="navbar-inner"> 
+        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+        <div class="left"><a class="back" onclick="window.location.href='mycenter.html'"><i class="f7-icons">left</i></a></div>
+        <div class="center sliding">我的数据</div>
+      </div>
+    </div>
+    <!-- 头部结束--> 
+    <!-- 主体开始-->
+    <div class="pages navbar-through toolbar-through ">
+      <div data-page="contact" class="page">
+        <div class="page-content dbt-mydate">
+          <div id="main"></div>
+          <ul class="clearfix">
+            <li class="date-li1">
+              <div>
+                <h1>40</h1>
+                <p>商铺开通数量</p>
+              </div>
+            </li>
+            <li class="date-li2">
+              <div>
+                <h1>24</h1>
+                <p>微信秀场数量</p>
+              </div>
+            </li>
+            <li class="date-li3">
+              <div>
+                <h1>12</h1>
+                <p>产品推广数量</p>
+              </div>
+            </li>
+            <li class="date-li4">
+              <div>
+                <h1>48</h1>
+                <p>关键词数量</p>
+              </div>
+            </li>
+            <li class="date-li5">
+              <div>
+                <h1>40</h1>
+                <p>企业新闻数量</p>
+              </div>
+            </li>
+            <li class="date-li6">
+              <div>
+                <h1>24</h1>
+                <p>产品发布数量</p>
+              </div>
+            </li>
+            <li class="date-li7">
+              <div>
+                <h1>12</h1>
+                <p>访客数量</p>
+              </div>
+            </li>
+            <li class="date-li8">
+              <div>
+                <h1>48</h1>
+                <p>浏览量</p>
+              </div>
+            </li>
+          </ul>
+          <div class="date-table">
+            <table width="100%" cellspacing="0" cellpadding="0">
+              <tr class="tit">
+                <td>关键词</td>
+                <td>搜索引擎</td>
+                <td>排名</td>
+              </tr>
+              <tr>
+                <td>挖掘机</td>
+                <td><div class="engine google"></div></td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>挖掘机龙头</td>
+                <td><div class="engine so360"></div></td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>小水钻</td>
+                <td><div class="engine baidu"></div></td>
+                <td>2</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 主体结束--> 
+    <!-- 底部导航开始-->
+    <div class="toolbar tabbar tabbar-labels">
+      <div class="toolbar-inner"> <a href="#" class="tab-link1 open-popup"  data-popup=".popup-about"> <i class="f7-icons">reload_round</i><span class="tabbar-label">协同</span> </a> <a href="#" class="tab-link1"  onclick="window.location.href='service.html'"> <i class="f7-icons f7-icons-q"> data <span class="badge bg-red">5</span> </i> <span class="tabbar-label">推广</span></a> <a href="#" class="tab-link1 tab-link3"  onclick="window.location.href='add.html'"> <i class="f7-icons">add_round_fill</i> <span class="tabbar-label">创建内容</span></a> <a href="#" class="tab-link1 active" onclick="window.location.href='contact.html'"> <i class="f7-icons">phone</i> <span class="tabbar-label">联系</span></a> <a href="#" class="tab-link1" onclick="window.location.href='mycenter.html'"> <i class="f7-icons">person</i><span class="tabbar-label">我的</span> </a> </div>
+    </div>
+    <!-- 底部导航结束--> 
+    <!--协同弹窗开始-->
+    <div class="popup popup-about popup-xt">
+      <div class="content-block">
+        <h1>多维度内容才能更好获客<br/>让你的工作亮点成就营销内容</h1>
+        <div class="xt-content"> <img src="images/ewm_03.jpg">
+          <h4>扫码在其他终端使用<br/>
+            在线：1/3</h4>
+        </div>
+        <p><a href="#" class="close-popup"><i class="f7-icons">close_round</i></a></p>
+      </div>
+    </div>
+    <!--协同弹窗结束--> 
+  </div>
+</div>
+<!-- Path to Framework7 Library JS--> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<!-- Path to your app js--> 
+<script type="text/javascript" src="js/my-app.js"></script> 
+<script src="js/echarts.min.js"></script> 
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+
+
+
+option = {
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        x: 'center',
+    },
+    radar: [
+        
+        {
+            indicator: [
+                 {text: '关键词数量', max: 100,color:'#000',},
+                {text: '产品发布', max: 100,color:'#000',},
+                {text: '产品推广', max: 100,color:'#000',},
+                {text: '访客数量', max: 100,color:'#000',},
+                {text: '浏览量', max: 100,color:'#000',},
+				{text: '企业商铺', max: 100,color:'#000',},
+				{text: '微信秀场', max: 100,color:'#000',},
+				{text: '企业新闻', max: 100,color:'#000',},
+            ],
+            radius: 80,
+            center: ['50%','60%'],
+			
+        },
+    ],
+    series: [
+        {
+            type: 'radar',
+			background:'blue',
+             tooltip: {
+                trigger: 'item'
+            },
+           itemStyle: {normal: {areaStyle: {color: 'rgba(44,135,229,0.3)'},borderColor:'#000'}},
+            lineStyle: {normal: {color:'#005AAF',width:2}},//折线样式
+
+            data: [
+                {
+                    value: [100,73,85,40,60,80,50,100],
+                }
+            ]
+        },
+
+        
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

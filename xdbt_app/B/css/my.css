@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* 全局设置 */
+*{ margin:0; padding:0}
+body { font-size: 14px; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; background:#fff;color: #333; line-height: 21px;}
+h1,h2,h3,h4,h5,h6       {font-weight:700;}
+input,select,textarea 	{font-size:12px;}
+ul,li {list-style:none;}
+img {vertical-align: top;}
+input{ font-family:"微软雅黑";}
+.wrapper{background:url(../images/bg.png) 0 0;max-width: 600px;margin: 0 auto;position: relative; font-family:"微软雅黑"}
+.topl {background: url(../images/topl.png) 0 0 no-repeat;width:160px;height: 173px;top:0;left: 0;position: absolute;}
+.topr {background: url(../images/topr.png) right top no-repeat;width:160px;height: 173px;top:0;right: 0;position: absolute;}
+header{padding:70px 25px 10px;text-align: center;}
+header h1 {line-height:60px;color: #ff0;font-size: 36px;font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;}
+header p {color: #fff;font-size: 16px;}
+header a{ position:fixed; top:15px; right:5px; border-radius:3px; background-color:#4F140D; line-height:24px; padding:0 10px; border:1px solid #3C0A06; display:block; text-decoration:none; font-size:12px; color:#fff; z-index:111; }
+section{padding:15px 30px;color: #f5f5f5;}
+a.abtn {height:38px;line-height:38px;margin:10px 0;color:#fff;display:inline-block;}
+section.imgbox img {max-width: 100%;}
+section h2 {background:#4f140d;height:48px;line-height:48px;font-size: 18px;}
+section h2 span {background:url(../images/bgl.png) 100% 50% no-repeat;height:48px;line-height:48px;padding-left:25px;padding-right: 60px;display: inline-block;}
+section p {padding-bottom:10px;}
+section#s3 {padding: 0;}
+.formbox {background-color:#42110b;padding:30px;}
+section .formbox h2 {background:none;height:24px;line-height:24px;border-left:5px solid #fff;padding-left:10px;margin-bottom:15px;}
+.txtbox {background: #842216;}
+.txtbody {padding: 25px;}
+.input-inline {display: inline-block;margin:10px 0;margin-right: 10px;}
+.input {background-color:#68413c;width:96%;padding:0 2%;}
+.btn {background-color:#a52a1c;width:100%;color: #fff;font-size: 16px;cursor: pointer;}
+.input, .btn {height: 48px;margin:5px 0;border:none;color: #eee;}
+@media(max-width:560px){.topl ,.topr{ background-size:85%;}header h1{ font-size:34px;}}
+@media(max-width:420px){.topl ,.topr{ background-size:80%;}header h1{ font-size:30px;}}
+@media(max-width:380px){
+
+header {padding: 80px 25px 10px;text-align: center;}
+header h1{ font-size:28px;}
+}
+@media(max-width:320px){header h1{ font-size:25px;}}

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>关键词管理</title>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div>
+<!--点击头像出现菜单开始-->
+<div class="topnav_slide" style="display:none;">
+  <p><a href="account.html">账户管理<i class="fa fa-cog" aria-hidden="true"></i></a></p>
+  <p><a href="#">退出登录<i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+</div>
+<!--点击头像出现菜单结束--> 
+<!--顶部开始-->
+<div class="top clearfix">
+  <h2><img src="images/logo.png" /></h2>
+  <span>当前位置：<a href="index2.html"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;&gt;&nbsp;<a href="keyword.html">关键词管理</a>&nbsp;&gt;&nbsp;搪瓷反应釜</span>
+  <div class="clearfix">
+    <p> 
+      <!--经济版开始--> <em class="v1"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>经济版</em> 
+      <!--标准版开始--> <em class="v2" style="display: none;"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>标准版</em> 
+      <!--高级版开始--> <em class="v3" style="display: none;"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>高级版</em> 徐水县星涛机械厂 </p>
+    <img src="images/tx.jpg" class="i_tx" /> </div>
+</div>
+<!--顶部结束-->
+<div id="main">
+<!--左侧导航开始-->
+<div class="nav layui-collapse" lay-accordion="">
+  <div class="gwtg layui-colla-item">
+    <div class="tgtitle layui-colla-title">官网SEO</div>
+    <ul class="layui-colla-content layui-show">
+      <li><a href="index2.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>推广效果</span><strong>推广效果</strong></a></li>
+      <li class="active"><a href="keyword.html"><i class="fa fa-crosshairs" aria-hidden="true"></i><span>关键词管理</span><strong>关键词管理</strong></a></li>
+      <li><a href="charging.html"><i class="fa fa-list-ul"></i><span>扣费明细</span><strong>扣费明细</strong></a></li>
+      <li><a href="recharge.html"><i class="fa fa-money"></i><span>充值记录</span><strong>充值记录</strong></a></li>
+    </ul>
+  </div>
+  <div class="qwtg layui-colla-item">
+    <div class="tgtitle layui-colla-title"><a href="index.html">汇&nbsp;&nbsp;推</a></div>
+    <ul class="layui-colla-content">
+      <li><a href="index.html"><i class="fa fa-tachometer" aria-hidden="true"></i><span>中控台</span><strong>中控台</strong></a></li>
+      <li><a href="content.html"><i class="fa fa-cubes" aria-hidden="true"></i><span>内容中心</span></a><strong>内容中心</strong></li>
+      <li><a href="#"><i class="fa fa-paper-plane-o"></i><span>渠道中心</span></a><strong>渠道中心</strong></li>
+      <li class="navsm"><a href="website.html"><i class="fa fa-globe"></i><span>企业官网</span></a><strong>企业官网</strong></li>
+      <li class="navsm"><a href="substation.html"><i class="fa fa-sitemap"></i><span>企业分站</span></a><strong>企业分站</strong></li>
+      <li class="navsm"><a href="copycloud.html"><i class="fa fa-cloud"></i><span>企业云站</span></a><strong>企业云站</strong></li>
+      <li class="navsm"><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span>商贸联盟</span></a><strong>商贸联盟</strong></li>
+      <li class="navsm"><a href="wechat.html"><i class="fa fa-weixin" aria-hidden="true"></i><span>微信工具</span></a><strong>微信工具</strong></li>
+      <li class="navsm"><a href="news.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>新闻推广</span></a><strong>新闻推广</strong></li>
+      <li class="navsm"><a href="society.html"><i class="fa fa-weibo" aria-hidden="true"></i><span>社会化媒体</span></a><strong>社会化媒体</strong></li>
+      <li class="navsm"><a href="baike.html"><i class="fa fa-list" aria-hidden="true"></i><span>企业百科</span></a><strong>企业百科</strong></li>
+      <li class="navsm"><a href="answer.html"><i class="fa fa-comments-o" aria-hidden="true"></i><span>企业问答</span></a><strong>企业问答</strong></li>
+      <li class="navsm"><a href="starmedia.html"><i class="fa fa-star" aria-hidden="true"></i><span>星媒体</span></a><strong>星媒体</strong></li>
+      <li class="navsm"><a href="dsp.html"><i class="fa fa-bullseye" aria-hidden="true"></i><span>云广告</span></a><strong>云广告</strong></li>
+      <li><a href="data.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>数据中心</span></a><strong>数据中心</strong></li>
+      <li><a href="service.html"><i class="fa fa-heart" aria-hidden="true"></i><span>服务中心</span></a><strong>服务中心</strong></li>
+    </ul>
+  </div>
+  <div class="leftkf"> 专属服务顾问电话 <span>4006605555-6118</span> <br />
+    服务顾问企业QQ <span>3002745607</span> </div>
+  <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+  <h2>专属服务顾问电话：1501000000</h2>
+</div>
+<!--左侧导航结束--> 
+<!--主体内容开始-->
+<div class="content">
+  <div class="cntnt">
+    <div class="box">
+      <div class="container keywd pad20">
+        <div class="keywd_top">
+          <h2><a href="keyword.html"><i class="fa fa-angle-left" aria-hidden="true"></i></a>搪瓷反应釜<span class="statu">当前状态：<i class="red">已停止（2020-05-18）</i><i class="green">推广中</i></span></h2>
+          <p>累计达标时间：<span class="blue">7天</span>累计扣费：<span class="red">120元</span>页面地址：<span class="blue"><a href="#" target="_blank">http://www.abc.com/wresjoo/sfsofsdfo.html</a></span></p>
+        </div>
+        <div class="layui-tab keywd-date">
+          <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+              <div class="keywd_table">
+                <form class="layui-form" action="">
+                  <div class="layui-input-inline keywd-form">
+                    <select name="quiz1">
+                      <option value="">请选择时间</option>
+                      <option value="2019年9月" selected="">2019年9月</option>
+                      <option value="2019年8月">2019年8月</option>
+                      <option value="2019年7月">2019年7月</option>
+                      <option value="2019年6月">2019年6月</option>
+                      <option value="2019年5月">2019年5月</option>
+                      <option value="2019年4月">2019年4月</option>
+                      <option value="2019年3月">2019年3月</option>
+                      <option value="2019年2月">2019年2月</option>
+                      <option value="2019年1月">2019年1月</option>
+                    </select>
+                  </div>
+                </form>
+                <table class="layui-table normaltab">
+                  <colgroup>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  </colgroup>
+                  <tbody>
+                    <tr class="theader">
+                      <td></td>
+                      <td>百度</td>
+                      <td>搜狗</td>
+                      <td>360</td>
+                      <td>百度移动</td>
+                      <td>搜狗移动</td>
+                      <td>360移动</td>
+                    </tr>
+                    <tr>
+                      <td>1日</td>
+                      <td><span onClick="look()">16</span></td>
+                      <td><span onClick="look()">24</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">8</span></td>
+                      <td><span onClick="look()">18</span></td>
+                      <td><span onClick="look()">3</span></td>
+                    </tr>
+                    <tr class="localkey">
+                      <td>2日<img src="images/local.png" title="本地跑词"><i class="fa fa-eye" onclick="showkey()" title="显示服务器跑词结果"></i><i class="fa fa-eye-slash" onclick="hidekey()" title="隐藏服务器跑词结果"></i></td>
+                      <td><span><em id="s2">本地：</em>-</span><span class="osign" onClick="look()"><em>服务器：</em>28</span></td>
+                      <td><span onClick="look()"><em id="s2">本地：</em>22</span><span class="osign" onClick="look()"><em>服务器：</em>20</span></td>
+                      <td><span><em id="s2">本地：</em>-</span><span class="osign" onClick="look()"><em>服务器：</em>28</span></td>
+                      <td><span><em id="s2">本地：</em>-</span><span class="osign" onClick="look()"><em>服务器：</em>28</span></td>
+                      <td><span onClick="look()"><em id="s2">本地：</em>22</span><span class="osign" onClick="look()"><em>服务器：</em>20</span></td>
+                      <td><span><em id="s2">本地：</em>-</span><span class="osign" onClick="look()"><em>服务器：</em>28</span></td>
+                    </tr>
+                    <tr>
+                      <td>3日</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>4日</td>
+                      <td><span onClick="look()">16</span></td>
+                      <td><span onClick="look()">24</span></td>
+                      <td><span onClick="look()">8</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">18</span></td>
+                      <td><span onClick="look()">3</span></td>
+                    </tr>
+                    <tr>
+                      <td>5日</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>6日</td>
+                      <td><span onClick="look()">16</span></td>
+                      <td><span onClick="look()">24</span></td>
+                      <td><span onClick="look()">18</span></td>
+                      <td><span onClick="look()">8</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">3</span></td>
+                    </tr>
+                    <tr>
+                      <td class="localkey">7日</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>8日</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                    </tr>
+                    <tr>
+                      <td>9日</td>
+                      <td><span onClick="look()">16</span></td>
+                      <td><span onClick="look()">24</span></td>
+                      <td><span onClick="look()">8</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">18</span></td>
+                      <td><span onClick="look()">3</span></td>
+                    </tr>
+                    <tr>
+                      <td>10日</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>11日</td>
+                      <td><span onClick="look()">16</span></td>
+                      <td><span onClick="look()">24</span></td>
+                      <td><span onClick="look()">8</span></td>
+                      <td><span onClick="look()">18</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">3</span></td>
+                    </tr>
+                    <tr>
+                      <td class="localkey">12日</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>13日</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>14日</td>
+                      <td><span onClick="look()">16</span></td>
+                      <td><span onClick="look()">24</span></td>
+                      <td><span onClick="look()">8</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">18</span></td>
+                      <td><span onClick="look()">3</span></td>
+                    </tr>
+                    <tr>
+                      <td>15日</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>16日</td>
+                      <td><span onClick="look()">16</span></td>
+                      <td><span onClick="look()">24</span></td>
+                      <td><span onClick="look()">8</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">18</span></td>
+                      <td><span onClick="look()">3</span></td>
+                    </tr>
+                    <tr>
+                      <td class="localkey">17日</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>18日</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                    </tr>
+                    <tr>
+                      <td>19日</td>
+                      <td><span onClick="look()">16</span></td>
+                      <td><span onClick="look()">24</span></td>
+                      <td><span onClick="look()">8</span></td>
+                      <td><span onClick="look()">3</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">18</span></td>
+                    </tr>
+                    <tr>
+                      <td>20日</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>21日</td>
+                      <td><span onClick="look()">16</span></td>
+                      <td><span onClick="look()">24</span></td>
+                      <td><span onClick="look()">8</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">18</span></td>
+                      <td><span onClick="look()">3</span></td>
+                    </tr>
+                    <tr>
+                      <td>22日</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>23日</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                    </tr>
+                    <tr>
+                      <td>24日</td>
+                      <td><span onClick="look()">16</span></td>
+                      <td><span onClick="look()">24</span></td>
+                      <td><span onClick="look()">8</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">18</span></td>
+                      <td><span onClick="look()">3</span></td>
+                    </tr>
+                    <tr>
+                      <td>25日</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>26日</td>
+                      <td><span onClick="look()">16</span></td>
+                      <td><span onClick="look()">24</span></td>
+                      <td><span onClick="look()">8</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">18</span></td>
+                      <td><span onClick="look()">3</span></td>
+                    </tr>
+                    <tr>
+                      <td>27日</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>28日</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                    </tr>
+                    <tr>
+                      <td>29日</td>
+                      <td><span onClick="look()">16</span></td>
+                      <td><span onClick="look()">24</span></td>
+                      <td><span onClick="look()">8</span></td>
+                      <td>-</td>
+                      <td><span onClick="look()">18</span></td>
+                      <td><span onClick="look()">3</span></td>
+                    </tr>
+                    <tr>
+                      <td>30日</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>31日</td>
+                      <td>-</td>
+                      <td><span onClick="look()">22</span></td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td><span onClick="look()">12</span></td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div> </div>
+    </div>
+    <!--主体内容结束--> 
+  </div>
+  
+  <!--日历查看弹窗-->
+  <div id="look" class="look" style="display:none;"> <img src="images/snapshot/1.jpg"> </div>
+  <!--日历查看弹窗--> 
+</div>
+<script type="text/javascript">
+
+//左侧导航js  
+function showkey(){ 
+    $("#s2,.osign,.fa-eye-slash").show();
+    $(".fa-eye").hide();
+};
+function hidekey(){ 
+    $("#s2,.osign,.fa-eye-slash").hide();
+    $(".fa-eye").show();
+};
+
+
+layui.use(['layer','element'], function(){
+  		var layer = layui.layer
+		,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模
+  	});  
+
+//查看弹窗
+function look(){
+  var index = layer.open({
+  type: 1,
+  content: $('#look'),
+  area: ['900px', '90%'],
+  title:'百度快照'
+});
+}
+
+
+layui.use(['form','laydate'], function() {
+
+                var form = layui.form
+                , laydate = layui.laydate;
+
+                //嵌套在指定容器中
+                laydate.render({
+                    elem: '#date'
+                    ,mark: {
+                        '2019-09-15': '',
+                        '2019-09-18': '',
+                        '2019-09-19': '',
+						'2019-09-20': '',
+                        '2019-09-21': '',
+
+                    }
+                    ,position: 'static'
+                    ,showBottom:false
+                    ,change: function(value, date){ //监听日期被切换
+                        console.log(date);
+                        look();
+                    }
+                });
+				laydate.render({
+                    elem: '#date2'
+                    ,mark: {
+                        '2019-09-10': '',
+                        '2019-09-12': '',
+                        '2019-09-17': '',
+						'2019-09-28': '',
+                        '2019-09-29': '',
+
+                    }
+                    ,position: 'static'
+                    ,showBottom:false
+                    ,change: function(value, date){ //监听日期被切换
+                        console.log(date);
+                        look();
+                    }
+                });
+				laydate.render({
+                    elem: '#date3'
+                    ,mark: {
+                        '2019-09-02': '',
+                        '2019-09-18': '',
+                        '2019-09-19': '',
+						'2019-09-27': '',
+                        '2019-09-29': '',
+
+                    }
+                    ,position: 'static'
+                    ,showBottom:false
+                    ,change: function(value, date){ //监听日期被切换
+                        console.log(date);
+                        look();
+                    }
+                });
+				laydate.render({
+                    elem: '#date4'
+                    ,mark: {
+                        '2019-09-02': '',
+                        '2019-09-18': '',
+                        '2019-09-19': '',
+						'2019-09-27': '',
+                        '2019-09-29': '',
+
+                    }
+                    ,position: 'static'
+                    ,showBottom:false
+                    ,change: function(value, date){ //监听日期被切换
+                        console.log(date);
+                        look();
+                    }
+                });
+				laydate.render({
+                    elem: '#date5'
+                    ,mark: {
+                        '2019-09-02': '',
+                        '2019-09-18': '',
+                        '2019-09-19': '',
+						'2019-09-27': '',
+                        '2019-09-29': '',
+
+                    }
+                    ,position: 'static'
+                    ,showBottom:false
+                    ,change: function(value, date){ //监听日期被切换
+                        console.log(date);
+                        look();
+                    }
+                });
+				laydate.render({
+                    elem: '#date6'
+                    ,mark: {
+                        '2019-09-02': '',
+                        '2019-09-18': '',
+                        '2019-09-19': '',
+						'2019-09-27': '',
+                        '2019-09-29': '',
+
+                    }
+                    ,position: 'static'
+                    ,showBottom:false
+                    ,change: function(value, date){ //监听日期被切换
+                        console.log(date);
+                        look();
+                    }
+                });
+            });
+
+</script> 
+
+<!--统计--> 
+<script type="text/javascript" src="js/gw-echarts.min.js"></script> 
+<script type="text/javascript">
+var dom = document.getElementById("data");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+option = {
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['百度','搜狗','360','百度移动','搜狗移动','360移动']
+    },
+    xAxis: {
+        type: 'category',
+        splitLine:{
+            show:true
+        },
+        data: ['01日', '02日', '03日', '04日', '05日', '06日', '07日', '08日', '09日', '10日','11日', '12日', '13日', '14日', '15日', '16日', '17日', '18日', '19日', '20日','21日', '22日', '23日', '24日', '25日', '26日', '27日', '28日', '29日', '30日']
+    },
+    yAxis: {
+        type: 'value',
+		    min: 1,
+        max: 30,
+        inverse:true
+    },
+    series: [
+        {
+        name:'百度',
+        data: [21, "", 17, 15, "", 8, 10, 13, 8, "",4, 2, 1, 5, "", 2, 1, 1, 1, 1, 2, "", 2, 3, 2, 1, 1, 1, 1],
+        type: 'line',
+        color:'#3385ff',
+        symbolSize: '10',
+        lineStyle:{
+          normal:{
+            width:2
+          }
+        },
+        smooth: true
+        },
+        {
+        name:'搜狗',
+        data: [28, 25, 22, 18, 17, 18, 15, 13, 12, 17,14, 12, 11, 10, 15, 12, 11, 8, 6, 10, 12, 11, 10, 9, 8, 11, 8, 6, 9],
+        type: 'line',
+        color:'#fd6853',
+        symbolSize: '10',
+        lineStyle:{
+          normal:{
+            width:2
+          }
+        },
+        smooth: true
+        },
+        {
+        name:'360',
+        data: [18, 20, 15, 20, 12, 14, 11, 13, 15, 16,14, 12, 11, 15, 13,12, 11, 11, 11, 20, 25, 21, 22, 23, 12, 11, 11, 15, 10],
+        type: 'line',
+        color:'#19b955',
+        symbolSize: '10',
+        lineStyle:{
+          normal:{
+            width:2
+          }
+        },
+        smooth: true
+        },
+		{
+        name:'百度移动',
+        data: [21, "", 17, 15, "", 8, 10, 13, 8, "",4, 2, 1, 5, "", 2, 1, 1, 1, 1, 2, "", 2, 3, 2, 1, 1, 1, 1],
+        type: 'line',
+        color:'#91c7ae',
+        symbolSize: '10',
+        lineStyle:{
+          normal:{
+            width:2
+          }
+        },
+        smooth: true
+        },
+        {
+        name:'搜狗移动',
+        data: [ 14, 8, 10, 13, 8, "",4, 2, 1, 5,18, 22, 20, 14, 8, 10, 13, 8, "",4, 2, 1, 5, "", 2, 1,18, 22, 20],
+        type: 'line',
+        color:'#bda29a',
+        symbolSize: '10',
+        lineStyle:{
+          normal:{
+            width:2
+          }
+        },
+        smooth: true
+        },
+        {
+        name:'360移动',
+        data: [ 16,14, 12, 11, 15, 13,12, 11, 11, 11, 20, 25, 21, 22, 23, 12, 11, 11, 15, 10,18, 20, 15, 20, 12, 14, 11, 13, 15],
+        type: 'line',
+        color:'#c23531',
+        symbolSize: '10',
+        lineStyle:{
+          normal:{
+            width:2
+          }
+        },
+        smooth: true
+        }
+    ]
+};
+;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+</body>
+</html>

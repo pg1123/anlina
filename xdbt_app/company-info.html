@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- Your app title -->
+<title>企业资料</title>
+<link rel="stylesheet" href="css/framework7.ios.min.css">
+<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+<link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="dbt">
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<div class="views" id="dbt">
+<div class="view view-main"> 
+  <!-- 头部开始-->
+  <div class="navbar">
+    <div class="navbar-inner"> 
+      <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+      <div class="left"><a class="back" onclick="window.location.href='mycenter.html'"><i class="f7-icons">left</i></a></div>
+      <div class="center sliding">企业资料</div>
+    </div>
+  </div>
+  <!-- 头部结束--> 
+  <!-- 主体开始-->
+  <div class="pages navbar-through toolbar-through">
+    <div data-page="index" class="page">
+      <div class="page-content has-page-title company-info ">
+        <form id="my-form" class="list-block">
+          <div class="buttons-row"> <a href="#"  onclick="window.location.href='company-info.html'" class="active button">内贸</a> <a href="#" class="button" onclick="window.location.href='company-info-en.html'">外贸</a> </div>
+          <div class="content-block">
+            <div class="company-info-top">
+              <ul class="dbt-add-content">
+                <li>
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-name"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title label"><span>*</span>企业名称</div>
+                      <div class="item-input">
+                        <input type="text" placeholder="不多于40个汉字">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-name"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title label"><span>*</span>法人代表</div>
+                      <div class="item-input">
+                        <input type="text" placeholder="不多于6个汉字">
+                    </div>
+                  </div>
+                </li>
+                <li class="select">
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label"><span>*</span>行业选择</div>
+                      <div class="item-input">
+                        <input type="text" placeholder="请选择" readonly id="picker-describe">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="align-top">
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title label"><span>*</span>企业简介</div>
+                      <div class="item-input item-textarea">
+                        <textarea placeholder="不多于400个汉字"></textarea>
+                        <i class="f7-icons notification-default">mic</i> </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-name"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title label"><span>*</span>营业执照</div>
+                      <div class="item-input">
+                        <input type="text" placeholder="请填写">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="dbt-add-tage dbt-add-pic dbt-add-video">
+              <h3><span class="span1">*</span>上传营业执照图片<span>（图片不得大于10M，jpg格式）</span></h3>
+              <div class="list-block">
+                <ul class="clearfix">
+                  <li class="swipeout">
+                    <div class="swipeout-content item-content">
+                      <div class="item-media"><img src="images/product_03.jpg"></div>
+                      <a href="#" class="swipeout-delete"><i class="f7-icons">close</i></a> </div>
+                  </li>
+                  <span>
+                  <div class="a-upload"><i class="f7-icons">add</i>
+                    <input type="file" accept="video/*;capture=camcorder">
+                  </div>
+                  </span>
+                </ul>
+              </div>
+            </div>
+            <div class="dbt-add-tage dbt-add-pic dbt-add-video">
+              <h3>上传企业logo<span>（图片不得大于10M，jpg格式）</span></h3>
+              <div class="list-block">
+                <ul class="clearfix">
+                  <li class="swipeout">
+                    <div class="swipeout-content item-content">
+                      <div class="item-media"><img src="images/product_03.jpg"></div>
+                      <a href="#" class="swipeout-delete"><i class="f7-icons">close</i></a> </div>
+                  </li>
+                  <span>
+                  <div class="a-upload"><i class="f7-icons">add</i>
+                    <input type="file" accept="video/*;capture=camcorder">
+                  </div>
+                  </span>
+                </ul>
+              </div>
+            </div>
+            <div class="tj"><a  href="#" onclick="window.location.href='company-info2.html'"  class="button button-big button-fill">下一步</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- 主体结束--> 
+  
+</div>
+<!-- Path to Framework7 Library JS--> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<!-- Path to your app js--> 
+<script type="text/javascript" src="js/my-app.js"></script>
+<script>
+var myApp = new Framework7(); 
+var mainView = myApp.addView('.view-main');
+ 
+var $$ = Dom7;
+ 
+$$('.notification-default').on('click', function () {
+    myApp.addNotification({
+        title: '友情提醒',
+        message: '请打开手机输入法语音输入'
+    });
+});
+</script>
+</body>
+</html>

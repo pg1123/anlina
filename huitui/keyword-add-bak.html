@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>关键词管理</title>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div>
+<!--点击头像出现菜单开始-->
+<div class="topnav_slide" style="display:none;">
+  <p><a href="account.html">账户管理<i class="fa fa-cog" aria-hidden="true"></i></a></p>
+  <p><a href="#">退出登录<i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+</div>
+<!--点击头像出现菜单结束--> 
+<!--顶部开始-->
+<div class="top clearfix">
+  <h2><img src="images/logo.png" /></h2>
+  <span>当前位置：<a href="index2.html"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;&gt;&nbsp;<a href="keyword.html">关键词管理</a>&nbsp;&gt;&nbsp;添加关键词</span>
+  <div class="clearfix">
+    <p> 
+      <!--经济版开始--> <em class="v1"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>经济版</em> 
+      <!--标准版开始--> <em class="v2" style="display: none;"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>标准版</em> 
+      <!--高级版开始--> <em class="v3" style="display: none;"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>高级版</em> 徐水县星涛机械厂 </p>
+    <img src="images/tx.jpg" class="i_tx" /> </div>
+</div>
+<!--顶部结束-->
+<div id="main">
+<!--左侧导航开始-->
+<div class="nav layui-collapse" lay-accordion="">
+  <div class="gwtg layui-colla-item">
+    <div class="tgtitle layui-colla-title">官网SEO</div>
+    <ul class="layui-colla-content layui-show">
+      <li><a href="index2.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>推广效果</span><strong>推广效果</strong></a></li>
+      <li class="active"><a href="keyword.html"><i class="fa fa-crosshairs" aria-hidden="true"></i><span>关键词管理</span><strong>关键词管理</strong></a></li>
+      <li><a href="charging.html"><i class="fa fa-list-ul"></i><span>扣费明细</span><strong>扣费明细</strong></a></li>
+      <li><a href="recharge.html"><i class="fa fa-money"></i><span>充值记录</span><strong>充值记录</strong></a></li>
+    </ul>
+  </div>
+  <div class="qwtg layui-colla-item">
+    <div class="tgtitle layui-colla-title"><a href="index.html">汇&nbsp;&nbsp;推</a></div>
+    <ul class="layui-colla-content">
+      <li><a href="index.html"><i class="fa fa-tachometer" aria-hidden="true"></i><span>中控台</span><strong>中控台</strong></a></li>
+      <li><a href="content.html"><i class="fa fa-cubes" aria-hidden="true"></i><span>内容中心</span></a><strong>内容中心</strong></li>
+      <li><a href="#"><i class="fa fa-paper-plane-o"></i><span>渠道中心</span></a><strong>渠道中心</strong></li>
+      <li class="navsm"><a href="website.html"><i class="fa fa-globe"></i><span>企业官网</span></a><strong>企业官网</strong></li>
+      <li class="navsm"><a href="substation.html"><i class="fa fa-sitemap"></i><span>企业分站</span></a><strong>企业分站</strong></li>
+      <li class="navsm"><a href="copycloud.html"><i class="fa fa-cloud"></i><span>企业云站</span></a><strong>企业云站</strong></li>
+      <li class="navsm"><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span>商贸联盟</span></a><strong>商贸联盟</strong></li>
+      <li class="navsm"><a href="wechat.html"><i class="fa fa-weixin" aria-hidden="true"></i><span>微信工具</span></a><strong>微信工具</strong></li>
+      <li class="navsm"><a href="news.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>新闻推广</span></a><strong>新闻推广</strong></li>
+      <li class="navsm"><a href="society.html"><i class="fa fa-weibo" aria-hidden="true"></i><span>社会化媒体</span></a><strong>社会化媒体</strong></li>
+      <li class="navsm"><a href="baike.html"><i class="fa fa-list" aria-hidden="true"></i><span>企业百科</span></a><strong>企业百科</strong></li>
+      <li class="navsm"><a href="answer.html"><i class="fa fa-comments-o" aria-hidden="true"></i><span>企业问答</span></a><strong>企业问答</strong></li>
+      <li class="navsm"><a href="starmedia.html"><i class="fa fa-star" aria-hidden="true"></i><span>星媒体</span></a><strong>星媒体</strong></li>
+      <li class="navsm"><a href="dsp.html"><i class="fa fa-bullseye" aria-hidden="true"></i><span>云广告</span></a><strong>云广告</strong></li>
+      <li><a href="data.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>数据中心</span></a><strong>数据中心</strong></li>
+      <li><a href="service.html"><i class="fa fa-heart" aria-hidden="true"></i><span>服务中心</span></a><strong>服务中心</strong></li>
+    </ul>
+  </div>
+  <div class="leftkf"> 专属服务顾问电话 <span>4006605555-6118</span> <br />
+    服务顾问企业QQ <span>3002745607</span> </div>
+  <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+  <h2>专属服务顾问电话：1501000000</h2>
+</div>
+<!--左侧导航结束--> 
+<!--主体内容开始-->
+<div class="content">
+  <div class="cntnt">
+    <div class="box">
+      <div class="snav">
+        <ul class=" clearfix">
+          <li><a href="keyword.html">关键词管理</a></li>
+          <li class="sactive"><a href="keyword-add.html"><i class="fa fa-plus" aria-hidden="true"></i>添加关键词</a></li>
+        </ul>
+      </div>
+      <form class="layui-form" action="keyword-ing.html">
+        <div class="keyadd">
+          <div class="keycxbox pad20">
+            <div class="keyaddtab">
+              <p class="keytit">请选择需要推广的搜索引擎</p>
+              <div class="layui-form-item">
+                <div class="layui-input-inline">
+                  <input type="checkbox" name="" title="百度" checked>
+                  <input type="checkbox" name="" title="搜狗">
+                  <input type="checkbox" name="" title="360">
+                </div>
+              </div>
+              <div class="keysearch clearfix">
+                <input type="text" name="title" placeholder="请输入要推广的商品名称" class="layui-input left">
+                <button type="button" class="layui-btn btn_blue left" onclick="cxkey()">查询</button>
+              </div>
+              <p><i class="fa fa-info-circle"></i> 系统会根据输入的商品名称自动推荐合适针对企业官网进行优化的关键词</p>
+            </div>
+            <div class="keyprice right">
+              <table class="layui-table normaltab">
+                <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>第一页</th>
+                    <th>第二页</th>
+                    <th>第三页</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>百度</td>
+                    <td><span>￥8</span>/个</td>
+                    <td><span>￥4</span>/个</td>
+                    <td><span>￥2</span>/个</td>
+                  </tr>
+                  <tr>
+                    <td>搜狗</td>
+                    <td><span>￥4</span>/个</td>
+                    <td><span>￥3</span>/个</td>
+                    <td><span>￥1</span>/个</td>
+                  </tr>
+                  <tr>
+                    <td>360</td>
+                    <td><span>￥5</span>/个</td>
+                    <td><span>￥2.5</span>/个</td>
+                    <td><span>￥1</span>/个</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p><i class="fa fa-info-circle"></i> 关键词扣费参考</p>
+            </div>
+          </div>
+          <div class="keyresult pad20" style="display:none;">
+            <p class="keytit">目前汇推能够针对以下关键词进行推广优化，您需要选择至少15个关键词</p>
+            <table class="layui-table normaltab">
+              <colgroup>
+              <col width="60" />
+              <col />
+              <col width="200" />
+              <col width="120" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>序号</th>
+                  <th>关键词</th>
+                  <th>推广热度</th>
+                  <th>选择</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>14</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="40%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>7</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="20%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>24</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="50%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>6</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="20%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>40</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="90%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>14</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="40%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>7</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="20%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>24</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="50%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>6</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="20%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>40</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="90%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>14</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="40%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>7</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="20%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>24</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="50%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>6</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="20%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>北京机场清洁用鼓风机哪家强北京机场</td>
+                  <td><span>40</span>
+                    <div class="layui-progress">
+                      <div class="layui-progress-bar" lay-percent="90%"></div>
+                    </div></td>
+                  <td><input type="checkbox" name="" lay-skin="primary" ></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="layui-form-item submin-cancle">
+              <label class="layui-form-label">&nbsp;</label>
+              <div class="layui-input-block">
+                <button class="layui-btn btn_blue" lay-submit="" lay-filter="demo1">添加关键词</button>
+                <button type="reset" class="layui-btn layui-btn-primary">取消</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div> </div>
+    </div>
+    <!--主体内容结束--> 
+  </div>
+  
+  <!--日历查看弹窗-->
+  <div id="look" class="look" style="display:none;"> <img src="images/pic.jpg"> </div>
+  <!--日历查看弹窗--> 
+</div>
+<script type="text/javascript">
+
+
+function cxkey(){
+  $('.keyresult').show()
+}
+
+layui.use(['form', 'layedit', 'laydate','element'], function(){
+  var form = layui.form
+  ,layer = layui.layer
+  ,layedit = layui.layedit
+  ,laydate = layui.laydate
+  ,element = layui.element;
+	}) 
+
+
+</script> 
+
+<!--统计--> 
+<script type="text/javascript" src="js/echarts.min.js"></script> 
+<script type="text/javascript">
+var dom = document.getElementById("data");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+option = {
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['百度','搜狗','360']
+    },
+    xAxis: {
+        type: 'category',
+        data: ['01日', '02日', '03日', '04日', '05日', '06日', '07日', '08日', '09日', '10日','11日', '12日', '13日', '14日', '15日', '16日', '17日', '18日', '19日', '20日','21日', '22日', '23日', '24日', '25日', '26日', '27日', '28日', '29日', '30日']
+    },
+    yAxis: {
+        type: 'value',
+        inverse:true
+    },
+    series: [
+        {
+        name:'百度',
+        data: [21, 23, 17, 15, 13, 8, 10, 13, 8, 6,4, 2, 1, 5, 3, 2, 1, 1, 1, 1, 2, 1, 2, 3, 2, 1, 1, 1, 1],
+        type: 'line',
+        color:'#3385ff',
+        symbolSize: '8',
+        lineStyle:{
+          normal:{
+            width:3
+          }
+        },
+        smooth: true
+        },
+        {
+        name:'搜狗',
+        data: [28, 25, 22, 18, 17, 18, 15, 13, 12, 17,14, 12, 11, 10, 15, 12, 11, 8, 6, 10, 12, 11, 10, 9, 8, 11, 8, 6, 9],
+        type: 'line',
+        color:'#fd6853',
+        symbolSize: '8',
+        lineStyle:{
+          normal:{
+            width:3
+          }
+        },
+        smooth: true
+        },
+        {
+        name:'360',
+        data: [18, 20, 15, 20, 12, 14, 11, 13, 15, 16,14, 12, 11, 15, 13,12, 11, 11, 11, 20, 25, 21, 22, 23, 12, 11, 11, 15, 10],
+        type: 'line',
+        color:'#19b955',
+        symbolSize: '8',
+        lineStyle:{
+          normal:{
+            width:3
+          }
+        },
+        smooth: true
+        }
+    ]
+};
+;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+</body>
+</html>

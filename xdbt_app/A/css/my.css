@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* 全局设置 */
+*{ margin:0; padding:0}
+body { font-size: 14px; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; background:#fff;color: #333; line-height: 21px;}
+h1,h2,h3,h4,h5,h6       {font-weight:700;}
+input,select,textarea 	{font-size:12px;}
+ul,li {list-style:none;}
+img {vertical-align: top;}
+input{ font-family:"微软雅黑";}
+header a{ position:fixed; top:15px; right:5px; border-radius:3px; background-color:#ccc; line-height:24px; padding:0 10px; border:1px solid #ccc; display:block; text-decoration:none; font-size:12px; color:#000; z-index:111; }
+.wrapper{background-color:#00263e;max-width: 600px;margin: 0 auto;font-family:"微软雅黑"}
+header{height: 70px;line-height:70px;padding:0 25px;}
+header h1 {color: #fff;font-size: 18px;}
+section.txtbox{padding:30px;color: #f5f5f5;clear: both;}
+section:nth-child(odd) {background-color:#497da8;color: #fff;}
+section:nth-child(even) {background-color:#f5f5f5;color: #333;}
+section:nth-child(even) h2 {border-color: #333;}
+a.abtn {height:38px;line-height:38px;margin:10px 0;color:#fff;display:inline-block;}
+section.imgbox img {max-width: 100%;}
+section h2 {border-left:5px solid #fff;padding-left:10px;margin-bottom:15px;font-size: 18px;}
+section.formbox {background-color:#00263e;}
+.input-inline {display: inline-block;margin:10px 0;margin-right: 10px;}
+.input {background-color:#335165;width:96%;padding:0 2%;}
+.btn {background-color:#497da8;width:100%;color: #fff;font-size: 16px;cursor: pointer;}
+.input, .btn {height: 48px;margin:5px 0;border:none;color: #eee;}
+
+.rslides{position:relative;list-style:none;overflow:hidden;width:100%;padding:0;margin:0}
+.rslides li{-webkit-backface-visibility:hidden;position:absolute;display:none;width:100%;left:0;top:0}
+.rslides li:first-child{position:relative;display:block;float:left}
+.rslides img{display:block;height:auto;float:left;width:100%;border:0}
+.slide_container{position:relative;float:left;width:100%}
+.slide{position:relative;list-style:none;overflow:hidden;width:100%;padding:0;margin:0}
+.slide li{position:absolute;width:100%;left:0;top:0}
+.slide img{display:block;position:relative;z-index:1;height:auto;width:100%;border:0}
+.slide .caption{display:block;position:absolute;z-index:2;font-size:20px;text-shadow:none;color:#fff;background:#000;background:rgba(0,0,0,.8);left:0;right:0;bottom:0;padding:10px 20px;margin:0;max-width:none}
+.slide_nav{position:absolute;-webkit-tap-highlight-color:transparent;top:52%;left:0;opacity:.7;z-index:3;text-indent:-9999px;overflow:hidden;text-decoration:none;height:61px;width:38px;background:transparent url(../images/slider/barrow.gif) no-repeat left top;margin-top:-45px}
+.slide_nav:active{opacity:1}
+.slide_nav.next{left:auto;background-position:right top;right:0}

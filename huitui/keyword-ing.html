@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>关键词管理</title>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div>
+<!--点击头像出现菜单开始-->
+<div class="topnav_slide" style="display:none;">
+  <p><a href="account.html">账户管理<i class="fa fa-cog" aria-hidden="true"></i></a></p>
+  <p><a href="#">退出登录<i class="fa fa-sign-out" aria-hidden="true"></i></a></p>
+</div>
+<!--点击头像出现菜单结束--> 
+<!--顶部开始-->
+<div class="top clearfix">
+  <h2><img src="images/logo.png" /></h2>
+  <span>当前位置：<a href="index2.html"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;&gt;&nbsp;<a href="keyword.html">关键词管理</a>&nbsp;&gt;&nbsp;未达标关键词</span>
+  <div class="clearfix">
+    <p> 
+      <!--经济版开始--> <em class="v1"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>经济版</em> 
+      <!--标准版开始--> <em class="v2" style="display: none;"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>标准版</em> 
+      <!--高级版开始--> <em class="v3" style="display: none;"><b><i class="fa fa-clock-o"></i>20181001-20191001</b><i class="fa fa-shirtsinbulk"></i>高级版</em> 徐水县星涛机械厂 </p>
+    <img src="images/tx.jpg" class="i_tx" /> </div>
+</div>
+<!--顶部结束-->
+<div id="main">
+<!--左侧导航开始-->
+<div class="nav layui-collapse" lay-accordion="">
+  <div class="gwtg layui-colla-item">
+    <div class="tgtitle layui-colla-title">官网SEO</div>
+    <ul class="layui-colla-content layui-show">
+      <li><a href="index2.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>推广效果</span><strong>推广效果</strong></a></li>
+      <li class="active"><a href="keyword.html"><i class="fa fa-crosshairs" aria-hidden="true"></i><span>关键词管理</span><strong>关键词管理</strong></a></li>
+      <li><a href="charging.html"><i class="fa fa-list-ul"></i><span>扣费明细</span><strong>扣费明细</strong></a></li>
+      <li><a href="recharge.html"><i class="fa fa-money"></i><span>充值记录</span><strong>充值记录</strong></a></li>
+    </ul>
+  </div>
+  <div class="qwtg layui-colla-item">
+    <div class="tgtitle layui-colla-title"><a href="index.html">汇&nbsp;&nbsp;推</a></div>
+    <ul class="layui-colla-content">
+      <li><a href="index.html"><i class="fa fa-tachometer" aria-hidden="true"></i><span>中控台</span><strong>中控台</strong></a></li>
+      <li><a href="content.html"><i class="fa fa-cubes" aria-hidden="true"></i><span>内容中心</span></a><strong>内容中心</strong></li>
+      <li><a href="#"><i class="fa fa-paper-plane-o"></i><span>渠道中心</span></a><strong>渠道中心</strong></li>
+      <li class="navsm"><a href="website.html"><i class="fa fa-globe"></i><span>企业官网</span></a><strong>企业官网</strong></li>
+      <li class="navsm"><a href="substation.html"><i class="fa fa-sitemap"></i><span>企业分站</span></a><strong>企业分站</strong></li>
+      <li class="navsm"><a href="copycloud.html"><i class="fa fa-cloud"></i><span>企业云站</span></a><strong>企业云站</strong></li>
+      <li class="navsm"><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span>商贸联盟</span></a><strong>商贸联盟</strong></li>
+      <li class="navsm"><a href="wechat.html"><i class="fa fa-weixin" aria-hidden="true"></i><span>微信工具</span></a><strong>微信工具</strong></li>
+      <li class="navsm"><a href="news.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>新闻推广</span></a><strong>新闻推广</strong></li>
+      <li class="navsm"><a href="society.html"><i class="fa fa-weibo" aria-hidden="true"></i><span>社会化媒体</span></a><strong>社会化媒体</strong></li>
+      <li class="navsm"><a href="baike.html"><i class="fa fa-list" aria-hidden="true"></i><span>企业百科</span></a><strong>企业百科</strong></li>
+      <li class="navsm"><a href="answer.html"><i class="fa fa-comments-o" aria-hidden="true"></i><span>企业问答</span></a><strong>企业问答</strong></li>
+      <li class="navsm"><a href="starmedia.html"><i class="fa fa-star" aria-hidden="true"></i><span>星媒体</span></a><strong>星媒体</strong></li>
+      <li class="navsm"><a href="dsp.html"><i class="fa fa-bullseye" aria-hidden="true"></i><span>云广告</span></a><strong>云广告</strong></li>
+      <li><a href="data.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>数据中心</span></a><strong>数据中心</strong></li>
+      <li><a href="service.html"><i class="fa fa-heart" aria-hidden="true"></i><span>服务中心</span></a><strong>服务中心</strong></li>
+    </ul>
+  </div>
+  <div class="leftkf"> 专属服务顾问电话 <span>4006605555-6118</span> <br />
+    服务顾问企业QQ <span>3002745607</span> </div>
+  <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+  <h2>专属服务顾问电话：1501000000</h2>
+</div>
+<!--左侧导航结束--> 
+<!--主体内容开始-->
+<div class="content">
+  <div class="cntnt">
+    <div class="box">
+      <div class="snav">
+        <ul class=" clearfix">
+          <li class="sactive"><a href="keyword.html">关键词管理</a></li>
+          <li class="snavli"><a href="keyword-add.html"><i class="fa fa-plus" aria-hidden="true"></i>添加关键词</a></li>
+        </ul>
+      </div>
+      <div class="container keyword pad20">
+        <div class="kyword_top clearfix">
+        <ul class="boxnav clearfix"> 
+         <li><a href="keyword.html">已达标</a></li> 
+         <li class="this"><a href="keyword-ing.html">未达标</a></li> 
+        </ul>
+        </div>
+        <ul class="keyword_ul shkw clearfix">
+          <li> <div class="kwpad">
+            <p>厨具涂料厨具涂料厨具涂料厨具涂料厨具涂料</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>防腐粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>散热器粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>厨具涂料</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>防腐粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>散热器粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>厨具涂料</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>防腐粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>散热器粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>厨具涂料</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>防腐粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>散热器粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>厨具涂料</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>防腐粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>散热器粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>厨具涂料</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>防腐粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>散热器粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>厨具涂料</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>防腐粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>散热器粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>厨具涂料</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>防腐粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>散热器粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>厨具涂料</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>防腐粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>散热器粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>厨具涂料</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>防腐粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+          <li> <div class="kwpad">
+            <p>散热器粉末</p>
+            <span><img src="images/icon/baidu.png" alt="百度"><img src="images/icon/sogou.png" alt="搜狗"><img src="images/icon/360.png" alt="360"></span> </div> </li>
+        </ul>
+      </div>
+      <div> </div>
+    </div>
+    <!--主体内容结束--> 
+  </div>
+</div>
+</body>
+</html>

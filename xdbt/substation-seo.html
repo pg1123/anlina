@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>企业分站</title>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div> 
+  <!--顶部开始-->
+  <div class="top clearfix">
+    <h2><img src="images/logo.png"></h2>
+    <span><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;>&nbsp;企业分站&nbsp;>&nbsp;分站名称分站名称&nbsp;>&nbsp;基本设置</span>
+    <div class="clearfix">
+      <p>徐水县星涛机械厂</p>
+      <img src="images/tx.jpg"></div>
+  </div>
+  <!--顶部结束-->
+  
+  <div id="main"> 
+    <!--左侧导航开始-->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html" ><i class="fa fa-tachometer" aria-hidden="true"></i><span>首页</span><strong>首页</strong></a></li>
+        <li><a href="content.html"><i class="fa fa-cubes" aria-hidden="true"></i><span>内容中心</span></span></a><strong>内容中心</strong></li>
+        <li class="active"><a href="substation.html"><i class="fa fa-sitemap"></i><span>企业分站</span></a><strong>企业分站</strong></li>
+        <li><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span>商贸联盟</span></a><strong>商贸联盟</strong></li>
+        <li><a href="wechat.html"><i class="fa fa-weixin" aria-hidden="true"></i><span>微信秀场</span></a><strong>微信秀场</strong></li>
+        <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>新闻联盟</span></a><strong>新闻联盟</strong></li>
+        <li><a href="video.html"><i class="fa fa-video-camera" aria-hidden="true"></i><span>视频联盟</span></a><strong>视频联盟</strong></li>
+        <li><a href="classification.html"><i class="fa fa-list" aria-hidden="true"></i><span>分类站联盟</span></a><strong>分类站联盟</strong></li>
+        <li><a href="data.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>数据分析</span></a><strong>数据分析</strong></li>
+        <li><a href="xunpan.html"><i class="fa fa-commenting" aria-hidden="true"></i><span>询盘管理</span></a><strong>询盘管理</strong></li>
+        <!--<li><a href="service.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>服务市场</span></a><strong>服务市场</strong></li>-->
+      </ul>
+      <div> 专属服务顾问电话 <span>1501000000</span> </div>
+      <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+      <h2>专属服务顾问电话：1501000000</h2>
+    </div>
+    <!--左侧导航结束--> 
+    <!--主体内容开始-->
+    <div class="content">
+      <div class="cntnt">
+        <div class="body">
+          <div class="snav">
+            <ul class=" clearfix">
+              <li><a href="substation-basic.html">基本设置</a></li>
+              <li><a href="substation-content.html">内容管理</a></li>
+              <li><a href="substation-contact.html">联系方式</a></li>
+              <li class="sactive"><a href="substation-seo.html">SEO设置</a></li>
+              <li><a href="substation-link.html">外链管理</a></li>
+            </ul>
+          </div>
+          <div class="container sub-basic sub-seo">
+            <div class="addct addctlist">
+              <div class="thisname">当前分站：<span>西安、上海、武汉</span></div>
+              <div id="container" class="container-seo">
+                <div class="clearfix">
+                  <div class="div100">
+                    <div class="clearfix smlmtip1"><span></span>
+                  <p>注：如果您不具备SEO基础，请保持默认设置，以免造成相反的优化效果，如需更改，也请遵守相应的修改规则。</p>
+                </div>
+                    <div class="layui-tab">
+                      <ul class="layui-tab-title">
+                        <li class="layui-this">首页</li>
+                        <li>产品列表</li>
+                        <li>产品细览页</li>
+                        <li>资讯列表</li>
+                        <li>资讯细览页</li>
+                        <li>关于我们</li>
+                        <li>联系我们</li>
+                      </ul>
+                      <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                          <div class="seoo">
+                            <div class="seoboxn">
+                              <div class="seobox">
+                                <div class="seoinput clearfix">
+                                  <h4><a href="#" title="恢复默认规则">恢复默认&nbsp;<span class="fa fa-undo"></span></a>标题：</h4>
+                                  <div class="kwbosel"> <a href="javascript:;" onclick="showkl('d1','b1')">选择&nbsp;<span id="b1" class="fa fa-angle-double-right"></span></a> </div>
+                                  <div class="kwbo"> <a href="javascript:;">主要产品&nbsp;<span class="fa fa-remove"></span></a>_<a href="javascript:;">主要产品&nbsp;<span class="fa fa-remove"></span></a>_<a href="javascript:;">主要产品&nbsp;<span class="fa fa-remove"></span></a>_<a href="javascript:;">主要产品&nbsp;<span class="fa fa-remove"></span></a>_<a href="javascript:;">主要产品&nbsp;<span class="fa fa-remove"></span></a>_<a href="javascript:;">主要产品&nbsp;<span class="fa fa-remove"></span></a>
+                                    <input type="text" onclick="showd()" style="width:200px" />
+                                  </div>
+                                  <div class="gzbox defaultgz" id="d1" style="display:none;">
+                                    <ul>
+                                      <li><a href="javascript:;">Website Name_Main industry</a></li>
+                                      <li><a href="javascript:;">主要产品s_Website Name</a></li>
+                                      <li><a href="javascript:;">主要产品s_Website Name_Main industry</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="seoinput clearfix">
+                                  <h4><a href="#" title="恢复默认规则">恢复默认&nbsp;<span class="fa fa-undo"></span></a>关键词：</h4>
+                                  <div class="kwbosel"> <a href="javascript:;" onclick="showkl('d2','b2')">选择&nbsp;<span id="b2" class="fa fa-angle-double-right"></span></a> </div>
+                                  <div class="kwbo"> <a href="javascript:;">主要产品&nbsp;<span class="fa fa-remove"></span></a>_<a href="javascript:;">主要产品&nbsp;<span class="fa fa-remove"></span></a>_<a href="javascript:;">主要产品&nbsp;<span class="fa fa-remove"></span></a>_<a href="javascript:;">主要产品&nbsp;<span class="fa fa-remove"></span></a>
+                                    <input type="text" onclick="showd()" style="width:100px" />
+                                  </div>
+                                  <div class="gzbox defaultgz" id="d2" style="display:none;">
+                                    <ul>
+                                      <li><a href="javascript:;">Website Name_Main industry</a></li>
+                                      <li><a href="javascript:;">主要产品s_Website Name</a></li>
+                                      <li><a href="javascript:;">主要产品s_Website Name_Main industry</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="seoinput clearfix">
+                                  <h4><a href="#" title="恢复默认规则">恢复默认&nbsp;<span class="fa fa-undo"></span></a>描述：</h4>
+                                  <div class="kwbosel"> <a href="javascript:;" onclick="showkl('d3','b3')">选择&nbsp;<span id="b3" class="fa fa-angle-double-right"></span></a> </div>
+                                  <div class="kwbo"> <a href="javascript:;">主要产品&nbsp;<span class="fa fa-remove"></span></a>_<a href="javascript:;">主要产品&nbsp;<span class="fa fa-remove"></span></a>_<a href="javascript:;">主要产品&nbsp;<span class="fa fa-remove"></span></a>
+                                    <input type="text" onclick="showd(k1)" style="width:200px" />
+                                  </div>
+                                  <div class="gzbox defaultgz" id="d3" style="display:none;">
+                                    <ul>
+                                      <li><a href="javascript:;">Website Name_Main industry</a></li>
+                                      <li><a href="javascript:;">主要产品s_Website Name</a></li>
+                                      <li><a href="javascript:;">主要产品s_Website Name_Main industry</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <textarea placeholder="请填写一段针对企业、品牌的广告语或者商品销售说明"></textarea>
+                                <div class="gzbox seogzlist" id="k1" style="display:;">
+                                  <h5>点击下列信息插入规则</h5>
+                                  <ul>
+                                    <li><a href="javascript:;"><span class="fa fa-plus"></span>&nbsp;主要产品</a></li>
+                                    <li><a href="javascript:;"><span class="fa fa-plus"></span>&nbsp;主要产品</a></li>
+                                    <li><a href="javascript:;"><span class="fa fa-plus"></span>&nbsp;主要产品</a></li>
+                                    <li><a href="javascript:;"><span class="fa fa-plus"></span>&nbsp;主要产品</a></li>
+                                    <li><a href="javascript:;"><span class="fa fa-plus"></span>&nbsp;主要产品</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="clearfix">
+                                <button class="layui-btn btn_blue">保存</button>
+                                <button class="layui-btn layui-btn-primary">取消</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="layui-tab-item">About us Seo Setting</div>
+                        <div class="layui-tab-item">Products list Seo Setting</div>
+                        <div class="layui-tab-item">Blog list Seo Setting</div>
+                        <div class="layui-tab-item">Contact us Seo Setting</div>
+                        <div class="layui-tab-item">product Detail Seo Setting</div>
+                        <div class="layui-tab-item">Blog text Seo Setting</div>
+                      </div>
+                    </div>
+                    <!-- info end --> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--主体内容结束--> 
+  </div>
+</div>
+<script type="text/javascript">
+
+	
+	
+$(function(){
+     //左侧导航js
+     var _width = $(window).width(); 
+     if(_width < 1000){
+     
+	$(".nav p").mouseover(function(){
+		$(".nav h2").show();
+		})
+	$(".nav p").mouseleave(function(){
+		$(".nav h2").hide();
+		})
+		
+	$(".nav ul li").mouseover(function(){
+		$(this).find("strong").show();
+		})
+	$(".nav ul li").mouseleave(function(){
+		$(this).find("strong").hide();
+		})
+   
+     }
+	 
+		
+	
+
+});
+
+layui.use('element', function(){
+  var $ = layui.jquery
+  ,element = layui.element(); //Tab的切换功能，切换事件监听等，需要依赖element模块
+  
+  //触发事件
+  var active = {
+    tabAdd: function(){
+      //新增一个Tab项
+      element.tabAdd('demo', {
+        title: '新选项'+ (Math.random()*1000|0) //用于演示
+        ,content: '内容'+ (Math.random()*1000|0)
+        ,id: new Date().getTime() //实际使用一般是规定好的id，这里以时间戳模拟下
+      })
+    }
+    ,tabDelete: function(othis){
+      //删除指定Tab项
+      element.tabDelete('demo', '44'); //删除：“商品管理”
+      
+      
+      othis.addClass('layui-btn-disabled');
+    }
+    ,tabChange: function(){
+      //切换到指定Tab项
+      element.tabChange('demo', '22'); //切换到：用户管理
+    }
+  };
+  
+  $('.site-demo-active').on('click', function(){
+    var othis = $(this), type = othis.data('type');
+    active[type] ? active[type].call(this, othis) : '';
+  });
+  
+  //Hash地址的定位
+  var layid = location.hash.replace(/^#test=/, '');
+  element.tabChange('test', layid);
+  
+  element.on('tab(test)', function(elem){
+    location.hash = 'test='+ $(this).attr('lay-id');
+  });
+  
+});
+
+
+
+
+</script>
+</body>
+</html>

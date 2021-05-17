@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>视频联盟</title>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div> 
+  <!--顶部开始-->
+  <div class="top clearfix">
+    <h2><img src="images/logo.png"></h2>
+    <span><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;>&nbsp;视频联盟</span>
+    <div class="clearfix">
+      <p>徐水县星涛机械厂</p>
+      <img src="images/tx.jpg"></div>
+  </div>
+  <!--顶部结束-->
+  
+  <div id="main"> 
+    <!--左侧导航开始-->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html" ><i class="fa fa-tachometer" aria-hidden="true"></i><span>首页</span><strong>首页</strong></a></li>
+        <li><a href="content.html"><i class="fa fa-cubes" aria-hidden="true"></i><span>内容中心</span></span></a><strong>内容中心</strong></li>
+        <li><a href="substation.html"><i class="fa fa-sitemap"></i><span>企业分站</span></a><strong>企业分站</strong></li>
+        <li><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span>商贸联盟</span></a><strong>商贸联盟</strong></li>
+        <li><a href="wechat.html"><i class="fa fa-weixin" aria-hidden="true"></i><span>微信秀场</span></a><strong>微信秀场</strong></li>
+        <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>新闻联盟</span></a><strong>新闻联盟</strong></li>
+        <li class="active"><a href="video.html"><i class="fa fa-video-camera" aria-hidden="true"></i><span>视频联盟</span></a><strong>视频联盟</strong></li>
+        <li><a href="classification.html"><i class="fa fa-list" aria-hidden="true"></i><span>分类站联盟</span></a><strong>分类站联盟</strong></li>
+        <li><a href="data.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>数据分析</span></a><strong>数据分析</strong></li>
+        <li><a href="xunpan.html"><i class="fa fa-commenting" aria-hidden="true"></i><span>询盘管理</span></a><strong>询盘管理</strong></li>
+        <!--<li><a href="service.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>服务市场</span></a><strong>服务市场</strong></li>-->
+      </ul>
+      <div> 专属服务顾问电话 <span>1501000000</span> </div>
+      <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+      <h2>专属服务顾问电话：1501000000</h2>
+    </div>
+    <!--左侧导航结束--> 
+    <!--主体内容开始-->
+    <div class="content">
+      <div class="cntnt">
+        <div class="body">
+          <div class="snav">
+            <ul class=" clearfix">
+              <li><a href="video.html">全部视频</a></li>
+              <li class="sactive"><a href="video-release.html"><i class="fa fa-plus" aria-hidden="true"></i>发布视频</a></li>
+            </ul>
+          </div>
+          <div class="container video-add">
+            <form class="layui-form" action="">
+              <div class="layui-form-item">
+                <label class="layui-form-label">视频名称：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name="title" value="光轮电子光轮电子光轮电子光轮电子" class="layui-input" disabled="true" style="cursor:not-allowed;">
+                </div>
+              </div>
+              <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">视频简介：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <textarea class="layui-textarea" disabled="true" style="cursor:not-allowed;">北京光轮电子科技有限公司成立于2007年，一直致力于微控制器（MCU）操作系统及嵌入式软件构件化研究，取得了重要成果。同时也为广大用户提供物联网解决方案、智能硬件开发（包括电子产品开发、工控设备开发、仪器仪表开发等）等服务。公司拥有多名北大硕士、海归博士等经验丰富的高级技术团队，现有软硬件工程师20余人。 光轮电子研发成功的TreeOS物联网实时操作系统，具有国际领 先水平。这是一种新型的大型定制化嵌入式操作系统，可一键式自动生成高达90%代码，广泛用于物联网、工业4.0、人工智能等领域。 公司成立10余年来，已为全国各地多种行业用户开发了200多个物联网及智能硬件产品和项目，积累了极其丰富的实践经验。</textarea>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">选择推广平台：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <ul class="clearfix">
+                    <li class="videoli colorblue"><img src="images/pic/youku.jpg"><i class="fa fa-check-square-o" ></i></li>
+                    <li class="videoli"><img src="images/pic/tecent.jpg"><i class="fa" ></i></li>
+                    <li><img src="images/pic/iqiyi.jpg"><span>无剩余额度请购买</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="layui-form-item submin-cancle">
+                <label class="layui-form-label">&nbsp;</label>
+                <div class="layui-input-block">
+                  <button class="layui-btn btn_blue" lay-submit="" lay-filter="demo1">发布</button>
+                  <button type="reset" class="layui-btn layui-btn-primary">取消</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--主体内容结束--> 
+  </div>
+</div>
+<script type="text/javascript">
+
+	
+	
+$(function(){
+     //左侧导航js
+     var _width = $(window).width(); 
+     if(_width < 1000){
+     
+	$(".nav p").mouseover(function(){
+		$(".nav h2").show();
+		})
+	$(".nav p").mouseleave(function(){
+		$(".nav h2").hide();
+		})
+		
+	$(".nav ul li").mouseover(function(){
+		$(this).find("strong").show();
+		})
+	$(".nav ul li").mouseleave(function(){
+		$(this).find("strong").hide();
+		})
+   
+     }
+	 
+
+   //选择资源
+		$(".videoli").click(function(){
+		 $(this).toggleClass("colorblue");
+		 $(this).children("i").toggleClass("fa-check-square-o");
+		 })	
+});
+
+
+  
+  
+
+
+
+layui.use(['form','upload', 'laydate','element', 'layer'], function(){
+	
+	var form = layui.form
+	,layer = layui.layer
+	,laydate = layui.laydate
+	,element = layui.element;
+	
+
+
+});  
+
+//续费弹窗
+function renew(){
+	layer.open({
+   type: 1,
+  title: false,
+  closeBtn: 0,
+  shadeClose: true,
+  area: ['400px', 'auto'],
+  btn: ['确定', '取消'],
+  skin: 'yourclass',
+  content: $('#renew'),	
+
+ 
+});
+}
+//添加商品系列弹窗
+function videolook(){
+	layer.open({
+		type: 1,
+  title: '视频详情',
+  shadeClose: true,
+  shade: 0.8,
+  area: ['800px', 'auto'],
+  content: $('#videolook') //iframe的url
+		
+ 
+});
+}
+</script>
+</body>
+</html>

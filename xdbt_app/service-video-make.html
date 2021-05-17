@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- Your app title -->
+  <title>我的推广</title>
+  <link rel="stylesheet" href="css/framework7.ios.min.css">
+  <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="dbt">
+  <!-- Status bar overlay for full screen mode (PhoneGap) -->
+  <div class="statusbar-overlay"></div>
+  <!-- Panels overlay-->
+  <div class="panel-overlay"></div>
+
+  <div class="views" id="dbt"> 
+    <div class="view view-main"> 
+      <!-- 头部开始-->
+      <div class="navbar">
+        <div class="navbar-inner"> 
+          <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+          <div class="left"><a href="#" class="back"><i class="f7-icons">left</i></a></div>
+          <div class="center sliding">视频制作</div>
+        </div>
+      </div>
+      <!-- 头部结束-->
+      <!-- 主体开始-->
+      <div class="pages navbar-through toolbar-through"> 
+        <div data-page="" class="page">
+         <div class="page-content tgdetail">
+          <!-- service cover -->
+          <div class="scover-img"><img src="images/video-make-cover.png"></div>
+          <h2 class="h2title">服务介绍</h2>
+          <div class="dbt-common-content">              
+            <div class="dbt-content-item">
+              <p>低投入制作企业视频，标准化生产流程，用视频内容展示企业形象和产品服务，便于传播分享。</p>
+            </div>
+            <div class="dbt-content-item">
+              <p><img class="lct" src="images/liucheng.png" alt="服务流程"></p>
+            </div>
+          </div>
+          <h2 class="h2title">服务采购</h2>
+          <div class="dbt-common-content list-block"> 
+            <div class="content-block cg-list">
+              <div class="row">             
+                <div class="col-70">
+                  <h3>企业视频名片</h3>
+                  <p class="x-desc">导演、创意、拍摄、剪辑、原创企业宣传片</p>
+                </div>
+                <div class="col-30">
+                  <a href="#"  class="button">暂存</a>
+                  <a href="#" class="button notification-yescart" onClick="yescart()">购买</a>
+                </div>
+              </div>
+              <div class="row">             
+                <div class="col-70">
+                  <h3>企业主/高管访谈</h3>
+                  <p class="x-desc">导演、拍摄、剪辑、企业符号化软广宣传片</p>
+                </div>
+                <div class="col-30">
+                  <a href="#"  class="button">暂存</a>
+                  <a href="#" class="button notification-yescart" onClick="yescart()">购买</a>
+                </div>
+              </div>
+              <div class="row">             
+                <div class="col-70">
+                  <h3>企业产品视频</h3>
+                  <p class="x-desc">主打商品或系列介绍宣传片拍摄、后期自作</p>
+                </div>
+                <div class="col-30">
+                  <a href="#"  class="button">暂存</a>
+                  <a href="#" class="button notification-yescart" onClick="yescart()">购买</a>
+                </div>
+              </div>
+              <div class="tj"><a href="#"  data-popup=".popup-pricebox" class="button button-big button-fill open-popup">高端定制</a></div>
+            </div>
+          </div>
+        </div>
+        <!--第三方估值页面-->
+        <div class="popup popup-about popup-pricebox">
+          <div class="gscbbox">
+            <div class="gscbbox-content">
+            <ul class="clearfix">
+               <li>
+                  <h2>视频类别</h2>
+                  <input type="text" placeholder="请选择" readonly id="dbt-sp" onClick="dbtsp()">
+               </li>
+               <li>
+                  <h2>时长</h2>
+                  <input type="text" placeholder="请选择" readonly id="dbt-time" onClick="dbttime()">
+               </li>
+               <li>
+                  <h2>导演团队</h2>
+                  <input type="text" placeholder="请选择" readonly id="dbt-team" onClick="dbtteam()">
+                  <p>两到三年创作经验,拥有十部以上成功作品案例</p>
+               </li>
+               <li>
+                  <h2>拍摄设备</h2>
+                  <input type="text" placeholder="请选择" readonly id="dbt-sb" onClick="dbtsb()">
+                  <p>1920*1080 高清分辨率,清晰色彩表现和画面锐度</p>
+               </li>
+               <li>
+                  <h2>演员</h2>
+                  <input type="text" placeholder="请选择" readonly id="dbt-actor" onClick="dbtactor()">
+               </li>
+               <li>
+                  <h2>动画</h2>
+                  <input type="text" placeholder="请选择" readonly id="dbt-animate" onClick="dbtanimate()">
+               </li>
+            </ul>
+            <div class="tj"><a href="#" class="button button-big button-fill" onClick="yescart()">提交</a></div>
+            </div>
+            <p><a href="#" class="close-popup"><i class="f7-icons">close_round</i></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 主体结束-->
+
+  </div>
+  <!-- Path to Framework7 Library JS--> 
+  <script type="text/javascript" src="js/framework7.min.js"></script> 
+  <!-- Path to your app js--> 
+  <script type="text/javascript" src="js/my-app.js"></script>
+
+</body>
+</html>

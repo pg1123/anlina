@@ -1,0 +1,173 @@
+@charset "utf-8";
+@import url("font-awesome.min.css");
+@import url("../layui/css/layui.css");
+
+/***** 通用样式 *****/
+/**************************/
+body{background-color:#f7f7f7;}
+.red{color:red;}
+.f20{font-size:20px;}
+.pad10{padding:10px;}
+.w60{width:60%;}
+.text-align-right{text-align:right;}
+.tips{background:#fffbda url(../images/advertisment-32.png) no-repeat 10px 10px;margin-bottom:10px;border:1px solid #f09624;color:#000}
+.tips p{margin:15px 10px 15px 50px;font-size:12px;line-height:14px}
+.rtips p{color:red;}
+#commonunit{background-color:#fff}
+.layui-layer-page .layui-layer-content{overflow:visible !important;}
+.xpop{background-color:#f7f7f7;}
+.xpop .layui-form{padding:15px 0;font-size:12px;}
+.xpop .layui-form-label{width:90px;}
+.xpop .layui-input-block{margin-left:120px;}
+.popbox{padding:25px;}
+.xsearch{clear:both;overflow:hidden;}
+.xsearch input{background-color:#fff;height:40px;padding:0 15px;min-width:300px;float:left;font-size:14px;border:1px solid #ddd;border-right:none;}
+.xsearch button{background-color:#3596dd;padding:0 15px;color:#fff;height:42px;border:none;font-size:16px;float:left;cursor:pointer}
+.xsearch button:hover{background-color:#436ea5}
+.sbul{background:#f5f5f5;padding:15px 0 35px;border-bottom:1px solid #ddd;text-align:center;}
+.sbul ul{margin-left:55px;}
+.sbul li{width:33.33333%;text-align:center;height:5px;background-color:#ddd;position:relative;display:inline-block;}
+.sbul li:last-child{background-color:inherit;width:60px}
+.sbul span{background-color:#ddd;height:20px;width:20px;display:block;border-radius:20px;margin:0 auto;position:absolute;top:-8px;left:-5px}
+.sbul li:last-child span{margin-left:-2px}
+.sbul .lineli,.sbul .this span{background-color:#3cb878}
+.sbul p{font-size:12px;color:#000;position:absolute;top:15px;left:-15px}
+.sbul li:first-child p{left:-25px}
+.sbul li:last-child p{left:-5px}
+.sbul.ht_progress li:last-child p{left:-15px}
+.ht_progress{background:#fff;text-align:center;}
+.xl_tag span{border:1px solid #ddd;line-height:32px;padding:0 10px;border-radius:4px;display:inline-block;margin:4px 0;margin-right:6px;background-color:#fff;cursor:pointer}
+.xl_tag span.on{background-color:#3596dd;color:#fff;border-color:#3596dd}
+.xl_tag strong{color:#3596dd;font-weight:400;cursor:pointer;display:inline-block}
+.xl_tag i{margin-left:4px;cursor:pointer}
+.xl_tag .selected{background-color:#3596dd;color:#fff;border-color:#3596dd}
+.industry-item{padding-bottom:5px;font-size:12px;}
+.industry-item p{color:#999;}
+.industry-item p span{padding:0 5px;color:#333;}
+.add-industytype{zoom:1;}
+.glgx{clear:both;}
+#goodsxl h2{color:red;font-size:12px}
+.addgooddsxl{height:50px;background-color:#f5f5f5;border-top:1px solid #ddd;line-height:50px;color:#3596dd}
+#addgoodsxl .layui-form-item{padding:10px 30px;margin-bottom:0}
+#addgoodsxl .layui-form-item:first-child{padding-bottom:15px}
+#addgoodsxl .layui-form-item:nth-child(even){background:#fff;}
+#addgoodsxl .layui-form-label{width:100px}
+#addgoodsxl .layui-input-block{margin-left:130px}
+#addgoodsxl .nameinput{width:400px}
+#addgoodsxl .layui-form-item .layui-input-inline{width:120px}
+#addgoodsxl p{padding-top:5px}
+#addgoodsxl .spa{line-height:40px;display:block;float:left}
+#addgoodsxl .layui-layer-page .layui-layer-content{overflow:initial!important}
+.layui-addbtn{width:190px;display:inline-block;}
+.search-main{padding:20px}
+.search-input input{float:left;width:536px;height:38px;border-right:0;}
+.search-input a{line-height:38px;height:38px;padding:0 25px}
+.search-main .no-date{width:120px;text-align:center;margin:auto;line-height:300px}
+.search-main .no-date i{background:url(../images/smlm/zzd_but.png) no-repeat -242px -105px;height:30px;width:30px;display:block;margin-top:135px;float:left;margin-right:10px}
+.search-main .no-date span{display:block;float:left;font-size:16px;color:#888}
+.smlm-batch .extend .orange-tip{width:auto;height:auto;margin-top:4px}
+.search-main .date-search-list{background-color:#f5f5f5;border:1px solid #e6e6e6;padding:6px;max-height:350px;overflow-y:auto;margin-top:12px}
+.date-search-list li a{line-height:30px;padding:0 10px;border-bottom:1px dotted #ddd;font-size:12px;display:block;}
+.date-search-list li:last-child a{border:none;}
+.date-search-list li a:hover .hy-item span{font-size:13px;color:#f60;}
+.date-search-list li a:hover .selectbtn {background-color:#f60;}
+.date-search-list .hy-item{color:#666;display:inline-block;}
+.date-search-list .hy-item span{color:#333;padding:0 5px;}
+.date-search-list .selectbtn{float:right;height:20px;line-height:20px;font-size:12px;padding:0 6px;background:#bbb;display:inline-block;color:#fff;border-radius:2px;cursor:pointer;margin-top:4px}
+/* 上传图片 */
+.upldimg{margin-top:10px;}
+.upldimg .layui-field-box{padding:5px;overflow:hidden;}
+.upldimg fieldset{height:230px;}
+.upldimg legend{font-size:12px;}
+.upldimg .product-coverimg{float:left;padding:0 5px;margin-right:10px;}
+.upldimg .product-coverimg .uploadimg-item img{height:190px;width:190px;}
+.upldimg .uploadimg-item{float:left;margin:5px;border:1px solid #ddd;position:relative;}
+.upldimg .uploadimg-item:hover{border:1px dashed red;cursor:pointer;}
+.upldimg .uploadimg-item.on{border:2px solid red;margin:4px;}
+.upldimg .uploadimg-item img{height:90px;width:90px;}
+.upldimg .uploadimg-item a{background:#fff;width:18px;height:18px;padding:0 2px 2px;font-size:18px;display:block;top:0;right:0;position:absolute;text-align:center;}
+.upldimg .uploadimg-item a:hover{color:red;}
+
+/* 添加商品新样式 */
+.xcontent{max-width:880px;padding:15px 0 0;margin:0 auto 90px;}
+.xcontent .layui-form-label{width:90px;}
+.xcontent .layui-input-block{margin-left:120px;}
+.catcat{background-color:#f5f5f5;padding:8px;margin:15px 0;border:1px solid #ddd;border-radius:3px;clear:both;}
+.catcat p{padding-bottom:5px;}
+.catcontainer{max-width:880px;}
+.catcontainer .xsearch{padding-left:150px;}
+.catlistbox{background-color:#fff;border:1px solid #eee;overflow:hidden;}
+.cat-item{float:left;max-height:290px;overflow-y:auto;width:33.33333%;}
+.searchcat .cat-item{width:100%;}
+.catbox{border-right:1px solid #ddd;min-height:290px;}
+.cat-item:last-child .catbox{border-right:none;}
+.catbox li{padding:0 10px;margin-bottom:1px;line-height:30px;cursor:pointer;}
+.catbox li:hover{background-color:#f8f8f8;}
+.catbox li.hover{background-color:#e7eff7;color:#3596dd;}
+.catbox li i{color:#999;}
+.curcat{color:#999;}
+.curcat span{color:#3596dd;}
+.gridinput .layui-input,.gridinput .layui-form-select{width:200px;display:inline-block;}
+.gridinput .layui-input-inline{width:50%;min-height:40px;margin-bottom:5px;margin-right:0;}
+.gridinput .layui-input-inline span{margin-left:5px;}
+.gridinput .layui-input-inline span.inputname,.gridinput .layui-input-inline span.inputname .customsxname {width:100px;padding-left:5px;display:inline-block;text-align: right;vertical-align:middle;font-size:12px;}
+.gridinput .layui-input-inline span.inputname .customsxname{text-align:left;}
+.gridinput .layui-input-inline span.inputname span{vertical-align:middle;}
+.zdysx i {margin-left: 3px;cursor: pointer;}
+.addzdy {clear: both;text-align:center;font-size:14px;padding:10px 0;}
+.addzdy a{background-color:#f9f9f9;padding:10px 0;border:1px dotted #ddd;display:block;}
+.addzdy a:hover{border-color:#f60;color:#f60;}
+.cpsx {padding: 15px 0;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.unitbox{padding:15px;overflow:hidden;}
+.unitlist{padding:5px 0;border-bottom:1px solid #ddd;overflow:hidden;}
+.unitlist:last-child{border:none;}
+.unitlist li{float: left;}
+.unitlist li a{height:30px;line-height:30px;padding:0 5px;text-align:center;display:block;border:1px dashed #fff;}
+.unitlist li a:hover{border-color:#ddd;color:#4f96d7;}
+.textareabox p{padding:5px 0;}
+.textareabox p span{color:#999;}
+.textareabox p span b{color:red;}
+.numbox span{color:#f60;}
+.xtitlelist{background-color:#F5F8Fd;padding:15px;border:1px solid #C2D9F2;list-style-type:none;counter-reset:sectioncounter;}
+.xtitlelist li{line-height:32px;font-size:14px;}
+.xtitlelist li:before {content:counter(sectioncounter) "、"; counter-increment:sectioncounter;color:#999;}
+.w50{width:60%;}
+.wid50{padding:25px 0;width:100%;max-width:100%;overflow:hidden;}
+.wid50 .texteditbox{position:fixed;top:20px;width:60%;height:100%;overflow-y:auto;overflow-x:hidden;}
+.wid50 .comtext{top:0;right:0;z-index:0;width:39%;height:100%;}
+.wid50 .comtext fieldset{padding:0 15px;border-left:1px solid #ddd;}
+.comtext h4{margin-bottom:15px;font-weight:normal;font-size:18px;}
+.textbody{padding:15px;border:1px solid #C2D9F2;background-color:#F5F8Fd;color:#666;font-size:14px;}
+.textbody p{padding:5px 0;}
+.textareabody{margin-bottom:90px;}
+.xsubmit{background-color:#fff;width:100%;padding:15px 0;border-top:1px solid #ddd;text-align:center;bottom:0;position:fixed;}
+.addgoodsxl .layui-form-item .layui-input-inline{width:135px;}
+.xlist{background-color:#fff;padding:10px;margin:5px 0;border:1px solid #e6e6e6;overflow:hidden;}
+.xlist span{float:left;}
+.xlist li{float:left;padding-right:10px;line-height:22px;color:#666}
+.xpop .xlist li{width:20%;padding-right:0;margin-bottom:8px;}
+.xlist i{font-size:12px;cursor:pointer}
+.xlist i:hover{color:red;}
+.selection .selection-title{height:40px;line-height:40px;background:#4d90cb;overflow:hidden}
+.selection .selection-title h2{font-size:16px;margin-left:10px;color:#fff;float:left;display:block;float:left}
+.selection{color:#333;padding:0 20px}
+.selection h2{font-size:12px}
+.selection .layui-input-block{margin-left:0}
+.selection .layui-input-block div{float:left}
+.selection .layui-input-block div input{float:left;font-size:12px}
+.selection .layui-input-block div strong{width:7px;height:7px;display:block;float:left;background:url(../images/zzd_but.png) -289px 0 no-repeat;margin-top:6px;cursor:pointer;margin-right:16px}
+.selection .layui-input-block div strong:hover{background:url(../images/zzd_but.png) -279px 0 no-repeat}
+.selection .layui-input-block div span{padding-right:2px;font-size:12px;padding-left:6px}
+.selection .layui-form-item .layui-form-checkbox{margin-top:3px;}
+.selection-input input{width:356px;float:left;border-right:0;font-size:12px}
+.selection-input a{float:left;height:32px;border-radius:0 4px 4px 0;line-height:32px;display:inline-block;padding:0 18px;color:#fff;white-space:nowrap;text-align:center;border:none;cursor:pointer;font-size:12px}
+.layui-form-checkbox[lay-skin=primary] .yeselect{border-color:#5FB878;background-color:#5FB878}
+.red-tip{color:red;padding-top:4px;font-size:12px;line-height:20px}
+.red-tip i{width:14px;height:14px;background:url(../images/zzd_but.png) -181px -139px no-repeat;display:block;float:left;margin-right:6px;margin-top:2px}
+.bustages{margin-left:0}
+
+.xcontent .layui-input-block.bustages{margin-left:0;}
+.textareabox{margin-bottom:15px;}
+.totitle{margin:10px 0;}
+
+

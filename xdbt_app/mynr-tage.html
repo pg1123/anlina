@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- Your app title -->
+<title>我的内容</title>
+<link rel="stylesheet" href="css/framework7.ios.min.css">
+<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+<link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="dbt">
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<div class="views" id="dbt">
+  <div class="view view-main"> 
+    <!-- 头部开始-->
+    <div class="navbar">
+      <div class="navbar-inner"> 
+        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+        <div class="left"><a href="#" class="back"><i class="f7-icons">left</i></a></div>
+        <div class="center sliding">筛选内容</div>
+      </div>
+    </div>
+    <!-- 头部结束--> 
+    <!-- 主体开始-->
+    <div class="pages navbar-through toolbar-through ">
+      <div data-page="mynr-list" class="page">
+        <div class="page-content ">
+          <div class="dbt-mynr-tage">
+            <div class="tage-t clearfix">
+              <h1>通过标签筛选内容</h1>
+              <h2 data-popup=".popup-services" class="open-popup"><span>管理标签</span><i class="f7-icons">gear</i></h2>
+            </div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <label class="label-checkbox item-content">
+                  <!-- Checked by default -->
+                  <input type="checkbox" name="my-checkbox" value="Books" checked="checked">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">商品</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-checkbox item-content">
+                  <input type="checkbox" name="my-checkbox" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">视频</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-checkbox item-content">
+                  <input type="checkbox" name="my-checkbox" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">新闻</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-checkbox item-content">
+                  <input type="checkbox" name="my-checkbox" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">自定义1</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-checkbox item-content">
+                  <input type="checkbox" name="my-checkbox" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">自定义2</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-checkbox item-content">
+                  <input type="checkbox" name="my-checkbox" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">自定义3</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-checkbox item-content">
+                  <input type="checkbox" name="my-checkbox" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">自定义4</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-checkbox item-content">
+                  <input type="checkbox" name="my-checkbox" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">自定义5</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-checkbox item-content">
+                  <input type="checkbox" name="my-checkbox" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">自定义6</div>
+                  </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-checkbox item-content">
+                  <input type="checkbox" name="my-checkbox" value="Movies">
+                  <div class="item-media"> <i class="icon icon-form-checkbox"></i> </div>
+                  <div class="item-inner">
+                    <div class="item-title">自定义7</div>
+                  </div>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="tj"><a href="mynr-list.html" class="button button-big button-fill back">提交</a></div>
+          </div>
+          <!--编辑标签弹窗开始-->
+          <div class="popup popup-services popup-tagma">
+            <div class="content-block">
+              <div class="clearfix swi">
+                <div class="swipeout">
+                  <div class="swipeout-content">
+                    <div class="item-subtitle clearfix"><a href="#" class="swipeout-delete"><i class="f7-icons">delete_round_fill</i></a><span>商品</span> </div>
+                  </div>
+                </div>
+                <div class="swipeout">
+                  <div class="swipeout-content">
+                    <div class="item-subtitle clearfix"><a href="#" class="swipeout-delete"><i class="f7-icons">delete_round_fill</i></a><span>视频</span> </div>
+                  </div>
+                </div>
+                <div class="swipeout">
+                  <div class="swipeout-content">
+                    <div class="item-subtitle clearfix"><a href="#" class="swipeout-delete"><i class="f7-icons">delete_round_fill</i></a><span>新闻</span> </div>
+                  </div>
+                </div>
+                <div class="swipeout">
+                  <div class="swipeout-content">
+                    <div class="item-subtitle clearfix"><a href="#" class="swipeout-delete"><i class="f7-icons">delete_round_fill</i></a><span>自定义</span> </div>
+                  </div>
+                </div>
+                <div class="swipeout">
+                  <div class="swipeout-content">
+                    <div class="item-subtitle clearfix"><a href="#" class="swipeout-delete"><i class="f7-icons">delete_round_fill</i></a><span>自定义</span> </div>
+                  </div>
+                </div>
+                <div class="swipeout">
+                  <div class="swipeout-content">
+                    <div class="item-subtitle clearfix"><a href="#" class="swipeout-delete"><i class="f7-icons">delete_round_fill</i></a><span>自定义</span> </div>
+                  </div>
+                </div>
+                <div class="swipeout">
+                  <div class="swipeout-content">
+                    <div class="item-subtitle clearfix"><a href="#" class="swipeout-delete"><i class="f7-icons">delete_round_fill</i></a><span>自定义</span> </div>
+                  </div>
+                </div>
+                <div class="swipeout">
+                  <div class="swipeout-content">
+                    <div class="item-subtitle clearfix"><a href="#" class="swipeout-delete"><i class="f7-icons">delete_round_fill</i></a><span>自定义</span> </div>
+                  </div>
+                </div>
+                <div class="swipeout">
+                  <div class="swipeout-content">
+                    <div class="item-subtitle clearfix"><a href="#" class="swipeout-delete"><i class="f7-icons">delete_round_fill</i></a><span>自定义</span> </div>
+                  </div>
+                </div>
+                <div class="swipeout">
+                  <div class="swipeout-content">
+                    <div class="item-subtitle clearfix"><a href="#" class="swipeout-delete"><i class="f7-icons">delete_round_fill</i></a><span>自定义</span> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tj"><a href="mynr-list.html" class="button button-big button-fill back">提交</a></div>
+              <div class="close-pop"><a href="#" class="close-popup"><i class="f7-icons">close_round</i></a></div>
+            </div>
+          </div>
+          <!--编辑标签弹窗结束--> 
+          
+        </div>
+        <!-- 底部导航开始-->
+        <div class="toolbar tabbar tabbar-labels">
+          <div class="toolbar-inner"> <a href="#" data-popup=".popup-about" class="tab-link1 open-popup"> <i class="f7-icons">reload_round</i><span class="tabbar-label">协同</span> </a> <a href="#" class="tab-link1"  onclick="window.location.href='service.html'"> <i class="f7-icons f7-icons-q"> data <span class="badge bg-red">5</span> </i> <span class="tabbar-label">推广</span></a> <a href="#" class="tab-link1 tab-link3"  onclick="window.location.href='add.html'"> <i class="f7-icons">add_round_fill</i> <span class="tabbar-label">创建内容</span></a> <a href="#" class="tab-link1"  onclick="window.location.href='contact.html'"> <i class="f7-icons">phone</i> <span class="tabbar-label">联系</span></a> <a href="#" class="tab-link1 active" onclick="window.location.href='mycenter.html'"> <i class="f7-icons">person</i><span class="tabbar-label">我的</span> </a> </div>
+        </div>
+        <!-- 底部导航结束--> 
+      </div>
+    </div>
+    <!-- 主体结束--> 
+    
+  </div>
+</div>
+<!-- Path to Framework7 Library JS--> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<!-- Path to your app js--> 
+<script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

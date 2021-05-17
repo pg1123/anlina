@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>账户管理</title>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div> 
+  <!--顶部开始-->
+  <div class="top clearfix">
+    <h2><img src="images/logo.png"></h2>
+    <span><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;>&nbsp;账户管理</span>
+    <div class="clearfix">
+      <p>徐水县星涛机械厂</p>
+      <img src="images/tx.jpg"></div>
+  </div>
+  <!--顶部结束-->
+  
+  <div id="main"> 
+    <!--左侧导航开始-->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html" ><i class="fa fa-tachometer" aria-hidden="true"></i><span>首页</span><strong>首页</strong></a></li>
+        <li><a href="content.html"><i class="fa fa-cubes" aria-hidden="true"></i><span>内容中心</span></span></a><strong>内容中心</strong></li>
+        <li><a href="substation.html"><i class="fa fa-sitemap"></i><span>企业分站</span></a><strong>商贸企业分站</strong></li>
+        <li><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span>商贸联盟</span></a><strong>商贸联盟</strong></li>
+        <li><a href="wechat.html"><i class="fa fa-weixin" aria-hidden="true"></i><span>微信秀场</span></a><strong>微信秀场</strong></li>
+        <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>新闻联盟</span></a><strong>新闻联盟</strong></li>
+        <li><a href="video.html"><i class="fa fa-video-camera" aria-hidden="true"></i><span>视频联盟</span></a><strong>视频联盟</strong></li>
+        <li><a href="classification.html"><i class="fa fa-list" aria-hidden="true"></i><span>分类站联盟</span></a><strong>分类站联盟</strong></li>
+        <li><a href="data.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>数据分析</span></a><strong>数据分析</strong></li>
+        <li><a href="xunpan.html"><i class="fa fa-commenting" aria-hidden="true"></i><span>询盘管理</span></a><strong>询盘管理</strong></li>
+        <!--<li><a href="service.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>服务市场</span></a><strong>服务市场</strong></li>-->
+      </ul>
+      <div> 专属服务顾问电话 <span>1501000000</span> </div>
+      <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+      <h2>专属服务顾问电话：1501000000</h2>
+    </div>
+    <!--左侧导航结束--> 
+    <!--主体内容开始-->
+    <div class="content">
+      <div class="cntnt">
+        <div class="body">
+          <div class="snav">
+            <ul class=" clearfix">
+              <li><a href="account.html">基础信息</a></li>
+              <li><a href="account-info.html">企业资料</a></li>
+              <li class="sactive"><a href="account-info1.html">企业经营信息</a></li>
+              <li><a href="account-contact.html">联系方式</a></li>
+              <li><a href="account-online.html">在线客服</a></li>
+            </ul>
+          </div>
+          <div class="container account-info1">
+            <form class="layui-form">
+              <div class="layui-form-item">
+                <label class="layui-form-label">主营产品：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name="title"  lay-verify="title" placeholder="多个产品采用逗号(,)分割,限定5个" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">附属产品：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name="title"   placeholder="多个产品采用逗号(,)分割,限定10个" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">经营模式：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <select name="city" lay-verify="required">
+                    <option value="">请选择</option>
+                    <option value="0">生产制造</option>
+                    <option value="1">贸易批发</option>
+                    <option value="2">商业服务</option>
+                    <option value="3">招商代理</option>
+                    <option value="4">其他</option>
+                  </select>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label" >企业类型：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <select name="city" lay-verify="required">
+                    <option value="">请选择</option>
+                    <option value="0">企业单位</option>
+                    <option value="1">事业单位或社会团体</option>
+                    <option value="2">个体经营</option>
+                  </select>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">年营业额：</label>
+                <div class="layui-input-inline">
+                  <input type="text" name="title"   autocomplete="off" class="layui-input">
+                </div>
+                <span class="sspan">万人民币</span> </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">企业规模：</label>
+                <div class="layui-input-inline">
+                  <input type="text" name="title"    autocomplete="off" class="layui-input">
+                </div>
+                <span class="sspan">人</span> </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">法人代表：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name="b_product"  lay-verify="b_product" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">营业执照注册号：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" name="title"  placeholder="多个产品采用逗号(,)分割,限定10个" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">企业营业执照：</label>
+                <div class="layui-upload zhpic">
+                  <button type="button" class="layui-btn layui-btn-primary" id="zhpic"><i class="layui-icon"></i>上传企业营业执照</button>
+                  <div class="upldimg">
+                    <img src="images/pic_05.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">注册资金：</label>
+                <div class="layui-input-inline">
+                  <input type="text" name="title"   autocomplete="off" class="layui-input">
+                </div>
+                <span class="sspan">万</span>
+                <div class="layui-input-inline" style="width:120px;">
+                  <select name="city" lay-verify="required">
+                    <option value="">请选择币种</option>
+                    <option value="0">人民币</option>
+                    <option value="1">港币</option>
+                    <option value="2">台币</option>
+                    <option value="3">美元</option>
+                    <option value="4">欧元</option>
+                    <option value="5">英镑</option>
+                  </select>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">注册地址：</label>
+                <div class="layui-input-inline">
+                  <select name="city" lay-verify="required">
+                    <option value="">请选择</option>
+                    <option value="0">北京</option>
+                    <option value="1">上海</option>
+                  </select>
+                </div>
+                <div class="layui-input-inline">
+                  <select name="city1" lay-verify="required">
+                    <option value="">请选择</option>
+                    <option value="0">北京</option>
+                    <option value="1">上海</option>
+                  </select>
+                </div>
+                <div class="layui-input-inline">
+                  <select name="city2" lay-verify="required">
+                    <option value="">请选择</option>
+                    <option value="0">朝阳区</option>
+                    <option value="1">静安区</option>
+                  </select>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">企业成立日期：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="text" class="layui-input" id="date" placeholder="请选择">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">是否提供加工定制：</label>
+                <div class="layui-input-block layui-input-block1">
+                  <input type="radio" name="choose" value="提供" title="提供" checked="">
+                  <input type="radio" name="choose" value="不提供" title="不提供">
+                </div>
+              </div>
+              <div class="layui-form-item submin-cancle">
+                <label class="layui-form-label">&nbsp;</label>
+                <div class="layui-input-block">
+                  <button class="layui-btn btn_blue" lay-submit="" lay-filter="demo1">保存</button>
+                  <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--主体内容结束--> 
+  </div>
+</div>
+<script type="text/javascript">
+
+	
+	
+$(function(){
+     //左侧导航js
+     var _width = $(window).width(); 
+     if(_width < 1000){
+     
+	$(".nav p").mouseover(function(){
+		$(".nav h2").show();
+		})
+	$(".nav p").mouseleave(function(){
+		$(".nav h2").hide();
+		})
+		
+	$(".nav ul li").mouseover(function(){
+		$(this).find("strong").show();
+		})
+	$(".nav ul li").mouseleave(function(){
+		$(this).find("strong").hide();
+		})
+   
+     }
+
+});
+
+layui.use(['form','upload', 'laydate'], function(){
+	
+	var form = layui.form
+	,layer = layui.layer
+	,laydate = layui.laydate;
+	
+	  //日期
+	    laydate.render({
+	      elem: '#date'
+	    });
+  
+	  //监听提交
+	  form.on('submit(formDemo)', function(data){
+	    layer.msg(JSON.stringify(data.field));
+	    return false;
+	  });
+	  
+    //自定义验证规则
+    form.verify({
+      title: function(value){
+      if(value.length<=0){
+        return '标题不能为空';
+      }
+        if(value.length > 50){
+        return '标题不超过50个汉字';
+        }
+    },
+    b_product : function(value,item){
+        if(value.length<=0){
+        return '主营产品不能为空';
+        }
+        var keyword=value;
+        var k_len_error=0;
+        keyword = keyword.replace("、",",");
+        keyword = keyword.replace("，",",");
+        keyword = keyword.replace("　",",");
+        keyword = keyword.replace(/\s+/g,",");
+        //alert(b_product);
+        var keyword_arr = $.unique(keyword.split(','));
+        var keyword_arr_length = keyword_arr.length;
+
+        $.each(keyword_arr,function(index,kvalue){
+            if(kvalue.length>20) 
+            {
+              k_len_error = 1;
+          }
+        });
+        console.log(keyword_arr_length);
+        if(keyword_arr_length>5 || k_len_error)
+        {
+          console.log(123123);
+          return '多个产品用逗号(,)分隔，限定5个';
+        }
+      },
+
+    });
+	  
+	  
+	 var $ = layui.jquery,
+     upload = layui.upload;
+//上传营业执照
+     var uploadInst = upload.render({
+    elem: '#zhpic'
+    ,url: '/upload/'
+    ,before: function(obj){
+      //预读本地文件示例，不支持ie8
+      obj.preview(function(index, file, result){
+        $('#zhpicimg1').attr('src', result); //图片链接（base64）
+      });
+    }
+    ,done: function(res){
+      //如果上传失败
+      if(res.code > 0){
+        return layer.msg('上传失败');
+      }
+      //上传成功
+    }
+    ,error: function(){
+      //演示失败状态，并实现重传
+      var demoText = $('#zhpictext');
+      demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+      demoText.find('.demo-reload').on('click', function(){
+        uploadInst.upload();
+      });
+    }
+  }); 
+   
+   
+	});
+	
+
+
+</script>
+</body>
+</html>

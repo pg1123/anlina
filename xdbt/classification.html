@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>分类站联盟</title>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div> 
+  <!--顶部开始-->
+  <div class="top clearfix">
+    <h2><img src="images/logo.png"></h2>
+    <span><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;>&nbsp;分类站联盟</span>
+    <div class="clearfix">
+      <p>徐水县星涛机械厂</p>
+      <img src="images/tx.jpg"></div>
+  </div>
+  <!--顶部结束-->
+  
+  <div id="main"> 
+    <!--左侧导航开始-->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html" ><i class="fa fa-tachometer" aria-hidden="true"></i><span>首页</span><strong>首页</strong></a></li>
+        <li><a href="content.html"><i class="fa fa-cubes" aria-hidden="true"></i><span>内容中心</span></span></a><strong>内容中心</strong></li>
+        <li><a href="substation.html"><i class="fa fa-sitemap"></i><span>企业分站</span></a><strong>企业分站</strong></li>
+        <li><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span>商贸联盟</span></a><strong>商贸联盟</strong></li>
+        <li><a href="wechat.html"><i class="fa fa-weixin" aria-hidden="true"></i><span>微信秀场</span></a><strong>微信秀场</strong></li>
+        <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>新闻联盟</span></a><strong>新闻联盟</strong></li>
+        <li><a href="video.html"><i class="fa fa-video-camera" aria-hidden="true"></i><span>视频联盟</span></a><strong>视频联盟</strong></li>
+        <li class="active"><a href="classification.html"><i class="fa fa-list" aria-hidden="true"></i><span>分类站联盟</span></a><strong>分类站联盟</strong></li>
+        <li><a href="data.html"><i class="fa fa-line-chart" aria-hidden="true"></i><span>数据分析</span></a><strong>数据分析</strong></li>
+        <li><a href="xunpan.html"><i class="fa fa-commenting" aria-hidden="true"></i><span>询盘管理</span></a><strong>询盘管理</strong></li>
+        <!--<li><a href="service.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>服务市场</span></a><strong>服务市场</strong></li>-->
+      </ul>
+      <div> 专属服务顾问电话 <span>1501000000</span> </div>
+      <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+      <h2>专属服务顾问电话：1501000000</h2>
+    </div>
+    <!--左侧导航结束--> 
+    <!--主体内容开始-->
+    <div class="content">
+      <div class="cntnt">
+        <div class="body">
+          <div class="snav">
+            <ul class=" clearfix">
+              <li class="sactive"><a href="classification.html">全部分类信息</a></li>
+              <li class="snavli"><a href="classification-release.html"><i class="fa fa-plus" aria-hidden="true"></i>发布分类信息</a></li>
+            </ul>
+          </div>
+          <div class="container video">
+            <div class="nodate" style="display:none;"> 暂无数据 </div>
+            <div>
+              <div class="videozy clearfix">
+                <h2>分类信息推广可用资源：</h2>
+                <p class="clearfix"><img src="images/pic/58.jpg"><span>5</span></p>
+                <p class="clearfix"><img src="images/pic/ganji.jpg"><span>5</span><span class="spa" style="display:none;">无剩余额度请购买</span></p>
+              </div>
+              <table class="layui-table">
+                <colgroup>
+                <col width="60">
+                <col width="350">
+                <col width="100">
+                <col width="120">
+                <col width="100">
+                <col width="100">
+                <col width="100">
+                <col width="180">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>序号</th>
+                    <th>标题</th>
+                    <th>投放平台</th>
+                    <th>投放状态</th>
+                    <th>专题链接</th>
+                    <th>投放时间</th>
+                    <th>投放周期</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><p onClick="videolook()">纳米抗菌易洁釉料添加剂</p></td>
+                    <td>58同城</td>
+                    <td><span>审核未通过</span></td>
+                    <td>-</td>
+                    <td>2018.04.03</td>
+                    <td>1年</td>
+                    <td>
+                      <button class="btn btn_white"  onClick="videolook()">查看</button><button class="btn btn_orange">编辑</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><p onClick="videolook()">异型件加工 异型定制 异型紧固件 异型五金件</p></td>
+                    <td>赶集网</td>
+                    <td>审核中</td>
+                    <td>-</td>
+                    <td>2018.04.03</td>
+                    <td>1年</td>
+                    <td><button class="btn btn_white"  onClick="videolook()">查看</button></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><p onClick="videolook()">五金杂件 五金件</p></td>
+                    <td>58同城</td>
+                    <td>已投放</td>
+                    <td><a href="#">查看</a></td>
+                    <td>2018.04.03</td>
+                    <td>1年</td>
+                    <td>
+                      <button class="btn btn_white" onClick="videolook()" >查看</button><button class="btn btn_orange" onClick="change()">变更信息</button></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><p onClick="videolook()">异型件加工 异型定制 异型紧固件 异型五金件</p></td>
+                    <td>赶集网</td>
+                    <td>已下线</td>
+                    <td>-</td>
+                    <td>2018.04.03</td>
+                    <td>1年</td>
+                    <td>
+                      <button class="btn btn_white" onClick="videolook()">查看</button><button class="btn btn_orange" onClick="renew()">续费</button></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div id="demo2">
+                <div class="layui-box layui-laypage layui-laypage-molv" id="layui-laypage-1"><a href="javascript:;" class="layui-laypage-prev layui-disabled" data-page="0">上一页</a><span class="layui-laypage-curr"><em class="layui-laypage-em"></em><em>1</em></span><a href="javascript:;" data-page="2">2</a><a href="javascript:;" data-page="3">3</a><a href="javascript:;" data-page="4">4</a><a href="javascript:;" data-page="5">5</a><span class="layui-laypage-spr">…</span><a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="10">10</a><a href="javascript:;" class="layui-laypage-next" data-page="2">下一页</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--主体内容结束--> 
+  </div>
+  <!--续费弹窗开始-->
+  <div class="normaltip layui-layer-wrap" id="renew" style="display:none;">
+    <div class="pop-main">
+      <p>光轮电子已到期，提交续费需求后，客服人员会尽快与您联系！</p>
+    </div>
+  </div>
+  <!--续费弹窗结束--> 
+  <!--详情弹窗开始-->
+  <div class="videolook scoll" id="videolook" style="display:none;">
+    <h2>审核未通过，视频不符合；</h2>
+    <div class="videoimg"><img src="images/video.png"></div>
+    <ul>
+      <li class="clearfix"><span>标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;题：</span>
+        <p>光轮电子</p>
+      </li>
+      <li class="clearfix"><span>公司名称：</span>
+        <p>光轮电子</p>
+      </li>
+      <li class="clearfix"><span>企业介绍：</span>
+        <p>北京光轮电子科技有限公司成立于2007年，一直致力于微控制器（MCU）操作系统及嵌入式软件构件化研究，取得了重要成果。同时也为广大用户提供物联网解决方案、智能硬件开发（包括电子产品开发、工控设备开发、仪器仪表开发等）等服务。公司拥有多名北大硕士、海归博士等经验丰富的高级技术团队，现有软硬件工程师20余人。 光轮电子研发成功的TreeOS物联网实时操作系统，具有国际领 先水平。这是一种新型的大型定制化嵌入式操作系统，可一键式自动生成高达90%代码，广泛用于物联网、工业4.0、人工智能等领域。 公司成立10余年来，已为全国各地多种行业用户开发了200多个物联网及智能硬件产品和项目，积累了极其丰富的实践经验。</p>
+      </li>
+      <li class="clearfix"><span>联系人：</span>
+        <p>张三</p>
+      </li>
+      <li class="clearfix"><span>联系手机：</span>
+        <p>13126262626</p>
+      </li>
+      <li class="clearfix"><span>标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;签：</span>
+        <p>物联网开发 单片机操作系统 单片机设计</p>
+      </li>
+      <li class="clearfix"><span>主营产品：</span>
+        <p>物联网开发 单片机操作系统 单片机设计</p>
+      </li>
+      <li class="clearfix"><span>上传日期：</span>
+        <p>2018-05-20</p>
+      </li>
+    </ul>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+      <legend>投放信息</legend>
+    </fieldset>
+    <ul class="videoul clearfix">
+      <li class="clearfix"><span>投放日期：</span>
+        <p>2018-05-21</p>
+      </li>
+      <li class="clearfix"><span>推广周期：</span>
+        <p>1年</p>
+      </li>
+      <li class="clearfix"><span>投放平台：</span>
+        <p>58同城</p>
+      </li>
+      <li class="clearfix"><span>投放状态：</span>
+        <p>已投放</p>
+      </li>
+    </ul>
+  </div>
+  <!--详情弹窗结束--> 
+  <!--变更信息弹窗开始-->
+  <div class="change" id="change" style="display:none;">
+    <h2>变更记录：</h2>
+    <ul class="changediv scoll">
+      <li>2018-06-15&nbsp;&nbsp;&nbsp;&nbsp;变更信息&nbsp;&nbsp;&nbsp;&nbsp;联系人：刘伟权&nbsp;&nbsp;&nbsp;&nbsp;电话：1300000000</li>
+      <li>2018-06-15&nbsp;&nbsp;&nbsp;&nbsp;变更信息&nbsp;&nbsp;&nbsp;&nbsp;联系人：刘伟权&nbsp;&nbsp;&nbsp;&nbsp;电话：1300000000</li>
+      <li>2018-06-15&nbsp;&nbsp;&nbsp;&nbsp;变更信息&nbsp;&nbsp;&nbsp;&nbsp;联系人：刘伟权&nbsp;&nbsp;&nbsp;&nbsp;电话：1300000000</li>
+      <li>2018-06-15&nbsp;&nbsp;&nbsp;&nbsp;变更信息&nbsp;&nbsp;&nbsp;&nbsp;联系人：刘伟权&nbsp;&nbsp;&nbsp;&nbsp;电话：1300000000</li>
+      <li>2018-06-15&nbsp;&nbsp;&nbsp;&nbsp;变更信息&nbsp;&nbsp;&nbsp;&nbsp;联系人：刘伟权&nbsp;&nbsp;&nbsp;&nbsp;电话：1300000000</li>
+      <li>2018-06-15&nbsp;&nbsp;&nbsp;&nbsp;变更信息&nbsp;&nbsp;&nbsp;&nbsp;联系人：刘伟权&nbsp;&nbsp;&nbsp;&nbsp;电话：1300000000</li>
+      <li>2018-06-15&nbsp;&nbsp;&nbsp;&nbsp;变更信息&nbsp;&nbsp;&nbsp;&nbsp;联系人：刘伟权&nbsp;&nbsp;&nbsp;&nbsp;电话：1300000000</li>
+      <li>2018-06-15&nbsp;&nbsp;&nbsp;&nbsp;变更信息&nbsp;&nbsp;&nbsp;&nbsp;联系人：刘伟权&nbsp;&nbsp;&nbsp;&nbsp;电话：1300000000</li>
+      <li>2018-06-15&nbsp;&nbsp;&nbsp;&nbsp;变更信息&nbsp;&nbsp;&nbsp;&nbsp;联系人：刘伟权&nbsp;&nbsp;&nbsp;&nbsp;电话：1300000000</li>
+      <li>2018-06-15&nbsp;&nbsp;&nbsp;&nbsp;变更信息&nbsp;&nbsp;&nbsp;&nbsp;联系人：刘伟权&nbsp;&nbsp;&nbsp;&nbsp;电话：1300000000</li>
+      <li>2018-06-15&nbsp;&nbsp;&nbsp;&nbsp;变更信息&nbsp;&nbsp;&nbsp;&nbsp;联系人：刘伟权&nbsp;&nbsp;&nbsp;&nbsp;电话：1300000000</li>
+      <li>2018-06-15&nbsp;&nbsp;&nbsp;&nbsp;变更信息&nbsp;&nbsp;&nbsp;&nbsp;联系人：刘伟权&nbsp;&nbsp;&nbsp;&nbsp;电话：1300000000</li>
+    </ul>
+    <form class="layui-form" action="">
+      <div class="layui-form-item">
+        <label class="layui-form-label">标题：</label>
+        <div class="layui-input-block ">
+          <p>标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">联系人手机：</label>
+        <div class="layui-input-block ">
+          <input type="text" name="title" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">联系人：</label>
+        <div class="layui-input-block">
+          <input type="text" name="title" class="layui-input">
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--变更信息弹窗结束--> 
+</div>
+<script type="text/javascript">
+
+	
+	
+$(function(){
+     //左侧导航js
+     var _width = $(window).width(); 
+     if(_width < 1000){
+     
+	$(".nav p").mouseover(function(){
+		$(".nav h2").show();
+		})
+	$(".nav p").mouseleave(function(){
+		$(".nav h2").hide();
+		})
+		
+	$(".nav ul li").mouseover(function(){
+		$(this).find("strong").show();
+		})
+	$(".nav ul li").mouseleave(function(){
+		$(this).find("strong").hide();
+		})
+   
+     }
+
+});
+
+
+  
+  
+
+
+
+layui.use(['form','upload', 'laydate','laypage', 'layer'], function(){
+	
+	var form = layui.form
+	,layer = layui.layer
+	,laydate = layui.laydate
+	,upload = layui.upload;
+	
+		  
+	  <!--分页-->
+  var laypage = layui.laypage
+  ,layer = layui.layer;
+laypage.render({
+    elem: 'demo2'
+    ,count: 100
+    ,theme: '#3596dd'
+  });
+
+});  
+
+//续费弹窗
+function renew(){
+	layer.open({
+   type: 1,
+  title: false,
+  closeBtn: 0,
+  shadeClose: true,
+  area: ['400px', 'auto'],
+  btn: ['确定', '取消'],
+  skin: 'yourclass',
+  content: $('#renew'),	
+
+ 
+});
+}
+//信息弹窗
+function videolook(){
+	layer.open({
+		type: 1,
+  title: '视频详情',
+  shadeClose: true,
+  shade: 0.8,
+  area: ['800px', 'auto'],
+  content: $('#videolook') //iframe的url
+		
+ 
+});
+}
+//变更信息弹窗
+function change(){
+	layer.open({
+		type: 1,
+		title: '变更信息',
+  shadeClose: true,
+  shade: 0.8,
+  area: ['600px', 'auto'],
+   btn: ['确定', '取消'],
+  content: $('#change') //iframe的url
+		
+ 
+});
+}
+</script>
+</body>
+</html>

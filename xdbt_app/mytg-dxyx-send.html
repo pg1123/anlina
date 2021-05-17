@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- Your app title -->
+<title>我的推广</title>
+<link rel="stylesheet" href="css/framework7.ios.min.css">
+<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+<link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="dbt">
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<div class="views" id="dbt">
+<div class="view view-main"> 
+  <!-- 头部开始-->
+  <div class="navbar">
+    <div class="navbar-inner"> 
+      <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+      <div class="left"><a href="mytg-dxyx.html" class="back"><i class="f7-icons">left</i></a></div>
+      <div class="center sliding">发送短信</div>
+    </div>
+  </div>
+  <!-- 头部结束--> 
+  <!-- 主体开始-->
+  <div class="pages navbar-through toolbar-through ">
+    <div data-page="qysp" class="page">
+      <div class="page-content">
+        <div class="add-message">
+          <p><a href="#" class="close-popup" ><i class="f7-icons">close_round</i></a></p>
+          <div class="content-block">
+            <form>
+              <ul >
+                <li class="align-top">
+                  <div class="item-content">
+                    <div class="item-inner clearfix">
+                      <div class="item-title label">短信内容</div>
+                      <div class="item-input item-textarea item-textarea-no"> 格式：容+退订+【签名】；例子：会员您好，参与我们的问卷回答就可获得免费赠送您“10元现金券”！请戳{网址}回T退订【XXX网上商城】 </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="select">
+                  <div class="item-content">
+                    <div class="item-inner clearfix">
+                      <div class="item-title label">标签选择</div>
+                      <div class="item-input">
+                        <div class="list-block">
+                          <ul>
+                            <li>
+                              <label class="label-radio item-content">
+                              <input type="radio" name="my-radio" value="Books" checked="checked">
+                              <div class="item-inner">
+                                <div class="item-title">百度搜索过制造业产品</div>
+                              </div>
+                              </label>
+                              <h3><a href="#" class="open-popup"  data-popup=".popup-ckxx">查看详细介绍</a></h3>
+                            </li>
+                            <li>
+                              <label class="label-radio item-content">
+                              <input type="radio" name="my-radio" value="Movies">
+                              <div class="item-inner">
+                                <div class="item-title">登陆过阿里、慧聪、马可波罗</div>
+                              </div>
+                              </label>
+                              <p>最近半年登陆过</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="select">
+                  <div class="item-content">
+                    <div class="item-inner clearfix" >
+                      <div class="item-title label">投放数量</div>
+                      <div class="item-input">
+                        <input type="text" placeholder="请选择"  id="picker-describe-number"  onClick="tf()">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="tj"><a href="#">
+                <button class="button button-big button-fill">发送</button>
+                </a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 主体结束--> 
+</div>
+<!-- Path to Framework7 Library JS--> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<!-- Path to your app js--> 
+<script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

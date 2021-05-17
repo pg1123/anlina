@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- Your app title -->
+<title>我的推广</title>
+<link rel="stylesheet" href="css/framework7.ios.min.css">
+<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+
+<link rel="stylesheet" href="css/my-app.css">
+<style type="text/css">
+
+</style>
+</head>
+<body class="dbt">
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<div class="views" id="dbt">
+<div class="view view-main"> 
+  <!-- 头部开始-->
+  <div class="navbar">
+    <div class="navbar-inner"> 
+      <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+      <div class="left"><a href="mytg-ygmtg.html" class="back"><i class="f7-icons">left</i></a></div>
+      <div class="center sliding">外贸推广</div>
+    </div>
+  </div>
+  <!-- 头部结束--> 
+  <!-- 主体开始-->
+  <div class="pages navbar-through toolbar-through ">
+    <div data-page="wmtg" class="page">
+              
+      <div class="page-content dbt-mytg-wmtg infinite-scroll  pull-to-refresh-content" data-distance="100">
+        <div class="mytg-wmtg  " >
+          <div class="pull-to-refresh-layer">
+    <div class="preloader"></div>
+    <div class="up-down">下拉查看最新内容</div>
+  </div>
+          <div style="height:72px;"></div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-item-divider"><strong></strong></div>
+              <div class="timeline-item-content">
+                <div class="timeline-item-inner"> <img src="images/left_19.png" class="left-icon">
+                  <div>
+                    <h2>xxxxx用户说:</h2>
+                    <p>我又提交了一些新营销内容，是否可以帮我想facebook上发送一下？</p>
+                    <img src="images/sy.jpg" > <span>2017年10月1日</span> </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-item-divider"><strong></strong></div>
+              <div class="timeline-item-content">
+                <div class="timeline-item-inner"> <img src="images/left_19.png" class="left-icon">
+                  <div>
+                    <h2>xxxxx用户说:</h2>
+                    <p>我又提交了一些新营销内容，是否可以帮我想facebook上发送一下？</p>
+                    <span>2017年10月1日</span> </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-item-divider"><strong></strong></div>
+              <div class="timeline-item-content">
+                <div class="timeline-item-inner"> <img src="images/left_19.png" class="left-icon">
+                  <div>
+                    <h2>xxxxx用户说:</h2>
+                    <p>我又提交了一些新营销内容，是否可以帮我想facebook上发送一下？</p>
+                    <span>2017年10月1日</span> </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-item-divider"><strong></strong></div>
+              <div class="timeline-item-content">
+                <div class="timeline-item-inner"> <img src="images/left_19.png" class="left-icon">
+                  <div>
+                    <h2>xxxxx用户说:</h2>
+                    <p>我又提交了一些新营销内容，是否可以帮我想facebook上发送一下？</p>
+                    <img src="images/sy.jpg" > <span>2017年10月1日</span> </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-item-divider"><strong></strong></div>
+              <div class="timeline-item-content">
+                <div class="timeline-item-inner"> <img src="images/left_19.png" class="left-icon">
+                  <div>
+                    <h2>xxxxx用户说:</h2>
+                    <p>我又提交了一些新营销内容，是否可以帮我想facebook上发送一下？</p>
+                    <span>2017年10月1日</span> </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-item-divider"><strong></strong></div>
+              <div class="timeline-item-content">
+                <div class="timeline-item-inner"> <img src="images/left_19.png" class="left-icon">
+                  <div>
+                    <h2>xxxxx用户说:</h2>
+                    <p>我又提交了一些新营销内容，是否可以帮我想facebook上发送一下？</p>
+                    <span>2017年10月1日</span> </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="infinite-scroll-preloader">
+        <div class="preloader"></div>
+       </div>
+        </div>
+      </div>
+      <div class="toolbar messagebar messagebar-init mytg-wmtg-bottom" data-max-height="200">
+        <div class="toolbar-inner">
+          <textarea placeholder="您想跟外贸服务交流的内容"></textarea>
+          <i class="f7-icons">mic</i><a href="#" class="link">发布</a> </div>
+      </div>
+    </div>
+  </div>
+  <!-- 主体结束--> 
+  
+</div>
+<!-- Path to Framework7 Library JS--> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<!-- Path to your app js--> 
+<script type="text/javascript" src="js/my-app.js"></script>
+<script>
+
+ /*外贸推广下拉加载最新内容*/
+
+ // Dummy Content
+var songs = ['Yellow Submarine', 'Don\'t Stop Me Now', 'Billie Jean', 'Californication'];
+var authors = ['Beatles', 'Queen', 'Michael Jackson', 'Red Hot Chili Peppers'];
+ 
+// Pull to refresh content
+var ptrContent = $$('.pull-to-refresh-content');
+ 
+// Add 'refresh' listener on it
+ptrContent.on('refresh', function (e) {
+    // Emulate 2s loading
+    setTimeout(function () {
+        // Random image
+        var picURL = 'images/sy.jpg' + Math.round(Math.random() * 100);
+        // Random song
+        var song = songs[Math.floor(Math.random() * songs.length)];
+        // Random author
+        var author = authors[Math.floor(Math.random() * authors.length)];
+        // List item html
+        var itemHTML = '<div class="timeline-item"><div class="timeline-item-divider"><strong></strong></div><div class="timeline-item-content"><div class="timeline-item-inner"> <img src="images/left_19.png" class="left-icon"><div><h2>xxxxx用户说:</h2><p>我又提交了一些新营销内容，是否可以帮我想facebook上发送一下？</p><img src="images/sy.jpg" > <span>2017年12月24日</span></div></div></div></div>';
+        // Prepend new list element
+        ptrContent.find('.timeline').prepend(itemHTML);
+        // When loading done, we need to reset it
+        myApp.pullToRefreshDone();
+    }, 2000);
+});
+
+
+
+
+
+ /*外贸推广加载更多内容*/
+var loading = false;
+ 
+// Last loaded index
+var lastIndex = $$('.timeline .timeline-item').length;
+ 
+// Max items to load
+var maxItems = 60;
+ 
+// Append items per load
+var itemsPerLoad = 20;
+ 
+// Attach 'infinite' event handler
+$$('.infinite-scroll').on('infinite', function () {
+ 
+  // Exit, if loading in progress
+  if (loading) return;
+ 
+  // Set loading flag
+  loading = true;
+ 
+  // Emulate 1s loading
+  setTimeout(function () {
+    // Reset loading flag
+    loading = false;
+ 
+    if (lastIndex >= maxItems) {
+      // Nothing more to load, detach infinite scroll events to prevent unnecessary loadings
+      myApp.detachInfiniteScroll($$('.infinite-scroll'));
+      // Remove preloader
+      $$('.infinite-scroll-preloader').remove();
+      return;
+    }
+ 
+    // Generate new items HTML
+    var html = '<div class="timeline-item"><div class="timeline-item-divider"><strong></strong></div><div class="timeline-item-content"><div class="timeline-item-inner"> <img src="images/left_19.png" class="left-icon"><div><h2>xxxxx用户说:</h2><p>我又提交了一些新营销内容，是否可以帮我想facebook上发送一下？</p><span>2017年10月1日</span></div></div></div></div>';
+   
+ 
+    // Append new items
+    $$('.timeline').append(html);
+ 
+    // Update last loaded index
+    lastIndex = $$('.timeline .timeline-item').length;
+  }, 1000);
+});          
+</script>
+</body>
+</html>

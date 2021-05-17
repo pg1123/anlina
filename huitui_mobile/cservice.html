@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>在线客服</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div class="mobile"> 
+  <!--头部导航开始-->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <h1>在线客服</h1>
+    </div>
+    <div class="bar khwind">
+      <div class="toolbar"> <a href="javascript:;"><i class="fa fa-sign-out" aria-hidden="true"></i> 退出</a></div>
+    </div>
+  </div>
+  <!--头部导航结束--> 
+  <!--服务中心开始-->
+  <div class="service">
+    <div class="servicelist listmain">
+       <div class="pad15 bluetit">问题处理进度<i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true" style="display:none;"></i></div>
+       <ul class="serul" style="display:none">
+          <li>
+             <p>1、企业云站收录问题</p>
+             <span class="green">已完成</span>
+          </li>
+          <li>
+             <p>2、续费问题资讯</p>
+             <span class="green">已完成</span>
+          </li>
+          <li>
+             <p>3、企业云站收录问题</p>
+             <span class="green">已完成</span>
+          </li>
+          <li>
+             <p>4、续费问题咨询</p>
+             <span class="warn">处理中</span>
+          </li>
+          <li>
+             <p>5、续费问题咨询</p>
+             <span class="warn">处理中</span>
+          </li>
+          <div class="notice text-right pad15"><p>更多问题请登录PC端</p></div>
+       </ul>
+    </div>
+    <div class="servicelist listmain">
+      <div class="serque pad15">
+        <div class="question clearfix">
+          <img src="images/e.png" />
+          <div class="sermain">
+            <div class="chat">
+              <span>汇推小e</span>
+              <p>您好，我是“汇推小e”请问你需要什么帮助吗？</p>
+              <span>2019-03-06 10:20</span>
+            </div>
+          </div>
+        </div>
+        <div class="question questiona clearfix">
+          <img src="images/tx.jpg" />
+          <div class="sermain">
+            <div class="chat">
+              <span>北京商贸联盟咨询有限公司</span>
+              <p>您好，请问一下订单处理速度。</p>
+              <span>2019-03-06 11:20</span>
+            </div>
+          </div>
+        </div>
+        <div class="question clearfix">
+          <img src="images/e.png" />
+          <div class="sermain">
+            <div class="chat">
+              <span>汇推小e</span>
+              <p>您好，您的问题我们已经收到，我们会尽快为您处理，请您耐心等待，谢谢您的合作！</p>
+              <span>2019-03-06 10:20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dialog fixed">
+        <div class="textareabox">
+          <button class="dialogpop hfbtn" onclick="hf()">回复</button>
+          <button class="dialogpop" onclick="tj()">提交问题</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--服务中心结束--> 
+  <div class="footer">
+    <p>北京XXXXXXXXXX有限公司</p>
+  </div>
+</div>
+<!--返回顶部开始--> 
+<div class="totop"><a href="javascript:;"><i class="fa fa-angle-double-up"></i></a></div>
+<!--返回顶部结束-->
+<script type="text/javascript" src="layer_mobile/layer.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script> 
+<script type="text/javascript">
+
+
+$( document ).ready(function() {	
+//展开收起
+$(".fa-angle-up").click(function(){
+	$(this).parent().siblings(".serul").slideUp();
+	$(this).siblings(".fa-angle-down").show();
+	$(this).hide();
+	});
+$(".fa-angle-down").click(function(){
+	$(this).parent().siblings(".serul").slideDown();
+	$(this).siblings(".fa-angle-up").show();
+	$(this).hide();
+	})	
+	
+	
+});
+
+
+function hf(){
+layer.open({
+  title: [
+    '回复问题',
+    'background-color:#3596dd; color:#fff;'
+  ]
+  ,anim: 'up'
+  ,content:'<div class="cnt"><div class="textareabox"><div class="textarea"><textarea id="textarea"></textarea></div></div></div>'
+  ,btn: ['提交回复', '关闭']
+  ,yes:function(index){
+     layer.open({
+    content: '提交成功'
+    ,skin: 'msg'
+    ,time: 2 //2秒后自动关闭
+  });
+    }
+});
+}
+function tj(){
+layer.open({
+  title: [
+    '提交问题',
+    'background-color:#3596dd; color:#fff;'
+  ]
+  ,anim: 'up'
+  ,content:'<div class="cnt"><div class="textareabox"><div class="textarea"><textarea id="textarea"></textarea></div></div></div>'
+  ,btn: ['提交问题', '关闭']
+  ,yes:function(index){
+     layer.open({
+    content: '问题提交成功'
+    ,skin: 'msg'
+    ,time: 2 //2秒后自动关闭
+  });
+    }
+});
+}
+</script> 
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>客户案例</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div class="mobile"> 
+  <!--头部导航开始-->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <h1>企业云站</h1>
+    </div>
+    <div class="bar">
+      <div class="toolbar menu-right"  id="open-sb"> <i class="fa fa-bars" aria-hidden="true"></i> </div>
+      <section class="sidebar">
+        <div data-ssbplugin="sub-wrapper">
+          <nav>
+            <h2>汇推导航</h2>
+            <ul>
+              <li><a href="index.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>汇推首页</a></li>
+              <li><a href="bcontent.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>内容中心</a></li>
+              <li> <a href="javascript:;"><i class="fa fa-angle-double-right" aria-hidden="true"></i>渠道中心</a>
+                <div> 
+                   <span><a href="bsubstation.html">企业分站</a></span> 
+                   <span><a href="bcloud.html">企业云站</a></span> 
+                   <span><a href="bbusiness.html">商贸联盟</a></span> 
+                   <span><a href="javascript:;">微信秀场</a></span> 
+                   <span><a href="bnews.html">新闻推广</a></span> 
+                   <span><a href="bsociety.html">社会化媒体</a></span> 
+                   <span><a href="bbaike.html">企业百科</a></span> 
+                   <span><a href="banswer.html">企业问答</a></span> 
+                   <span><a href="bstarmedia.html">星媒体</a></span> 
+                   <span><a href="bdsp.html">云广告</a></span> 
+                </div>
+              </li>
+              <li><a href="bservice.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>服务中心</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!--头部导航结束--> 
+  <!--企业云站开始-->
+  <div class="cloud">
+    <div>
+     <ul class="dateul datethree mar15 clearfix">
+      <li>
+         <a href="javascript:;">
+            <span class="nember nembera">11</span>
+            <p class="title">企业云站数量</p>
+         </a>
+      </li>
+      <li>
+         <a href="javascript:;">
+            <span class="nember nembera">26</span>
+            <p class="title">内容发布数量</p>
+         </a>
+      </li>
+      <li>
+         <a href="javascript:;">
+            <span class="nember nembera">546</span>
+            <p class="title">页面收录数量</p>
+         </a>
+      </li>
+   </ul>
+    </div>
+    <div class="cloudlist listmain">
+      <div class="pad15 bluetit">已开通企业云站列表</div>
+          <ul class="ullist">
+            <li>
+              <a href="#" target="_blank">
+              <img src="images/logo/nxing.png" />
+              <div class="lictnt lictnta">
+                <p>宁夏在线</p>
+                <span>2019-03-20</span> </div>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+              <img src="images/logo/qqma.png" />
+              <div class="lictnt lictnta">
+                <p>全球机械网</p>
+                <span>2019-03-20</span> </div>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+              <img src="images/logo/nongcun5.png" />
+              <div class="lictnt lictnta">
+                <p>农村网</p>
+                <span>2019-03-20</span> </div>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+              <img src="images/logo/99114.png" />
+              <div class="lictnt lictnta">
+                <p>中国网库</p>
+                <span>2019-03-20</span> </div>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+    </div>
+  </div>
+  
+  <!--企业云站结束--> 
+  <div class="footer">
+    <p>北京XXXXXXXXXX有限公司</p>
+  </div>
+</div>
+<!--返回顶部开始--> 
+<div class="totop"><a href="javascript:;"><i class="fa fa-angle-double-up"></i></a></div>
+<!--返回顶部结束-->
+<script src="js/jquery-1.10.2.min.js"></script> 
+<script src="js/jquery-ui.min.js"></script> 
+<script src="js/jquery.simplesidebar.js"></script> 
+<script type="text/javascript">
+//导航js
+$( document ).ready(function() {
+	$.ajaxSetup({
+		cache: false
+	});
+	$( '.sidebar' ).simpleSidebar({
+		settings: {
+			opener: '#open-sb',
+			animation: {
+				duration: 100,
+				easing: 'easeOutQuint'
+			}
+		},
+		sidebar: {
+			align: 'right',
+			width: 200,
+			closingLinks: 'a',
+		}
+	});
+	
+	
+});
+
+
+</script>
+</body>
+</html>

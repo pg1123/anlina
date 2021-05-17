@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+  <title>内容中心</title> 
+  <script type="text/javascript" src="layui/layui.js"></script> 
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script> 
+  <link rel="stylesheet" href="css/style2.css" /> 
+</head> 
+<body> 
+  <!--发布产品模块开始-->
+  <!--发布进度2开始--> 
+  <div class="sbul ht_progress col3"> 
+    <ul class="clearfix"> 
+      <li class="lineli this"> <span></span> <p>选择行业</p> </li> 
+      <li class="this"> <span></span> <p>产品信息</p> </li> 
+      <li class="last"> <span></span> <p>推广信息</p> </li> 
+    </ul> 
+  </div> 
+  <!--发布进度2结束-->
+  <!--发布内容开始-->
+  <form class="layui-form" action=""> 
+    <div class="xcontent"> 
+      <div class="pt20">
+        <div class="layui-form-item"> 
+          <label class="layui-form-label">产品标题：</label> 
+          <div class="layui-input-block layui-input-block1"> 
+            <input type="text" name="title" placeholder="请输入标题，不超过40个汉字" class="layui-input" /> 
+          </div> 
+        </div> 
+        <div class="layui-form-item"> 
+          <label class="layui-form-label">所属系列：</label> 
+          <div class="layui-input-block layui-input-block1"> 
+            <div class="xl_tag"> 
+              <span>商品系列1</span> 
+              <span>商品系列2</span> 
+              <span>商品系列3</span> 
+              <span>商品系列4</span> 
+              <span>商品系列5</span> 
+              <span>商品系列6</span> 
+              <span>商品系列7</span> 
+              <strong onclick="addgoodsxl()" class="adxl"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;添加系列</strong> 
+            </div> 
+          </div> 
+        </div> 
+        <div class="layui-form-item"> 
+          <label class="layui-form-label">图片：</label> 
+          <div class="layui-input-block layui-input-block1"> 
+            <div class="layui-upload"> 
+              <button type="button" class="layui-btn layui-btn-primary" id="test1"><i class="layui-icon"></i>上传图片</button> 
+              <span>建议尺寸不低于450*450px，不超过2M。不能在图片里添加公司名称、电话、网址等水印。</span> 
+              <div class="upldimg" style="display:;"> 
+              	<fieldset class="layui-elem-field product-coverimg">
+        				  <legend>封面图片</legend>
+        				  <!--未上传图片开始-->
+        				  <div class="layui-field-box" style="display:none;">
+        				  	<div class="uploadimg-item">
+        				  		<img src="images/default-200x200.jpg" />
+        				  	</div>
+        				  </div>
+        				  <!--未上传图片结束-->
+        				  <!--已上传图片开始-->
+        				  <div class="layui-field-box" style="display:;">
+        				  	<div class="uploadimg-item">
+        				  		<img src="images/demo/p1.jpg" />
+        				  	</div>
+        				  </div>
+        				  <!--已上传图片结束-->
+        				</fieldset>
+        				<fieldset class="layui-elem-field product-detailimg">
+        				  <legend>商品详情图片（<span class="red">点击图片设置为封面</span>）</legend>
+        				  <!--未上传图片开始-->
+        				  <div class="layui-field-box" style="display:none;">
+        				  	<div class="uploadimg-item">
+        				  		<img src="images/default-200x200.jpg" />
+        				  	</div>
+        				  </div>
+        				  <!--未上传图片结束-->
+        				  <!--已上传图片开始-->
+                  <div class="layui-field-box" style="display:;">
+                    <div class="uploadimg-item on">
+                      <a href="javascript:;" title="删除" onclick="deleteyes()"><i class="fa fa-times-circle"></i></a>
+                      <img src="images/demo/p1.jpg" />
+                    </div>
+                    <div class="uploadimg-item">
+                      <a href="javascript:;" title="删除" onclick="deleteyes()"><i class="fa fa-times-circle"></i></a>
+                      <img src="images/demo/p2.jpg" />
+                    </div>
+                    <div class="uploadimg-item">
+                      <a href="javascript:;" title="删除" onclick="deleteyes()"><i class="fa fa-times-circle"></i></a>
+                      <img src="images/demo/p3.jpg" />
+                    </div>
+                    <div class="uploadimg-item">
+                      <a href="javascript:;" title="删除" onclick="deleteyes()"><i class="fa fa-times-circle"></i></a>
+                      <img src="images/demo/p4.jpg" />
+                    </div>
+                    <div class="uploadimg-item">
+                      <a href="javascript:;" title="删除" onclick="deleteyes()"><i class="fa fa-times-circle"></i></a>
+                      <img src="images/demo/p5.jpg" />
+                    </div>
+                    <div class="uploadimg-item">
+                      <a href="javascript:;" title="删除" onclick="deleteyes()"><i class="fa fa-times-circle"></i></a>
+                      <img src="images/demo/p6.jpg" />
+                    </div>
+                    <div class="uploadimg-item">
+                      <a href="javascript:;" title="删除" onclick="deleteyes()"><i class="fa fa-times-circle"></i></a>
+                      <img src="images/demo/p7.jpg" />
+                    </div>
+                    <div class="uploadimg-item">
+                      <a href="javascript:;" title="删除" onclick="deleteyes()"><i class="fa fa-times-circle"></i></a>
+                      <img src="images/demo/p8.jpg" />
+                    </div>
+                    <div class="uploadimg-item">
+                      <a href="javascript:;" title="删除" onclick="deleteyes()"><i class="fa fa-times-circle"></i></a>
+                      <img src="images/demo/p9.jpg" />
+                    </div>
+                  </div>
+        				  <!--已上传图片结束-->
+        				</fieldset>
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+        <div class="layui-form-item layui-form-text gridinput cpsx"> 
+          <label class="layui-form-label">产品属性：</label> 
+          <div class="layui-input-block layui-input-block2"> 
+            <div class="layui-input-inline">
+              <span class="inputname"><span class="f20 red">*</span>颜色：</span> 
+              <select name="" lay-verify="required"> <option value=""></option> <option value="0">红色</option> <option value="1">黄色</option> <option value="2">蓝色</option> <option value="3">绿色</option> <option value="4">黑色</option> </select> 
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">形态：</span> 
+              <select name="" lay-verify="required"> <option value=""></option> <option value="0">液状</option> <option value="1">粉状</option> <option value="2">膏状</option> </select> 
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">种类：</span> 
+              <select name="" lay-verify="required"> <option value=""></option> <option value="0">种类1</option> <option value="1">种类2</option> <option value="2">种类3</option> <option value="3">其他</option> </select>
+              <!--其他开始--> 
+              <div class="qtsx" style="display:;">
+                <span class="inputname"></span>
+                <input type="text" class="layui-input"> 
+              </div>
+              <!--其他结束-->
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">功能：</span> 
+              <select name="" lay-verify="required"> <option value=""></option> <option value="0">功能1</option> <option value="1">功能2</option> <option value="2">功能3</option> </select> 
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">品牌：</span> 
+              <input type="text" class="layui-input" /> 
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">型号： </span>
+              <input type="text" class="layui-input" /> 
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">医疗器械注册（备案）号： </span>
+              <input type="text" class="layui-input" /> 
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">是否现货：</span> 
+              <input type="radio" name="xh" value="是" title="是" /> 
+              <input type="radio" name="xh" value="否" title="否" checked="" /> 
+            </div>
+            <div class="layui-input-inline zdysx" style="display:none;">
+              <span class="inputname"><input type="text" class="layui-input customsxname" placeholder="属性名(如:尺寸)" /></span>
+              <input type="text" class="layui-input" placeholder="属性值(例如：15寸)" /><i class="fa fa-times" onclick="delzdy()"></i>
+            </div> 
+          </div> 
+          <div class="addzdy">
+            <a href="javascript:;" onclick="showzdy()"><i class="fa fa-plus"></i>自定义属性</a>
+          </div>
+        </div> 
+        <div class="layui-form-item layui-form-text gridinput"> 
+          <label class="layui-form-label">交易信息：</label> 
+          <div class="layui-input-block layui-input-block2"> 
+            <div class="layui-input-inline">
+              <span class="inputname">产品单价：</span>
+              <input type="text" class="layui-input" placeholder="默认为：1" oninput="value=value.replace(/[^\d]/g,'')" /> 
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">计量单位：</span>
+              <input type="text" class="layui-input" placeholder="默认为：件" /> 
+              <span><a href="javascript:;" onclick="selectunit()"><i class="fa fa-location-arrow"></i> 选择</a></span> 
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">产地：</span>
+              <input type="text" class="layui-input" value="北京" /> 
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">库存总量：</span>
+              <input type="text" class="layui-input" placeholder="默认为：9999" /> 
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">发货期限：</span>
+              <input type="text" class="layui-input" placeholder="默认为：7" oninput="value=value.replace(/[^\d]/g,'')" /> 天
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">最小起订量：</span>
+              <input type="text" class="layui-input" placeholder="默认为：1" oninput="value=value.replace(/[^\d]/g,'')" /> 
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">会员推荐产品：</span>
+              <input type="radio" name="tjcp" value="是" title="是" checked="" /> 
+              <input type="radio" name="tjcp" value="否" title="否" /> 
+            </div> 
+            <div class="layui-input-inline">
+              <span class="inputname">信息类型：</span>
+              <input type="radio" name="infotype" value="供应" title="供应" checked="" /> 
+              <input type="radio" name="infotype" value="合作" title="合作" /> 
+              <input type="radio" name="infotype" value="代理" title="代理" /> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+    </div>
+    <div class="xsubmit clearfix"> 
+      <button class="layui-btn layui-btn-primary" type="button" onclick="window.location='add-content.html'">上一步</button> 
+      <button class="layui-btn layui-btn-normal" type="button" onclick="window.location='add-content3.html'">下一步</button> 
+    </div> 
+  </form> 
+  <!--发布内容结束-->
+  <!--发布产品模块结束-->
+  <!--常用单位开始--> 
+  <div id="commonunit" class="xpop" style="display:none;"> 
+    <div class="unitbox"> 
+      <ul class="unitlist"> 
+        <li><a href="javascript::">件</a></li> 
+        <li><a href="javascript::">把</a></li> 
+        <li><a href="javascript::">包</a></li> 
+        <li><a href="javascript::">本</a></li> 
+        <li><a href="javascript::">部</a></li> 
+        <li><a href="javascript::">层</a></li> 
+        <li><a href="javascript::">床</a></li> 
+        <li><a href="javascript::">打</a></li> 
+        <li><a href="javascript::">袋</a></li> 
+        <li><a href="javascript::">顶</a></li> 
+        <li><a href="javascript::">段</a></li> 
+        <li><a href="javascript::">对</a></li> 
+        <li><a href="javascript::">副</a></li> 
+        <li><a href="javascript::">幅</a></li> 
+        <li><a href="javascript::">个</a></li> 
+        <li><a href="javascript::">根</a></li> 
+        <li><a href="javascript::">管</a></li> 
+        <li><a href="javascript::">罐</a></li> 
+        <li><a href="javascript::">柜</a></li> 
+        <li><a href="javascript::">辊</a></li> 
+        <li><a href="javascript::">盒</a></li> 
+        <li><a href="javascript::">架</a></li> 
+        <li><a href="javascript::">卷</a></li> 
+        <li><a href="javascript::">卡</a></li> 
+        <li><a href="javascript::">颗</a></li> 
+        <li><a href="javascript::">棵</a></li> 
+        <li><a href="javascript::">块</a></li> 
+        <li><a href="javascript::">粒</a></li> 
+        <li><a href="javascript::">辆</a></li> 
+        <li><a href="javascript::">路</a></li> 
+        <li><a href="javascript::">枚</a></li> 
+        <li><a href="javascript::">盘</a></li> 
+        <li><a href="javascript::">盆</a></li> 
+        <li><a href="javascript::">批</a></li> 
+        <li><a href="javascript::">片</a></li> 
+        <li><a href="javascript::">瓶</a></li> 
+        <li><a href="javascript::">束</a></li> 
+        <li><a href="javascript::">双</a></li> 
+        <li><a href="javascript::">台</a></li> 
+        <li><a href="javascript::">套</a></li> 
+        <li><a href="javascript::">条</a></li> 
+        <li><a href="javascript::">桶</a></li> 
+        <li><a href="javascript::">头</a></li> 
+        <li><a href="javascript::">箱</a></li> 
+        <li><a href="javascript::">盏</a></li> 
+        <li><a href="javascript::">张</a></li> 
+        <li><a href="javascript::">折</a></li> 
+        <li><a href="javascript::">支</a></li> 
+        <li><a href="javascript::">只</a></li> 
+        <li><a href="javascript::">株</a></li> 
+        <li><a href="javascript::">组</a></li> 
+        <li><a href="javascript::">集装箱</a></li> 
+      </ul> 
+      <ul class="unitlist"> 
+        <li><a href="javascript::">码</a></li> 
+        <li><a href="javascript::">米</a></li> 
+        <li><a href="javascript::">平方米</a></li> 
+        <li><a href="javascript::">英寸</a></li> 
+      </ul> 
+      <ul class="unitlist"> 
+        <li><a href="javascript::">毫升</a></li> 
+        <li><a href="javascript::">升</a></li> 
+        <li><a href="javascript::">千升</a></li> 
+        <li><a href="javascript::">加仑</a></li> 
+      </ul> 
+      <ul class="unitlist"> 
+        <li><a href="javascript::">磅</a></li> 
+        <li><a href="javascript::">吨</a></li> 
+        <li><a href="javascript::">公斤</a></li> 
+        <li><a href="javascript::">克</a></li> 
+        <li><a href="javascript::">千克</a></li> 
+      </ul> 
+      <ul class="unitlist"> 
+        <li><a href="javascript::">千瓦</a></li> 
+        <li><a href="javascript::">千瓦时</a></li> 
+        <li><a href="javascript::">小时</a></li> 
+        <li><a href="javascript::">月</a></li> 
+        <li><a href="javascript::">年</a></li> 
+      </ul> 
+    </div> 
+  </div> 
+  <!--常用单位结束--> 
+  <!--添加商品系列弹窗开始--> 
+  <div id="addgoodsxl" class="xpop addgoodsxl" style="display:none;"> 
+      <form class="layui-form" action=""> 
+        <div class="layui-form-item"> 
+          <label class="layui-form-label">商品系列名称：</label> 
+          <div class="layui-input-block"> 
+            <input type="text" name="" lay-verify="" placeholder="请输入商品系列名称" class="layui-input nameinput" /> 
+          </div> 
+        </div> 
+        <div class="layui-form-item"> 
+          <label class="layui-form-label">上游商品品类：</label> 
+          <div class="layui-input-block"> 
+            <div class="industry-item">
+              <p><span>机械设备</span>&gt;<span>干燥设备</span>&gt;<span>鼓风机——生产设备</span></p> 
+            </div>
+            <div class="industry-item">
+              <p><span>食品饮料</span>&gt;<span>蔬菜制品</span>&gt;<span>生菜——原材料</span></p> 
+            </div>
+            <div class="industry-item">
+              <p><span>五金建材</span>&gt;<span>蔬菜制品</span>&gt;<span>生菜——原材料</span></p>
+            </div>
+            <div class="add-industytype"> 
+              <div class="layui-input-inline"> 
+                <select name="quiz1"> <option value="1">一级分类1</option> <option value="2">一级分类1</option> <option value="3">一级分类1</option> <option value="4">一级分类1</option> </select> 
+              </div> 
+              <div class="layui-input-inline"> 
+                <select name="quiz2"> <option value="">二级分类1</option> <option value="杭州">二级分类1</option> <option value="宁波">二级分类1</option> <option value="温州">二级分类1</option> <option value="温州">二级分类1</option> <option value="温州">二级分类1</option> </select> 
+              </div> 
+              <div class="layui-input-inline"> 
+                <select name="quiz3"> <option value="">三级分类1</option> <option value="西湖区">三级分类1</option> <option value="余杭区">三级分类1</option> <option value="拱墅区">三级分类1</option> </select> 
+              </div> 
+              <div class="layui-addbtn"> 
+                <button type="button" class="layui-btn">添加</button> 
+                <button type="button" onclick="checkhy()" class="layui-btn layui-btn-primary"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;查找行业</button> 
+              </div> 
+            </div>
+            <div class="glgx"> 
+              <span class="spa">关联关系：</span> 
+              <input type="radio" name="" value="原材料" title="原材料" checked="" /> 
+              <input type="radio" name="" value="生产设备" title="生产设备" /> 
+            </div> 
+          </div> 
+        </div> 
+        <div class="layui-form-item"> 
+          <label class="layui-form-label">下游商品品类：</label> 
+          <div class="layui-input-block"> 
+            <div class="industry-item">
+              <p><span>机械设备</span>&gt;<span>干燥设备</span>&gt;<span>鼓风机——生产设备</span></p> 
+            </div>
+            <div class="industry-item">
+              <p><span>食品饮料</span>&gt;<span>蔬菜制品</span>&gt;<span>生菜——原材料</span></p> 
+            </div>
+            <div class="industry-item">
+              <p><span>五金建材</span>&gt;<span>蔬菜制品</span>&gt;<span>生菜——原材料</span></p>
+            </div>
+            <div class="add-industytype"> 
+              <div class="layui-input-inline"> 
+                <select name="quiz1"> <option value="1">一级分类1</option> <option value="2">一级分类1</option> <option value="3">一级分类1</option> <option value="4">一级分类1</option> </select> 
+              </div> 
+              <div class="layui-input-inline"> 
+                <select name="quiz2"> <option value="">二级分类1</option> <option value="杭州">二级分类1</option> <option value="宁波">二级分类1</option> <option value="温州">二级分类1</option> <option value="温州">二级分类1</option> <option value="温州">二级分类1</option> </select> 
+              </div> 
+              <div class="layui-input-inline"> 
+                <select name="quiz3"> <option value="">三级分类1</option> <option value="西湖区">三级分类1</option> <option value="余杭区">三级分类1</option> <option value="拱墅区">三级分类1</option> </select> 
+              </div> 
+              <div class="layui-addbtn"> 
+                <button type="button" class="layui-btn">添加</button> 
+                <button type="button" onclick="checkhy()" class="layui-btn layui-btn-primary"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;查找行业</button> 
+              </div> 
+            </div>
+            <div class="glgx"> 
+              <span class="spa">关联关系：</span> 
+              <input type="radio" name="" value="原材料" title="原材料" checked="" /> 
+              <input type="radio" name="" value="生产设备" title="生产设备" /> 
+            </div> 
+          </div> 
+        </div> 
+      </form> 
+  </div> 
+  <!--添加商品系列弹窗结束--> 
+  <!--行业搜索弹窗开始--> 
+  <div id="search-ind" class="xpop" style="display:none;"> 
+    <div class="search-main"> 
+      <div class="selection-input search-input clearfix"> 
+        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入行业" class="layui-input" id="input1" /> 
+        <button class="layui-btn">搜索</button> 
+      </div> 
+      <div class="date-search-list"> 
+        <div class="no-date" style="display:none;">
+          <span>暂无数据</span>
+        </div>
+        <ul style="display:;"> 
+          <li><a href="javascript:;" onclick="selecthy();"><div class="selectbtn">选择</div><div class="hy-item"><span>建材装修</span>&gt;<span>建筑涂料</span>&gt;<span>建筑涂料</span></div></a></li> 
+          <li><a href="javascript:;" onclick="selecthy();"><div class="selectbtn">选择</div><div class="hy-item"><span>建材装修</span>&gt;<span>建筑涂料</span>&gt;<span>建筑涂料</span></div></a></li> 
+          <li><a href="javascript:;" onclick="selecthy();"><div class="selectbtn">选择</div><div class="hy-item"><span>建材装修</span>&gt;<span>建筑涂料</span>&gt;<span>建筑涂料</span></div></a></li> 
+          <li><a href="javascript:;" onclick="selecthy();"><div class="selectbtn">选择</div><div class="hy-item"><span>建材装修</span>&gt;<span>建筑涂料</span>&gt;<span>建筑涂料</span></div></a></li> 
+          <li><a href="javascript:;" onclick="selecthy();"><div class="selectbtn">选择</div><div class="hy-item"><span>建材装修</span>&gt;<span>建筑涂料</span>&gt;<span>建筑涂料</span></div></a></li> 
+          <li><a href="javascript:;" onclick="selecthy();"><div class="selectbtn">选择</div><div class="hy-item"><span>建材装修</span>&gt;<span>建筑涂料</span>&gt;<span>建筑涂料</span></div></a></li> 
+          <li><a href="javascript:;" onclick="selecthy();"><div class="selectbtn">选择</div><div class="hy-item"><span>建材装修</span>&gt;<span>建筑涂料</span>&gt;<span>建筑涂料</span></div></a></li> 
+          <li><a href="javascript:;" onclick="selecthy();"><div class="selectbtn">选择</div><div class="hy-item"><span>建材装修</span>&gt;<span>建筑涂料</span>&gt;<span>建筑涂料</span></div></a></li> 
+          <li><a href="javascript:;" onclick="selecthy();"><div class="selectbtn">选择</div><div class="hy-item"><span>建材装修</span>&gt;<span>建筑涂料</span>&gt;<span>建筑涂料</span></div></a></li> 
+          <li><a href="javascript:;" onclick="selecthy();"><div class="selectbtn">选择</div><div class="hy-item"><span>建材装修</span>&gt;<span>建筑涂料</span>&gt;<span>建筑涂料</span></div></a></li> 
+        </ul> 
+      </div> 
+    </div> 
+  </div> 
+  <!--行业搜索弹窗结束--> 
+  <script type="text/javascript">
+
+    $(function(){
+      //选择行业
+      $(".xl_tag span").click(function(){
+        $(this).toggleClass("selected")
+      })
+    });
+
+    $(function(){
+      //选择封面图片
+      $(".product-detailimg .uploadimg-item").click(function(){
+        $(this).siblings(".product-detailimg .uploadimg-item").removeClass('on');
+        $(this).addClass("on")
+      })
+    });
+    
+    layui.use(['form','upload','laydate'], function(){
+      var form = layui.form
+      ,upload = layui.upload
+      ,laydate = layui.laydate;
+
+      //常规用法
+      laydate.render({
+        elem: '#ydbdate'
+      });
+
+      //普通图片上传
+      var uploadInst = upload.render({
+        elem: '#test1'
+        ,url: '/upload/'
+        ,before: function(obj){
+      //预读本地文件示例，不支持ie8
+      obj.preview(function(index, file, result){
+      $('#uploadpic').attr('src', result); //图片链接（base64）
+      });
+      }
+      ,done: function(res){
+      //如果上传失败
+      if(res.code > 0){
+        return layer.msg('上传失败');
+      }
+      //上传成功
+      }
+      ,error: function(){
+      //演示失败状态，并实现重传
+      var demoText = $('#uploadpicText');
+      demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+      demoText.find('.demo-reload').on('click', function(){
+        uploadInst.upload();
+      });
+      }
+    });
+  });
+
+  //查找行业弹窗
+  function checkhy(){
+    layer.open({
+      type: 1,
+      title: '',
+      shadeClose: true,
+      shade: 0.8,
+      area: ['640px', 'auto'],
+    content: $('#search-ind') //iframe的url
+    });
+  }
+
+//添加商品系列弹窗
+function addgoodsxl(){
+	layer.open({
+		type: 1,
+		title: '',
+		shadeClose: true,
+		shade: 0.8,
+		closeBtn: 0,
+		btn: ['创建', '取消'],
+		area: ['800px', 'auto'],
+content: $('#addgoodsxl') //iframe的url
+});
+} 
+//选择常用单位弹窗
+function selectunit(){
+	layer.open({
+		type: 1,
+		title: '',
+		shadeClose: true,
+		shade: 0.8,
+		area: ['450px', 'auto'],
+content: $('#commonunit') //iframe的url
+});
+}
+function yyzz(){
+	layer.open({
+		type: 1,
+		shade: 0.8,
+		title: false,
+		area: ['auto', 'auto'],
+		content: $('.yyzz')
+	});
+}
+function showzdy(){
+	$(".zdysx").show();
+}
+function delzdy(){
+	$(".zdysx").hide();
+}
+//确定删除弹窗
+function deleteyes(){
+  layer.confirm('确定删除？', {
+    btn: ['确定','取消'] //按钮
+  });
+}
+
+</script> 
+</body>
+</html>
